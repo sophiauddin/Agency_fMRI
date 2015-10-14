@@ -295,6 +295,12 @@ These scripts save the subject name, ROI identity, and P value in a text file th
 ## MARSBaR second level
 
 
+## On FWE vs. conventional significance levels with ROI analysis
+
+As stated in [Schweizer et. al. 2013](http://www.jneurosci.org/content/33/12/5301.full), using an ROI analysis makes looking at corrected P values unnecessary:
+
+"(1) the ROI under consideration are clearly derived from the literature a priori; and (2) averaging across all voxels within an anatomically defined ROI is itself very conservative because included in the average will likely be sizeable clusters of voxels not activated by the relevant contrast. Such averaging already therefore biases toward the null hypothesis, and additional correction for multiple tests would make the significance threshold very stringent indeed (Poldrack, 2007)."
+
 #Participant information
 
 ## Excluded for data when art repair is used
