@@ -190,9 +190,12 @@ For non-agency first, vector is: [1 1 0 0 0]
 * p value adjustment: none
 * Threshold T/p value: 0.001
 * Extent threshold: 0 voxels (will count ANY activation, doesn't have to be a certain size)
+* Folder: this is in the folder *Specify model 1* for each subject.
 
 ## Repetition of first-level analysis with art repair AND motion regressors
 Even though the results made sense without the motion regressors I was curious to see if they would be improved or changed by adding motion regressors (e.g. using the rp*.txt files generated at the Realign phase of preprocessing as multiple regressors).
+
+This is in the folder *Specify model 2* for each subject.
 
 ### Batch processing
 To do this, I edited the *batch_ firstlevel.m* script to loop through all the subjects but add the regressors.
@@ -203,6 +206,8 @@ I examined the same contrasts as before, with the same options.
 
 ## Repetition of first-level analysis with motion regressors but NO art repair
 Based on some odd-looking brains that came out of the first-level analysis with art repair, I decided to try this again but not do art repair, instead excluding subjects that had motion issues. See below for the expanded list of excluded subjects.
+
+This is in the folder *Specify model 3* for each subject.
 
 ### Batch processing
 To do this, I edited the *batch_ firstlevel.m* script to loop through all the subjects but add the regressors.
@@ -269,9 +274,32 @@ Another approach is to use **Neurosynth** to generate automated meta-analyses; I
 # ROI analysis with MarsBaR
 One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.
 
+## Downloads
+Marsbar-0.44 was already present on Acropolis. To use MARSBaR's pre-made ROIs, I downloaded marsbar-aal-0.2 from their [recommended website](http://sourceforge.net/projects/marsbar/files/marsbar%20AAL%20ROIs/0.2/). These are used for strucural ROIs when functionals are not available (as in our case).
+
+## MARSBaR first level
+I used each subject's first-level SPM.mat file to specify the design; the Graphics window verified that the design had been correctly imported.
+
+I used MarsBar's batch code from their [support website](http://marsbar.sourceforge.net/faq.html#how-do-i-run-a-marsbar-analysis-in-batch-mode) to run the ROIs for all the subjects, across all four of the preliminary contrasts:
+
+* agency > non
+* non > agency
+* agency vs. baseline
+* non vs. baseline
+
+Then I wrote 2 small scripts:  
+1. Fish out the ROIs and their P values  
+2. Fish out the significant ROIs and their P values < 0.05
+These scripts save the subject name, ROI identity, and P value in a text file that can be copy-pasted into excel, etc.
+
+## MARSBaR second level
 
 
+## On FWE vs. conventional significance levels with ROI analysis
 
+As stated in [Schweizer et. al. 2013](http://www.jneurosci.org/content/33/12/5301.full), using an ROI analysis makes looking at corrected P values unnecessary:
+
+"(1) the ROI under consideration are clearly derived from the literature a priori; and (2) averaging across all voxels within an anatomically defined ROI is itself very conservative because included in the average will likely be sizeable clusters of voxels not activated by the relevant contrast. Such averaging already therefore biases toward the null hypothesis, and additional correction for multiple tests would make the significance threshold very stringent indeed (Poldrack, 2007)."
 
 #Participant information
 
