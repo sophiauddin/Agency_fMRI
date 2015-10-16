@@ -287,13 +287,34 @@ I used MarsBar's batch code from their [support website](http://marsbar.sourcefo
 * agency vs. baseline
 * non vs. baseline
 
-Then I wrote 2 small scripts:  
+### Parameters to investigate
+I wrote 2 small scripts to do the following:   
 1. Fish out the ROIs and their P values  
 2. Fish out the significant ROIs and their P values < 0.05
 These scripts save the subject name, ROI identity, and P value in a text file that can be copy-pasted into excel, etc.
 
-## MARSBaR second level
+I also used code from the [MarsBar FAQ page](http://marsbar.sourceforge.net/faq.html#how-do-i-extract-percent-signal-change-from-my-design-using-batch) to extract percent signal change from the data in batch mode.   
+Out of all the possible parameters of interest, it seems that *percent signal change* is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.
 
+## MARSBaR second level
+Using the data generated from first-level analysis, containing percent signal change for each block, I did the following:
+
++ For each subject and each ROI, average together the "agency" and "non-agency" blocks to get one agency % signal change and one non-agency % signal change  
++ For each ROI, use R to perform a paired t-test between agency and non-agency (n=38 usable subjects)
+
+A paired t test was used because the same subjects are being scanned twice: once in an agency condition and once in a non-agency condition.
+
+The following code was used to loop through all 46 ROIs examined, given percent signal change data:
+
+```{r, eval=FALSE}
+for (i in 1:46){
+  temp=t.test(data[1:38,i],data[39:76,i],alternative=c("two.sided"),mu=0,paired=TRUE,var.equal=FALSE,conf.level=0.95)
+  pval[i]=temp[[3]]
+  rm(temp)
+}
+
+write.table(pval,"pavlues_ROIttest.txt", sep="\t")
+```
 
 ## On FWE vs. conventional significance levels with ROI analysis
 

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="author" content="Soph Uddin" />
+
+<meta name="date" content="2015-09-21" />
+
+<title>fMRI analysis - agency/decision making</title>
+
+<script src="lab_notebook_files/jquery-1.11.0/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lab_notebook_files/bootstrap-3.3.1/css/cerulean.min.css" rel="stylesheet" />
+<script src="lab_notebook_files/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script src="lab_notebook_files/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
+<script src="lab_notebook_files/bootstrap-3.3.1/shim/respond.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet"
+      href="lab_notebook_files/highlight/default.css"
+      type="text/css" />
+<script src="lab_notebook_files/highlight/highlight.js"></script>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs && document.readyState && document.readyState === "complete") {
+   window.setTimeout(function() {
+      hljs.initHighlighting();
+   }, 0);
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img { 
+  max-width:100%; 
+  height: auto; 
+}
+</style>
+<div class="container-fluid main-container">
+
+
+<div id="header">
+<h1 class="title">fMRI analysis - agency/decision making</h1>
+<h4 class="author"><em>Soph Uddin</em></h4>
+<h4 class="date"><em>September 21, 2015</em></h4>
+</div>
+
+<div id="TOC">
+<ul>
+<li><a href="#preprocessing"><span class="toc-section-number">1</span> Preprocessing</a><ul>
+<li><a href="#steps-settings"><span class="toc-section-number">1.1</span> Steps &amp; Settings</a></li>
+<li><a href="#subjects-excluded-after-prepro"><span class="toc-section-number">1.2</span> Subjects excluded after prepro</a></li>
+<li><a href="#art-repair"><span class="toc-section-number">1.3</span> Art repair</a><ul>
+<li><a href="#re-run-of-subject-17-run-3"><span class="toc-section-number">1.3.1</span> Re-run of subject 17, run 3</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#first-level-analysis"><span class="toc-section-number">2</span> First-level analysis</a><ul>
+<li><a href="#with-art-repair-without-motion-regressors"><span class="toc-section-number">2.1</span> With art repair, without motion regressors</a><ul>
+<li><a href="#making-the-multiple-conditions-.mat-file"><span class="toc-section-number">2.1.1</span> Making the “multiple conditions” .mat file</a></li>
+<li><a href="#running-batch-option"><span class="toc-section-number">2.1.2</span> Running batch option</a></li>
+<li><a href="#first-pass-examination-of-level-1-results"><span class="toc-section-number">2.1.3</span> First-pass examination of level 1 results</a></li>
+</ul></li>
+<li><a href="#repetition-of-first-level-analysis-with-art-repair-and-motion-regressors"><span class="toc-section-number">2.2</span> Repetition of first-level analysis with art repair AND motion regressors</a><ul>
+<li><a href="#batch-processing"><span class="toc-section-number">2.2.1</span> Batch processing</a></li>
+<li><a href="#results"><span class="toc-section-number">2.2.2</span> Results</a></li>
+</ul></li>
+<li><a href="#repetition-of-first-level-analysis-with-motion-regressors-but-no-art-repair"><span class="toc-section-number">2.3</span> Repetition of first-level analysis with motion regressors but NO art repair</a><ul>
+<li><a href="#batch-processing-1"><span class="toc-section-number">2.3.1</span> Batch processing</a></li>
+<li><a href="#results-1"><span class="toc-section-number">2.3.2</span> Results</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#second-level-analysis"><span class="toc-section-number">3</span> Second-level analysis</a><ul>
+<li><a href="#filenames-and-location"><span class="toc-section-number">3.1</span> Filenames and location</a></li>
+<li><a href="#settings"><span class="toc-section-number">3.2</span> Settings</a></li>
+<li><a href="#pictures"><span class="toc-section-number">3.3</span> Pictures</a><ul>
+<li><a href="#agency-vs.baseline"><span class="toc-section-number">3.3.1</span> Agency vs. baseline</a></li>
+<li><a href="#non-agency-vs.baseline"><span class="toc-section-number">3.3.2</span> Non-agency vs. baseline</a></li>
+<li><a href="#agency-non-agency"><span class="toc-section-number">3.3.3</span> Agency &gt; non-agency</a></li>
+</ul></li>
+<li><a href="#interpretation-of-active-brain-areas"><span class="toc-section-number">3.4</span> Interpretation of active brain areas</a><ul>
+<li><a href="#converting-mni-to-tal-and-area-lookup"><span class="toc-section-number">3.4.1</span> Converting MNI to TAL and area lookup</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#roi-analysis-with-marsbar"><span class="toc-section-number">4</span> ROI analysis with MarsBaR</a><ul>
+<li><a href="#downloads"><span class="toc-section-number">4.1</span> Downloads</a></li>
+<li><a href="#marsbar-first-level"><span class="toc-section-number">4.2</span> MARSBaR first level</a><ul>
+<li><a href="#parameters-to-investigate"><span class="toc-section-number">4.2.1</span> Parameters to investigate</a></li>
+</ul></li>
+<li><a href="#marsbar-second-level"><span class="toc-section-number">4.3</span> MARSBaR second level</a></li>
+<li><a href="#on-fwe-vs.conventional-significance-levels-with-roi-analysis"><span class="toc-section-number">4.4</span> On FWE vs. conventional significance levels with ROI analysis</a></li>
+</ul></li>
+<li><a href="#participant-information"><span class="toc-section-number">5</span> Participant information</a><ul>
+<li><a href="#excluded-for-data-when-art-repair-is-used"><span class="toc-section-number">5.1</span> Excluded for data when art repair is used</a></li>
+<li><a href="#excluded-when-art-repair-is-not-used"><span class="toc-section-number">5.2</span> Excluded when art repair is not used</a></li>
+<li><a href="#block-order"><span class="toc-section-number">5.3</span> Block order</a></li>
+<li><a href="#unusual-but-still-included"><span class="toc-section-number">5.4</span> Unusual, but still included</a></li>
+</ul></li>
+</ul>
+</div>
+
+<div id="preprocessing" class="section level1">
+<h1><span class="header-section-number">1</span> Preprocessing</h1>
+<div id="steps-settings" class="section level2">
+<h2><span class="header-section-number">1.1</span> Steps &amp; Settings</h2>
+<p>The following pipeline was used:<br />1. Motion correction (folder: <em>Realignment</em>).<br />Settings:<br /><strong>Estimate</strong></p>
+<ul>
+<li>Quality: 0.9<br /></li>
+<li>Separation: 4</li>
+<li>Smoothing (FWHM): 5</li>
+<li>Num passes: Register to mean</li>
+<li>Interpolation: 2nd Degree B-Spline</li>
+<li>Wrapping: No wrap</li>
+<li>Weighting: 0 files</li>
+</ul>
+<p><strong>Reslice</strong></p>
+<ul>
+<li>Resliced images: All images + mean image</li>
+<li>Interpolation: 4th Degree B-Spline</li>
+<li>Wrapping: No wrap</li>
+<li>Masking: mask images</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Coregistration (folder: <em>Coregistration</em>)<br />Settings:<br /><strong>Estimate</strong></li>
+</ol>
+<ul>
+<li>Objective function: mutual information</li>
+<li>Separation: [4 2]</li>
+<li>Tolerances: left as default 1x12 array</li>
+<li>Histogram smoothing: [5 5]</li>
+</ul>
+<p><strong>Reslice</strong></p>
+<ul>
+<li>Interpolation: trilinear</li>
+<li>Wrapping: no wrap</li>
+<li>Masking: Don’t mask images</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>Segmentation (of structural only; folder: <em>Segmentation</em>)<br />Settings:<br /><strong>Output files</strong></li>
+</ol>
+<ul>
+<li>Grey matter: native space</li>
+<li>White matter: native space</li>
+<li>CSF: native space</li>
+<li>Bias corrected: Save bias corrected</li>
+<li>Clean up partitions: don’t do cleanup</li>
+</ul>
+<p><strong>Custom</strong></p>
+<ul>
+<li>Tissue probability maps: 3 files</li>
+<li>Gaussians per class: [2 2 2 4]</li>
+<li>Affine regularization: ICBM space template - European brains</li>
+<li>Warping regularization: 1</li>
+<li>Warp frequency cutoff: 25</li>
+<li>Bias regularization: very light (0.0001)</li>
+<li>Bias FWHM: 60 mm cutoff</li>
+<li>Sampling distance: 3</li>
+<li>Masking image: none</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>Normalization (folder: <em>Normalization</em>)<br />Settings:<br /><strong>Estimation options</strong></li>
+</ol>
+<ul>
+<li>Template image: T1.nii,1</li>
+<li>Template weighting image: 0 files</li>
+<li>Source image smoothing: 8</li>
+<li>Template image smoothing: 0</li>
+<li>Affine regularization: ICBM space template</li>
+<li>Nonlinear frequency cutoff: 25</li>
+<li>Nonlinear iterations: 16</li>
+<li>Nonlinear regularization: 1</li>
+</ul>
+<p><strong>Writing options</strong></p>
+<ul>
+<li>Perserve: concentrations</li>
+<li>Bounding box: [-78 -112 -50]</li>
+<li>Voxel sizes: [2 2 2]</li>
+<li>Interpolation: trilinear</li>
+<li>Wrapping: no wrap</li>
+</ul>
+<ol start="5" style="list-style-type: decimal">
+<li>Smoothing (folder: <em>Smoothing</em>)<br />Settings:</li>
+</ol>
+<ul>
+<li>FWHM: [4 4 4]; note that this is different from the default 6</li>
+<li>Data type: same</li>
+<li>Implicit masking: no</li>
+</ul>
+<p>Each step was checked visually before progressing to the next one.</p>
+</div>
+<div id="subjects-excluded-after-prepro" class="section level2">
+<h2><span class="header-section-number">1.2</span> Subjects excluded after prepro</h2>
+<ul>
+<li>2 for oddly shaped brain/failed motion correction<br /></li>
+<li>9 for failed motion correction<br /></li>
+<li>10 for abnormally large ventricles<br /></li>
+<li>26 for behavioral abnormalities<br /></li>
+<li>32 for uncorrectable rotation</li>
+</ul>
+</div>
+<div id="art-repair" class="section level2">
+<h2><span class="header-section-number">1.3</span> Art repair</h2>
+<p>Artifact repair was done using the Gabrieli lab’s ArtRepair toolbox, available for free online. As Lester suggested, I used the <em>art global</em> script to repair the already preprocessed images.<br />Because the end-stage preprocessed images are found in the “Smoothing” folder, the artifact repaired images appear in “Smoothing” for each subject, but they have a “v” added to the prefix.</p>
+<p>Note: this program needs to be run separately for each scan; that means it has to be run 4 times for each subject.</p>
+<p>I created a matlab script, now found in the Art Repair folder on the Acropolis server (mnt/ide0/share/hcnlab/spm8/ArtRepair v5b), called <em>artglobal loop</em>. This script loops through each subject and through each of the 4 scans, running <em>art global</em> separately, with defaults in place, each time. It spits out warnings when over 25% of the data in that scan were repaired (as per Lester’s suggestion of 25%) so that the user can go back, change the threshold, and re-run those separately.</p>
+<p>Only a few subjects showed runs that exceeded this threshold:</p>
+<ul>
+<li>Subject 12 run 3; based on Lester’s notes and the high but below threshold number of corrected volumes in other runs, I am going to exclude this subject from further analysis.<br /></li>
+<li>Subject 17 run 3; re-ran with a different threshold.</li>
+</ul>
+<p>Some other subjects showed lots of corrected volumes but below threshold. These included:</p>
+<ul>
+<li>Subject 16 runs 3 and 4; based on Lester’s notes it seems like a good idea to exclude this one.<br /></li>
+<li>Subject 20 run 1 only; I will keep this subject unless things look strange.</li>
+</ul>
+<div id="re-run-of-subject-17-run-3" class="section level3">
+<h3><span class="header-section-number">1.3.1</span> Re-run of subject 17, run 3</h3>
+<p>Used the GUI to adjust the threshold as follows:</p>
+<div class="figure">
+<img src="17rerun.png" alt="New thresholds" /><p class="caption">New thresholds</p>
+</div>
+</div>
+</div>
+</div>
+<div id="first-level-analysis" class="section level1">
+<h1><span class="header-section-number">2</span> First-level analysis</h1>
+<div id="with-art-repair-without-motion-regressors" class="section level2">
+<h2><span class="header-section-number">2.1</span> With art repair, without motion regressors</h2>
+<p>The options I used were:</p>
+<ul>
+<li>Units: seconds</li>
+<li>Interscan interval: 2 (same as TR)</li>
+<li>Microtime resolution: 16 (default)</li>
+<li>Microtime onset: 1 (default)</li>
+<li>High pass filter: 420 seconds</li>
+<li>Basis functions: canonical HRF with no derivatives</li>
+<li>Volterra: do not model interactions</li>
+<li>Global normalization: none</li>
+<li>Explicit mask: none</li>
+<li>Serial correlations: AR(1)</li>
+</ul>
+<p>The design matrix looks like this: <img src="designmatrix.png" alt="design matrix" /></p>
+<p>This shows that each run of 210 scans was treated as a separate condition.</p>
+<div id="making-the-multiple-conditions-.mat-file" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Making the “multiple conditions” .mat file</h3>
+<ul>
+<li>One file for agency first condition, one for non-first condition<br /></li>
+<li>Names set to cell array with “agency 1”, “agency 2”, “non-agency 1”, and “non-agency 2” blocks for agency first; flipped for non-agency first.</li>
+<li>Onsets set to 0, 420, 840, and 1260<br /></li>
+<li>Durations set to 420 only<br /></li>
+<li>Saved as <em>/mnt/ide0/share/hcnlab/agency/nifti/001/Specify model 1/params_ ag_ first.mat</em>, and <em>/mnt/ide0/share/hcnlab/agency/nifti/001/Specify model 1/params_ nonag_ first.mat</em></li>
+</ul>
+</div>
+<div id="running-batch-option" class="section level3">
+<h3><span class="header-section-number">2.1.2</span> Running batch option</h3>
+<p>This stage can be run as a loop through subjects using the <em>batch_ firstlevel.m</em> script found in <em>mnt/ide0/share/hcnlab/agency/nifti/001/Specify model 1</em>.</p>
+</div>
+<div id="first-pass-examination-of-level-1-results" class="section level3">
+<h3><span class="header-section-number">2.1.3</span> First-pass examination of level 1 results</h3>
+<p><strong>3 “contrasts” defined</strong><br />1. Agency &gt; non-agency (subtracts activation from non-agency from activation from agency condition, showing where the brain is MORE active, as measured by blood flow, for agency).<br />For agency first, vector is: [1 1 -1 -1 0]<br />For non-agency first, vector is: [-1 -1 1 1 0]</p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Agency vs. baseline (shows where brain is active for agency, regardless of other conditions)<br />For agency first, vector is: [1 1 0 0 0]<br />For non-agency first, vector is: [0 0 1 1 0]</p></li>
+<li><p>Non-agency vs. baseline (shows where brain is active for non-agency, regardless of other conditions)<br />For agency first, vector is: [0 0 1 1 0]<br />For non-agency first, vector is: [1 1 0 0 0]</p></li>
+</ol>
+<p><strong>Other options</strong></p>
+<ul>
+<li>Apply masking: none</li>
+<li>p value adjustment: none</li>
+<li>Threshold T/p value: 0.001</li>
+<li>Extent threshold: 0 voxels (will count ANY activation, doesn’t have to be a certain size)</li>
+<li>Folder: this is in the folder <em>Specify model 1</em> for each subject.</li>
+</ul>
+</div>
+</div>
+<div id="repetition-of-first-level-analysis-with-art-repair-and-motion-regressors" class="section level2">
+<h2><span class="header-section-number">2.2</span> Repetition of first-level analysis with art repair AND motion regressors</h2>
+<p>Even though the results made sense without the motion regressors I was curious to see if they would be improved or changed by adding motion regressors (e.g. using the rp*.txt files generated at the Realign phase of preprocessing as multiple regressors).</p>
+<p>This is in the folder <em>Specify model 2</em> for each subject.</p>
+<div id="batch-processing" class="section level3">
+<h3><span class="header-section-number">2.2.1</span> Batch processing</h3>
+<p>To do this, I edited the <em>batch_ firstlevel.m</em> script to loop through all the subjects but add the regressors.</p>
+</div>
+<div id="results" class="section level3">
+<h3><span class="header-section-number">2.2.2</span> Results</h3>
+<p>I examined the same contrasts as before, with the same options.</p>
+</div>
+</div>
+<div id="repetition-of-first-level-analysis-with-motion-regressors-but-no-art-repair" class="section level2">
+<h2><span class="header-section-number">2.3</span> Repetition of first-level analysis with motion regressors but NO art repair</h2>
+<p>Based on some odd-looking brains that came out of the first-level analysis with art repair, I decided to try this again but not do art repair, instead excluding subjects that had motion issues. See below for the expanded list of excluded subjects.</p>
+<p>This is in the folder <em>Specify model 3</em> for each subject.</p>
+<div id="batch-processing-1" class="section level3">
+<h3><span class="header-section-number">2.3.1</span> Batch processing</h3>
+<p>To do this, I edited the <em>batch_ firstlevel.m</em> script to loop through all the subjects but add the regressors.</p>
+</div>
+<div id="results-1" class="section level3">
+<h3><span class="header-section-number">2.3.2</span> Results</h3>
+<p>I examined the same contrasts as before, with the same options.</p>
+</div>
+</div>
+</div>
+<div id="second-level-analysis" class="section level1">
+<h1><span class="header-section-number">3</span> Second-level analysis</h1>
+<div id="filenames-and-location" class="section level2">
+<h2><span class="header-section-number">3.1</span> Filenames and location</h2>
+<p>Files for second-level analysis are the contrasts created in first-level. These are numbered as follows:</p>
+<p>For agency &gt; non-agency contrast:<br /><em>con_ 0001_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ over_ no/</em></p>
+<p>For agency vs. baseline:<br /><em>con_ 0002_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ vs_ base/</em></p>
+<p>For non-agency vs. baseline:<br /><em>con_ 0003_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/no_ vs_ base/</em></p>
+</div>
+<div id="settings" class="section level2">
+<h2><span class="header-section-number">3.2</span> Settings</h2>
+<p>To obtain the second-level contrasts, I followed the tutorial in the SPM8 manual closely. For each condition (e.g. agency vs. baseline), I made an F contrast with weights matrix = 1.</p>
+<ul>
+<li>Apply masking: none</li>
+<li>p value adjustment: none</li>
+<li>Threshold T/p value: 0.000001 for comparisons with baseline; 0.025 for agency &gt; non-agency contrast</li>
+<li>Extent threshold: 0 voxels for comparisons with baseline; 5 voxels for agency &gt; non-agency contrast because so many one or two-voxel locations were lighting up</li>
+</ul>
+</div>
+<div id="pictures" class="section level2">
+<h2><span class="header-section-number">3.3</span> Pictures</h2>
+<div id="agency-vs.baseline" class="section level3">
+<h3><span class="header-section-number">3.3.1</span> Agency vs. baseline</h3>
+<div class="figure">
+<img src="lev2_ag.png" alt="ag vs base" /><p class="caption">ag vs base</p>
+</div>
+</div>
+<div id="non-agency-vs.baseline" class="section level3">
+<h3><span class="header-section-number">3.3.2</span> Non-agency vs. baseline</h3>
+<div class="figure">
+<img src="lev2_nonag.png" alt="nonag vs base" /><p class="caption">nonag vs base</p>
+</div>
+</div>
+<div id="agency-non-agency" class="section level3">
+<h3><span class="header-section-number">3.3.3</span> Agency &gt; non-agency</h3>
+<div class="figure">
+<img src="lev2_contrast.png" alt="agency &gt; non-agency" /><p class="caption">agency &gt; non-agency</p>
+</div>
+</div>
+</div>
+<div id="interpretation-of-active-brain-areas" class="section level2">
+<h2><span class="header-section-number">3.4</span> Interpretation of active brain areas</h2>
+<p>The “versus baseline” contrasts give us a nice reality check. Because this task involves reading information on a screen, we should see activity in visual areas, which is obvious in both agency vs. baseline and non-agency vs. baseline. Because it involves pretty sophisticated decision-making, we should also see a great deal of frontal activation, which we also see in both “versus baseline” cases.</p>
+<div id="converting-mni-to-tal-and-area-lookup" class="section level3">
+<h3><span class="header-section-number">3.4.1</span> Converting MNI to TAL and area lookup</h3>
+<p>The coordinates in SPM are MNI coordinates. These need to be converted to Talairach in order to look them up in the Brede database. I used <a href="http://sprout022.sprout.yale.edu/mni2tal/mni2tal.html">a website from the BioImage suite at Yale</a> to convert MNI to TAL.</p>
+<p>I then used the <a href="http://neuro.imm.dtu.dk/cgi-bin/brede_loc_query.pl?q=">Brede database</a> to look up the TAL coordinates and what areas they correspond with in the literature.</p>
+<div id="areas-implicated-in-literature" class="section level4">
+<h4><span class="header-section-number">3.4.1.1</span> Areas implicated in literature</h4>
+<p>The following papers (from Shoham) are being used as a guide.</p>
+<ul>
+<li>Hutcherson et. al. 2015 <strong>A neurocomputational model of altruistic choice and its implications</strong></li>
+<li>Strombach et. al. 2015 <strong>Social discounting involves modulation of neural value signals by temporoparietal junction</strong></li>
+<li>Fehr &amp; Camerer 2007 <strong>Social neuroeconomics: the neural circuitry of social preferences</strong></li>
+</ul>
+<p>I looked at the names of the main areas implicated in these papers, then did a literature search to define the borders of these areas. I then compared the coordinates identified in my second-level analysis to the lists of coordinates as defined in many different papers.</p>
+<p>Another approach is to use <strong>Neurosynth</strong> to generate automated meta-analyses; I am looking into this currently.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="roi-analysis-with-marsbar" class="section level1">
+<h1><span class="header-section-number">4</span> ROI analysis with MarsBaR</h1>
+<p>One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.</p>
+<div id="downloads" class="section level2">
+<h2><span class="header-section-number">4.1</span> Downloads</h2>
+<p>Marsbar-0.44 was already present on Acropolis. To use MARSBaR’s pre-made ROIs, I downloaded marsbar-aal-0.2 from their <a href="http://sourceforge.net/projects/marsbar/files/marsbar%20AAL%20ROIs/0.2/">recommended website</a>. These are used for strucural ROIs when functionals are not available (as in our case).</p>
+</div>
+<div id="marsbar-first-level" class="section level2">
+<h2><span class="header-section-number">4.2</span> MARSBaR first level</h2>
+<p>I used each subject’s first-level SPM.mat file to specify the design; the Graphics window verified that the design had been correctly imported.</p>
+<p>I used MarsBar’s batch code from their <a href="http://marsbar.sourceforge.net/faq.html#how-do-i-run-a-marsbar-analysis-in-batch-mode">support website</a> to run the ROIs for all the subjects, across all four of the preliminary contrasts:</p>
+<ul>
+<li>agency &gt; non</li>
+<li>non &gt; agency</li>
+<li>agency vs. baseline</li>
+<li>non vs. baseline</li>
+</ul>
+<div id="parameters-to-investigate" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Parameters to investigate</h3>
+<p>I wrote 2 small scripts to do the following:<br />1. Fish out the ROIs and their P values<br />2. Fish out the significant ROIs and their P values &lt; 0.05 These scripts save the subject name, ROI identity, and P value in a text file that can be copy-pasted into excel, etc.</p>
+<p>I also used code from the <a href="http://marsbar.sourceforge.net/faq.html#how-do-i-extract-percent-signal-change-from-my-design-using-batch">MarsBar FAQ page</a> to extract percent signal change from the data in batch mode.<br />Out of all the possible parameters of interest, it seems that <em>percent signal change</em> is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.</p>
+</div>
+</div>
+<div id="marsbar-second-level" class="section level2">
+<h2><span class="header-section-number">4.3</span> MARSBaR second level</h2>
+<p>Using the data generated from first-level analysis, containing percent signal change for each block, I did the following:</p>
+<ul>
+<li>For each subject and each ROI, average together the “agency” and “non-agency” blocks to get one agency % signal change and one non-agency % signal change<br /></li>
+<li>For each ROI, use R to perform a paired t-test between agency and non-agency (n=38 usable subjects)</li>
+</ul>
+<p>A paired t test was used because the same subjects are being scanned twice: once in an agency condition and once in a non-agency condition.</p>
+<p>The following code was used to loop through all 46 ROIs examined, given percent signal change data:</p>
+<pre class="r"><code>for (i in 1:46){
+  temp=t.test(data[1:38,i],data[39:76,i],alternative=c(&quot;two.sided&quot;),mu=0,paired=TRUE,var.equal=FALSE,conf.level=0.95)
+  pval[i]=temp[[3]]
+  rm(temp)
+}
+
+write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></pre>
+</div>
+<div id="on-fwe-vs.conventional-significance-levels-with-roi-analysis" class="section level2">
+<h2><span class="header-section-number">4.4</span> On FWE vs. conventional significance levels with ROI analysis</h2>
+<p>As stated in <a href="http://www.jneurosci.org/content/33/12/5301.full">Schweizer et. al. 2013</a>, using an ROI analysis makes looking at corrected P values unnecessary:</p>
+<p>“(1) the ROI under consideration are clearly derived from the literature a priori; and (2) averaging across all voxels within an anatomically defined ROI is itself very conservative because included in the average will likely be sizeable clusters of voxels not activated by the relevant contrast. Such averaging already therefore biases toward the null hypothesis, and additional correction for multiple tests would make the significance threshold very stringent indeed (Poldrack, 2007).”</p>
+</div>
+</div>
+<div id="participant-information" class="section level1">
+<h1><span class="header-section-number">5</span> Participant information</h1>
+<div id="excluded-for-data-when-art-repair-is-used" class="section level2">
+<h2><span class="header-section-number">5.1</span> Excluded for data when art repair is used</h2>
+<p>2, 9, 10, 12, 16, 26, 32</p>
+</div>
+<div id="excluded-when-art-repair-is-not-used" class="section level2">
+<h2><span class="header-section-number">5.2</span> Excluded when art repair is not used</h2>
+<p>2, 9, 10, 12, 16, 17, 26, 32, 37, 38, 43, 45 (everyone on Lester’s list of people who may have had motion issues)</p>
+</div>
+<div id="block-order" class="section level2">
+<h2><span class="header-section-number">5.3</span> Block order</h2>
+<p>Agency first: 2, 4, 6, 8, 10, 12, 14, 16, 18, 19, 21, 23, 25, 26, 28, 30, 32, 34, 36, 39, 41, 43</p>
+<p>Non-agency first: 1, 3, 5, 7, 9, 11, 13, 15, 17, 20, 22, 24, 27, 29, 31, 33, 35, 37, 38, 40, 42, 44, 45</p>
+</div>
+<div id="unusual-but-still-included" class="section level2">
+<h2><span class="header-section-number">5.4</span> Unusual, but still included</h2>
+<ul>
+<li>13: had only 13 scans in run 4</li>
+<li>35: had only 171 scans in run 4</li>
+</ul>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
