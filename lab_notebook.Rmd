@@ -287,6 +287,96 @@ I used MarsBar's batch code from their [support website](http://marsbar.sourcefo
 * agency vs. baseline
 * non vs. baseline
 
+###ROIs used: Marsbar's own
+
+See "downloads" section above; I used a huge loop to go through all the ROIs that looked related to ones implicated in the literature (e.g. orbitofrontal, etc.) plus ones that looked like (upon visual examination with a non-corrected p-value threshold) like they were active in the contrast (temporal areas). This came to a total of 46 ROIs (bolded = approaching significance)
+
+MNI_ Caudate_ L_ roi.mat  
+MNI_ Caudate_ R_ roi.mat  
+MNI_ Cingulum_ Ant_ L_ roi.mat  
+MNI_ Cingulum_ Ant_ R_ roi.mat  
+MNI_ Cingulum_ Mid_ L_ roi.mat  
+MNI_ Cingulum_ Mid_ R_ roi.mat  
+MNI_ Cingulum_ Post_ L_ roi.mat  
+MNI_ Cingulum_ Post_ R_ roi.mat  
+MNI_ Cuneus_ L_ roi.mat  
+MNI_ Cuneus_ R_ roi.mat  
+**MNI_ Frontal_ Inf_ Oper_ L_ roi.mat** (p=0.07)  
+**MNI_ Frontal_ Inf_ Oper_ R_ roi.mat** (p=0.05)  
+**MNI_ Frontal_ Inf_ Orb_ L_ roi.mat** (p=0.06)  
+**MNI_ Frontal_ Inf_ Orb_ R_ roi.mat** (p=0.07)  
+**MNI_ Frontal_ Inf_ Tri_ L_ roi.mat** (p=0.05)  
+**MNI_ Frontal_ Inf_ Tri_ R_ roi.mat** (p=0.07)  
+MNI_ Frontal_ Med_ Orb_ L_ roi.mat  
+MNI_ Frontal_ Med_ Orb_ R_ roi.mat  
+MNI_ Frontal_ Mid_ L_ roi.mat  
+MNI_ Frontal_ Mid_ R_ roi.mat    
+MNI_ Frontal_ Mid_ Orb_ L_ roi.mat   
+MNI_ Frontal_ Mid_ Orb_ R_ roi.mat  
+MNI_ Frontal_ Sup_ L_ roi.mat  
+MNI_ Frontal_ Sup_ R_ roi.mat  
+MNI_ Frontal_ Sup_ Medial_ L_ roi.mat  
+MNI_ Frontal_ Sup_ Medial_ R_ roi.mat  
+MNI_ Frontal_ Sup_ Orb_ L_ roi.mat  
+MNI_ Frontal_ Sup_ Orb_ R_ roi.mat  
+MNI_ Insula_ L_ roi.mat  
+MNI_ Insula_ R_ roi.mat  
+MNI_ Precuneus_ L_ roi.mat  
+MNI_ Precuneus_ R_ roi.mat  
+MNI_ Putamen_ L_ roi.mat  
+MNI_ Putamen_ R_ roi.mat  
+**MNI_ Temporal_ Inf_ L_ roi.mat** (p=0.08)  
+MNI_ Temporal_ Inf_ R_ roi.mat   
+MNI_ Temporal_ Mid_ L_ roi.mat  
+MNI_ Temporal_ Mid_ R_ roi.mat  
+MNI_ Temporal_ Pole_ Mid_ L_ roi.mat  
+MNI_ Temporal_ Pole_ Mid_ R_ roi.mat  
+MNI_ Temporal_ Pole_ Sup_ L_ roi.mat  
+MNI_ Temporal_ Pole_ Sup_ R_ roi.mat  
+MNI_ Temporal_ Sup_ L_ roi.mat  
+MNI_ Temporal_ Sup_ R_ roi.mat  
+MNI_ Occipital_ Inf_ L_ roi.mat  
+MNI_ Occipital_ Inf_ R_ roi.mat  
+
+
+###ROIs used: Neurosynth
+
+I used neurosynth to make ROIs for the following areas, which were pulled out from the literature on decision making, prosociality, etc.:
+
++ Anterior cingulate (searched "acc")
++ Dorsal anterior cingulate (searched "dacc")
++ <span style="color:red">Paracingulate cortex - searched but no results in Neurosynth</span>  
++ Caudate
++ Precuneus
++ VMPFC
++ VLPFC
++ DMPFC
++ DLPFC
++ MPFC
++ Anterior prefrontal
++ Orbitofrontal cortex
++ Medial orbitofrontal
++ Striatum
++ Ventral striatum
++ Anterior insula
++ Nucleus accumbens
++ <span style="color:red">Ventral tegmental area - searched but no results in Neurosynth</span>
++ Subgenual area (searched "subgenual")
++ Posterior STS (searched "psts")
++ Temporoparietal junction
++ Putamen
++ Amygdala
+
+In order to make ROIs from Neurosynth, one does the following steps:
+
+1. Go to neurosynth.org  
+2. Click on Meta-analysis > Terms at the top bar  
+3. Type the term of interest (e.g. "ventral striatum") in the search bar  
+4. Click on the hyperlink that is returned by the result; some images showing red activation maps for the ROI should pop up  
+5. In the "Layers" bar on the right side, look for "ROI: reverse inference". Click the download arrow next to that to download a .nii file.   
+6. The ROIs are downloaded as .nii.gz files that can easily be expanded by double clicking (at least on a Mac)  
+7. 
+
 ### Parameters to investigate
 I wrote 2 small scripts to do the following:   
 1. Fish out the ROIs and their P values  
@@ -304,7 +394,7 @@ Using the data generated from first-level analysis, containing percent signal ch
 
 A paired t test was used because the same subjects are being scanned twice: once in an agency condition and once in a non-agency condition.
 
-The following code was used to loop through all 46 ROIs examined, given percent signal change data:
+The following code in R was used to loop through all 46 ROIs examined, given percent signal change data:
 
 ```{r, eval=FALSE}
 for (i in 1:46){
