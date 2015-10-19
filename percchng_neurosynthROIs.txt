@@ -1,0 +1,799 @@
+subject	region	agency % chng	nonag % chng	
+1	acc_pFgA_z_FDR_0_roi.mat	6.784891e-01	3.351528e-01	
+1	amygdala_pFgA_z_FDR_0_roi.mat	1.831654e-01	-3.387593e-02	
+1	anterior insula_pFgA_z_FDR_0_roi.mat	2.176101e-01	9.533467e-02	
+1	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-6.583513e-01	-2.207500e-01	
+1	caudate_pFgA_z_FDR_0_roi.mat	-9.584857e-02	-8.031837e-02	
+1	dacc_pFgA_z_FDR_0_roi.mat	6.425572e-01	2.820900e-01	
+1	dlpfc_pFgA_z_FDR_0_roi.mat	-6.041349e-01	-9.484476e-02	
+1	dmpfc_pFgA_z_FDR_0_roi.mat	-2.053688e+00	-4.139587e-01	
+1	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-9.550720e-02	-1.583615e-01	
+1	mpfc_pFgA_z_FDR_0_roi.mat	8.820662e-02	-1.003223e-03	
+1	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-5.690486e-01	-2.886757e-01	
+1	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	3.704653e-01	-2.226058e-02	
+1	precuneus_pFgA_z_FDR_0_roi.mat	-5.050863e-01	-1.600627e-01	
+1	psts_pFgA_z_FDR_0_roi.mat	4.109432e-01	1.548498e-01	
+1	putamen_pFgA_z_FDR_0_roi.mat	-2.583650e-01	-5.785131e-02	
+1	striatum_pFgA_z_FDR_0_roi.mat	7.480153e-01	3.332590e-01	
+1	subgenual_pFgA_z_FDR_0_roi.mat	1.074916e-02	2.033397e-02	
+1	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-2.667263e-01	-8.532443e-02	
+1	ventral striatum_pFgA_z_FDR_0_roi.mat	7.528610e-01	3.538152e-01	
+1	vlpfc_pFgA_z_FDR_0_roi.mat	3.692156e-01	7.914357e-02	
+1	vmpfc_pFgA_z_FDR_0_roi.mat	-5.339847e-01	-3.251471e-01	
+3	acc_pFgA_z_FDR_0_roi.mat	-8.116599e-02	1.600084e-01	
+3	amygdala_pFgA_z_FDR_0_roi.mat	-6.105812e-02	-4.233442e-04	
+3	anterior insula_pFgA_z_FDR_0_roi.mat	-1.694093e-01	1.312023e-02	
+3	anterior prefrontal_pFgA_z_FDR_0_roi.mat	3.598996e-02	-9.565633e-02	
+3	caudate_pFgA_z_FDR_0_roi.mat	2.310300e-01	1.723847e-01	
+3	dacc_pFgA_z_FDR_0_roi.mat	8.183749e-03	1.302864e-01	
+3	dlpfc_pFgA_z_FDR_0_roi.mat	-3.765525e-01	5.311600e-02	
+3	dmpfc_pFgA_z_FDR_0_roi.mat	1.807987e+00	9.234363e-01	
+3	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	2.057263e-01	4.389783e-01	
+3	mpfc_pFgA_z_FDR_0_roi.mat	-4.213465e-01	8.836021e-02	
+3	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-3.838080e-01	2.354184e-01	
+3	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-8.905211e-02	1.026236e-01	
+3	precuneus_pFgA_z_FDR_0_roi.mat	5.515591e-02	4.355599e-01	
+3	psts_pFgA_z_FDR_0_roi.mat	3.852194e-01	1.188981e-01	
+3	putamen_pFgA_z_FDR_0_roi.mat	7.625657e-02	5.762855e-03	
+3	striatum_pFgA_z_FDR_0_roi.mat	4.439724e-01	-7.689084e-03	
+3	subgenual_pFgA_z_FDR_0_roi.mat	-1.940832e-01	-4.579731e-02	
+3	temporoparietal junction_pFgA_z_FDR_0_roi.mat	3.288973e-01	2.612695e-01	
+3	ventral striatum_pFgA_z_FDR_0_roi.mat	2.870082e-01	5.617793e-03	
+3	vlpfc_pFgA_z_FDR_0_roi.mat	6.630439e-02	6.016810e-02	
+3	vmpfc_pFgA_z_FDR_0_roi.mat	-4.007767e-01	-1.719791e-01	
+4	acc_pFgA_z_FDR_0_roi.mat	1.906699e-01	2.724368e-01	
+4	amygdala_pFgA_z_FDR_0_roi.mat	-4.324733e-02	1.505447e-01	
+4	anterior insula_pFgA_z_FDR_0_roi.mat	5.837134e-02	1.151366e-01	
+4	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-2.959665e-01	-3.352849e-01	
+4	caudate_pFgA_z_FDR_0_roi.mat	-5.285221e-02	3.463821e-02	
+4	dacc_pFgA_z_FDR_0_roi.mat	1.223213e-01	1.711051e-01	
+4	dlpfc_pFgA_z_FDR_0_roi.mat	-3.329779e-01	-3.670991e-01	
+4	dmpfc_pFgA_z_FDR_0_roi.mat	-4.671583e-01	-2.462565e-01	
+4	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-2.152076e-01	-1.162663e-01	
+4	mpfc_pFgA_z_FDR_0_roi.mat	-1.745692e-01	-9.600529e-02	
+4	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-4.015173e-01	-4.106160e-01	
+4	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-1.367132e-01	-1.349286e-02	
+4	precuneus_pFgA_z_FDR_0_roi.mat	-2.981125e-01	-2.076324e-01	
+4	psts_pFgA_z_FDR_0_roi.mat	9.759505e-02	2.343534e-01	
+4	putamen_pFgA_z_FDR_0_roi.mat	-1.068236e-01	3.547553e-01	
+4	striatum_pFgA_z_FDR_0_roi.mat	1.081665e-01	1.235679e-01	
+4	subgenual_pFgA_z_FDR_0_roi.mat	-8.195155e-01	-5.779939e-01	
+4	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-2.284578e-01	-6.909243e-02	
+4	ventral striatum_pFgA_z_FDR_0_roi.mat	1.000717e-01	1.461677e-01	
+4	vlpfc_pFgA_z_FDR_0_roi.mat	-6.417419e-02	-5.197251e-02	
+4	vmpfc_pFgA_z_FDR_0_roi.mat	-2.304149e-01	-9.703631e-02	
+5	acc_pFgA_z_FDR_0_roi.mat	1.969252e-01	1.458585e-01	
+5	amygdala_pFgA_z_FDR_0_roi.mat	-2.648370e-01	-2.542391e-01	
+5	anterior insula_pFgA_z_FDR_0_roi.mat	-6.846805e-02	2.944104e-02	
+5	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-3.876582e-01	-2.506739e-01	
+5	caudate_pFgA_z_FDR_0_roi.mat	-5.757201e-02	-1.016477e-01	
+5	dacc_pFgA_z_FDR_0_roi.mat	-2.530096e-02	1.174532e-01	
+5	dlpfc_pFgA_z_FDR_0_roi.mat	-6.816351e-01	-1.228753e-01	
+5	dmpfc_pFgA_z_FDR_0_roi.mat	-1.850987e-01	-2.764600e-01	
+5	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-3.233249e-01	-2.233456e-01	
+5	mpfc_pFgA_z_FDR_0_roi.mat	-2.841116e-01	-1.859515e-01	
+5	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-1.025662e-01	-1.948333e-01	
+5	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-6.209735e-01	-4.136882e-01	
+5	precuneus_pFgA_z_FDR_0_roi.mat	-2.808120e-01	-2.235268e-01	
+5	psts_pFgA_z_FDR_0_roi.mat	3.411158e-02	8.114273e-02	
+5	putamen_pFgA_z_FDR_0_roi.mat	-7.651293e-02	-2.064513e-02	
+5	striatum_pFgA_z_FDR_0_roi.mat	-1.299966e-02	1.674527e-01	
+5	subgenual_pFgA_z_FDR_0_roi.mat	-2.137704e-01	-1.913229e-01	
+5	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-5.495991e-01	-1.946524e-01	
+5	ventral striatum_pFgA_z_FDR_0_roi.mat	-5.257250e-02	1.419689e-01	
+5	vlpfc_pFgA_z_FDR_0_roi.mat	1.038427e-01	1.901149e-01	
+5	vmpfc_pFgA_z_FDR_0_roi.mat	-1.622612e-01	-2.652916e-01	
+6	acc_pFgA_z_FDR_0_roi.mat	4.110515e-01	5.594969e-01	
+6	amygdala_pFgA_z_FDR_0_roi.mat	2.095761e-02	1.550601e-01	
+6	anterior insula_pFgA_z_FDR_0_roi.mat	-8.714525e-02	-1.193128e-01	
+6	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-1.928970e-01	-3.666161e-01	
+6	caudate_pFgA_z_FDR_0_roi.mat	-6.618072e-02	-1.714321e-02	
+6	dacc_pFgA_z_FDR_0_roi.mat	2.195908e-01	4.171695e-01	
+6	dlpfc_pFgA_z_FDR_0_roi.mat	1.939597e-01	9.894999e-02	
+6	dmpfc_pFgA_z_FDR_0_roi.mat	-4.869383e-01	-5.546278e-01	
+6	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-2.872707e-02	-3.025495e-02	
+6	mpfc_pFgA_z_FDR_0_roi.mat	-1.428878e-01	-1.456000e-01	
+6	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-3.472678e-01	-4.833400e-01	
+6	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-1.002599e-01	-2.384675e-01	
+6	precuneus_pFgA_z_FDR_0_roi.mat	-2.509788e-01	-3.762319e-01	
+6	psts_pFgA_z_FDR_0_roi.mat	1.283018e-01	1.683425e-01	
+6	putamen_pFgA_z_FDR_0_roi.mat	-3.926689e-02	-2.192904e-01	
+6	striatum_pFgA_z_FDR_0_roi.mat	9.341689e-02	4.533729e-01	
+6	subgenual_pFgA_z_FDR_0_roi.mat	-2.015000e-01	-1.407351e-01	
+6	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.546656e-01	-2.006746e-01	
+6	ventral striatum_pFgA_z_FDR_0_roi.mat	1.603877e-01	4.323977e-01	
+6	vlpfc_pFgA_z_FDR_0_roi.mat	5.429849e-02	1.829702e-01	
+6	vmpfc_pFgA_z_FDR_0_roi.mat	-2.038669e-01	-1.919870e-01	
+7	acc_pFgA_z_FDR_0_roi.mat	6.027125e-01	2.997496e-01	
+7	amygdala_pFgA_z_FDR_0_roi.mat	-9.116069e-01	-2.778684e-01	
+7	anterior insula_pFgA_z_FDR_0_roi.mat	4.737997e-01	6.111997e-02	
+7	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-1.151725e-01	-1.082630e-01	
+7	caudate_pFgA_z_FDR_0_roi.mat	1.132701e-01	5.997996e-03	
+7	dacc_pFgA_z_FDR_0_roi.mat	6.766627e-01	3.478279e-01	
+7	dlpfc_pFgA_z_FDR_0_roi.mat	4.339567e-01	1.338981e-01	
+7	dmpfc_pFgA_z_FDR_0_roi.mat	3.641692e-01	6.601038e-02	
+7	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	2.068619e-01	5.683267e-02	
+7	mpfc_pFgA_z_FDR_0_roi.mat	2.109457e-01	5.429319e-02	
+7	nucleus accumbens_pFgA_z_FDR_0_roi.mat	4.726375e-03	-1.159386e-01	
+7	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	8.003145e-02	4.986298e-02	
+7	precuneus_pFgA_z_FDR_0_roi.mat	-1.416717e-01	-3.039773e-01	
+7	psts_pFgA_z_FDR_0_roi.mat	9.575375e-01	3.642106e-01	
+7	putamen_pFgA_z_FDR_0_roi.mat	1.955077e-01	1.378024e-01	
+7	striatum_pFgA_z_FDR_0_roi.mat	3.733202e-01	2.841260e-01	
+7	subgenual_pFgA_z_FDR_0_roi.mat	-1.762101e-01	-1.731956e-01	
+7	temporoparietal junction_pFgA_z_FDR_0_roi.mat	3.228101e-01	9.641236e-03	
+7	ventral striatum_pFgA_z_FDR_0_roi.mat	3.764725e-01	2.560139e-01	
+7	vlpfc_pFgA_z_FDR_0_roi.mat	-4.023500e-01	-5.854929e-02	
+7	vmpfc_pFgA_z_FDR_0_roi.mat	-2.220361e-01	-1.291076e-01	
+8	acc_pFgA_z_FDR_0_roi.mat	3.559311e-01	6.124933e-01	
+8	amygdala_pFgA_z_FDR_0_roi.mat	8.387284e-02	1.721529e-01	
+8	anterior insula_pFgA_z_FDR_0_roi.mat	1.554659e-01	2.984912e-01	
+8	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-6.349552e-02	1.345324e-01	
+8	caudate_pFgA_z_FDR_0_roi.mat	1.300527e-01	6.305086e-01	
+8	dacc_pFgA_z_FDR_0_roi.mat	4.391204e-01	8.808559e-01	
+8	dlpfc_pFgA_z_FDR_0_roi.mat	2.305762e-01	2.790930e-01	
+8	dmpfc_pFgA_z_FDR_0_roi.mat	6.753576e-01	2.388753e+00	
+8	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	1.840326e-01	4.791802e-01	
+8	mpfc_pFgA_z_FDR_0_roi.mat	5.776917e-02	1.206298e-01	
+8	nucleus accumbens_pFgA_z_FDR_0_roi.mat	2.140280e-01	6.661044e-01	
+8	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	1.183470e-01	4.245641e-01	
+8	precuneus_pFgA_z_FDR_0_roi.mat	2.354188e-01	5.675661e-01	
+8	psts_pFgA_z_FDR_0_roi.mat	1.144789e-01	5.069030e-01	
+8	putamen_pFgA_z_FDR_0_roi.mat	1.646636e-01	6.377089e-01	
+8	striatum_pFgA_z_FDR_0_roi.mat	3.808654e-01	2.727509e-01	
+8	subgenual_pFgA_z_FDR_0_roi.mat	9.186019e-02	2.845241e-01	
+8	temporoparietal junction_pFgA_z_FDR_0_roi.mat	1.254357e-01	8.178123e-01	
+8	ventral striatum_pFgA_z_FDR_0_roi.mat	3.793923e-01	3.620263e-01	
+8	vlpfc_pFgA_z_FDR_0_roi.mat	3.018398e-01	6.678384e-01	
+8	vmpfc_pFgA_z_FDR_0_roi.mat	2.891297e-02	2.160194e-01	
+11	acc_pFgA_z_FDR_0_roi.mat	7.867059e-01	4.601961e-01	
+11	amygdala_pFgA_z_FDR_0_roi.mat	1.710713e-01	7.737420e-02	
+11	anterior insula_pFgA_z_FDR_0_roi.mat	1.037474e-01	-8.974946e-02	
+11	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-6.473745e-01	-4.698405e-01	
+11	caudate_pFgA_z_FDR_0_roi.mat	1.774429e-01	1.005327e-01	
+11	dacc_pFgA_z_FDR_0_roi.mat	6.786954e-01	4.199567e-01	
+11	dlpfc_pFgA_z_FDR_0_roi.mat	1.663220e-01	1.316155e-01	
+11	dmpfc_pFgA_z_FDR_0_roi.mat	-6.658848e-01	-4.778695e-01	
+11	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-5.785428e-01	-6.128145e-01	
+11	mpfc_pFgA_z_FDR_0_roi.mat	2.062491e-01	3.932324e-02	
+11	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-3.207616e-01	-2.544913e-01	
+11	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	3.296422e-03	4.726939e-04	
+11	precuneus_pFgA_z_FDR_0_roi.mat	2.077088e-01	-2.406017e-01	
+11	psts_pFgA_z_FDR_0_roi.mat	8.588093e-01	4.451925e-01	
+11	putamen_pFgA_z_FDR_0_roi.mat	-8.741077e-03	-1.499096e-01	
+11	striatum_pFgA_z_FDR_0_roi.mat	1.292039e+00	6.836987e-01	
+11	subgenual_pFgA_z_FDR_0_roi.mat	1.610906e-01	3.844789e-02	
+11	temporoparietal junction_pFgA_z_FDR_0_roi.mat	9.636199e-02	4.630827e-04	
+11	ventral striatum_pFgA_z_FDR_0_roi.mat	1.236195e+00	6.747468e-01	
+11	vlpfc_pFgA_z_FDR_0_roi.mat	7.632675e-01	3.285824e-01	
+11	vmpfc_pFgA_z_FDR_0_roi.mat	5.047435e-02	-2.963622e-01	
+13	acc_pFgA_z_FDR_0_roi.mat	1.879533e-01	2.454607e-01	
+13	amygdala_pFgA_z_FDR_0_roi.mat	7.912436e-02	6.020692e-02	
+13	anterior insula_pFgA_z_FDR_0_roi.mat	7.812777e-02	1.216345e-01	
+13	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-1.405933e-01	-2.432223e-01	
+13	caudate_pFgA_z_FDR_0_roi.mat	5.927837e-02	2.002757e-02	
+13	dacc_pFgA_z_FDR_0_roi.mat	2.105648e-01	2.353325e-01	
+13	dlpfc_pFgA_z_FDR_0_roi.mat	1.333385e-01	9.546513e-02	
+13	dmpfc_pFgA_z_FDR_0_roi.mat	6.244228e-01	2.378432e-01	
+13	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	4.893825e-02	1.048705e-01	
+13	mpfc_pFgA_z_FDR_0_roi.mat	1.094036e-01	-3.737934e-02	
+13	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-9.968635e-02	-8.179374e-02	
+13	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	9.372055e-02	1.979399e-02	
+13	precuneus_pFgA_z_FDR_0_roi.mat	-1.151625e-01	-1.956856e-01	
+13	psts_pFgA_z_FDR_0_roi.mat	-5.092573e-02	9.880196e-02	
+13	putamen_pFgA_z_FDR_0_roi.mat	2.337056e-01	1.655709e-02	
+13	striatum_pFgA_z_FDR_0_roi.mat	5.534135e-01	2.531457e-01	
+13	subgenual_pFgA_z_FDR_0_roi.mat	-3.909705e-02	1.919429e-02	
+13	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.347548e-01	-1.324353e-01	
+13	ventral striatum_pFgA_z_FDR_0_roi.mat	5.408026e-01	2.867374e-01	
+13	vlpfc_pFgA_z_FDR_0_roi.mat	6.684475e-02	1.494630e-01	
+13	vmpfc_pFgA_z_FDR_0_roi.mat	3.222589e-01	1.288676e-01	
+14	acc_pFgA_z_FDR_0_roi.mat	-1.929577e-02	6.086886e-01	
+14	amygdala_pFgA_z_FDR_0_roi.mat	1.637727e-02	3.004427e-01	
+14	anterior insula_pFgA_z_FDR_0_roi.mat	1.235976e-01	2.622949e-01	
+14	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-8.040589e-02	-3.004889e-01	
+14	caudate_pFgA_z_FDR_0_roi.mat	8.673532e-02	7.747686e-01	
+14	dacc_pFgA_z_FDR_0_roi.mat	-1.434714e-01	-1.388182e-01	
+14	dlpfc_pFgA_z_FDR_0_roi.mat	3.272599e-01	1.919723e+00	
+14	dmpfc_pFgA_z_FDR_0_roi.mat	-1.484216e-01	-1.034403e+00	
+14	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-7.710277e-02	4.763182e-01	
+14	mpfc_pFgA_z_FDR_0_roi.mat	3.441100e-02	3.240235e-01	
+14	nucleus accumbens_pFgA_z_FDR_0_roi.mat	7.857930e-02	7.798514e-01	
+14	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	2.870146e-02	7.839489e-01	
+14	precuneus_pFgA_z_FDR_0_roi.mat	-5.468735e-02	-5.337033e-02	
+14	psts_pFgA_z_FDR_0_roi.mat	2.014947e-02	4.274739e-01	
+14	putamen_pFgA_z_FDR_0_roi.mat	-1.831717e-01	6.073971e-02	
+14	striatum_pFgA_z_FDR_0_roi.mat	-7.053131e-02	8.873442e-01	
+14	subgenual_pFgA_z_FDR_0_roi.mat	1.038579e-02	2.076882e-01	
+14	temporoparietal junction_pFgA_z_FDR_0_roi.mat	3.017743e-01	1.608391e+00	
+14	ventral striatum_pFgA_z_FDR_0_roi.mat	1.188010e-02	7.494160e-01	
+14	vlpfc_pFgA_z_FDR_0_roi.mat	9.701083e-02	6.498416e-01	
+14	vmpfc_pFgA_z_FDR_0_roi.mat	-9.495936e-02	3.495301e-01	
+15	acc_pFgA_z_FDR_0_roi.mat	1.026657e-01	9.088054e-02	
+15	amygdala_pFgA_z_FDR_0_roi.mat	-7.719896e-02	-2.813815e-02	
+15	anterior insula_pFgA_z_FDR_0_roi.mat	4.272569e-02	-3.393304e-02	
+15	anterior prefrontal_pFgA_z_FDR_0_roi.mat	2.540531e-02	-8.307236e-02	
+15	caudate_pFgA_z_FDR_0_roi.mat	-8.079005e-02	-3.224522e-03	
+15	dacc_pFgA_z_FDR_0_roi.mat	1.851788e-01	1.705442e-01	
+15	dlpfc_pFgA_z_FDR_0_roi.mat	2.071373e-01	1.146082e-01	
+15	dmpfc_pFgA_z_FDR_0_roi.mat	1.424076e-01	5.303755e-02	
+15	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-4.573036e-02	-5.718765e-02	
+15	mpfc_pFgA_z_FDR_0_roi.mat	1.114398e-01	3.089675e-02	
+15	nucleus accumbens_pFgA_z_FDR_0_roi.mat	1.627427e-01	7.088463e-02	
+15	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-1.061458e-01	-9.862351e-02	
+15	precuneus_pFgA_z_FDR_0_roi.mat	-2.662378e-01	-2.156689e-01	
+15	psts_pFgA_z_FDR_0_roi.mat	1.217956e-01	2.657997e-02	
+15	putamen_pFgA_z_FDR_0_roi.mat	1.248166e-01	6.591258e-02	
+15	striatum_pFgA_z_FDR_0_roi.mat	3.387790e-01	3.089569e-01	
+15	subgenual_pFgA_z_FDR_0_roi.mat	-1.744119e-02	-3.638639e-02	
+15	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-8.243567e-02	-1.274214e-01	
+15	ventral striatum_pFgA_z_FDR_0_roi.mat	3.335584e-01	2.807757e-01	
+15	vlpfc_pFgA_z_FDR_0_roi.mat	4.538100e-03	1.153625e-01	
+15	vmpfc_pFgA_z_FDR_0_roi.mat	2.509045e-02	-4.833968e-02	
+17	acc_pFgA_z_FDR_0_roi.mat	3.952272e-01	3.199407e-01	
+17	amygdala_pFgA_z_FDR_0_roi.mat	-2.892747e-01	-3.722213e-02	
+17	anterior insula_pFgA_z_FDR_0_roi.mat	-2.362418e-01	-9.938574e-02	
+17	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-2.082542e-01	-1.100602e-01	
+17	caudate_pFgA_z_FDR_0_roi.mat	-7.515457e-02	-4.038938e-02	
+17	dacc_pFgA_z_FDR_0_roi.mat	1.339264e-01	5.106583e-02	
+17	dlpfc_pFgA_z_FDR_0_roi.mat	-9.902434e-01	-3.959755e-01	
+17	dmpfc_pFgA_z_FDR_0_roi.mat	2.409157e+00	6.840323e-02	
+17	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	3.401735e-01	-6.038051e-02	
+17	mpfc_pFgA_z_FDR_0_roi.mat	-3.637575e-01	-3.512408e-01	
+17	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-9.801747e-02	-1.600352e-01	
+17	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-1.020991e-01	1.510781e-01	
+17	precuneus_pFgA_z_FDR_0_roi.mat	-6.634917e-01	-3.229212e-01	
+17	psts_pFgA_z_FDR_0_roi.mat	2.099012e-01	1.096857e-01	
+17	putamen_pFgA_z_FDR_0_roi.mat	2.718435e-01	-3.742490e-02	
+17	striatum_pFgA_z_FDR_0_roi.mat	-7.230658e-01	1.959652e-01	
+17	subgenual_pFgA_z_FDR_0_roi.mat	1.483016e-01	5.992928e-02	
+17	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-2.809586e-02	2.555450e-02	
+17	ventral striatum_pFgA_z_FDR_0_roi.mat	-4.801908e-01	2.066914e-01	
+17	vlpfc_pFgA_z_FDR_0_roi.mat	2.109698e-01	1.966201e-01	
+17	vmpfc_pFgA_z_FDR_0_roi.mat	5.212670e-02	-2.530124e-01	
+18	acc_pFgA_z_FDR_0_roi.mat	1.428482e-01	1.079068e-01	
+18	amygdala_pFgA_z_FDR_0_roi.mat	1.665310e-01	3.345179e-01	
+18	anterior insula_pFgA_z_FDR_0_roi.mat	4.567571e-02	3.306674e-01	
+18	anterior prefrontal_pFgA_z_FDR_0_roi.mat	6.855465e-02	3.082653e-01	
+18	caudate_pFgA_z_FDR_0_roi.mat	1.622616e-01	4.897349e-01	
+18	dacc_pFgA_z_FDR_0_roi.mat	5.674743e-02	-1.072160e-01	
+18	dlpfc_pFgA_z_FDR_0_roi.mat	2.221882e-02	-2.314406e-01	
+18	dmpfc_pFgA_z_FDR_0_roi.mat	6.170548e-02	4.200233e-01	
+18	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	9.691740e-02	1.737314e-01	
+18	mpfc_pFgA_z_FDR_0_roi.mat	-5.325891e-02	-8.429995e-02	
+18	nucleus accumbens_pFgA_z_FDR_0_roi.mat	3.148649e-03	1.210920e-01	
+18	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	5.577959e-03	3.895608e-02	
+18	precuneus_pFgA_z_FDR_0_roi.mat	-2.284539e-02	6.511942e-03	
+18	psts_pFgA_z_FDR_0_roi.mat	1.635683e-02	-1.152415e-01	
+18	putamen_pFgA_z_FDR_0_roi.mat	-7.529316e-02	-4.839677e-02	
+18	striatum_pFgA_z_FDR_0_roi.mat	-8.864203e-02	-5.918923e-01	
+18	subgenual_pFgA_z_FDR_0_roi.mat	-3.613554e-02	-1.843814e-01	
+18	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.522349e-01	-5.371608e-01	
+18	ventral striatum_pFgA_z_FDR_0_roi.mat	-5.167350e-02	-4.533910e-01	
+18	vlpfc_pFgA_z_FDR_0_roi.mat	-3.719536e-01	-7.250436e-01	
+18	vmpfc_pFgA_z_FDR_0_roi.mat	-8.720893e-02	-9.354210e-02	
+19	acc_pFgA_z_FDR_0_roi.mat	5.069854e-02	-8.509282e-02	
+19	amygdala_pFgA_z_FDR_0_roi.mat	1.023582e-01	9.695402e-02	
+19	anterior insula_pFgA_z_FDR_0_roi.mat	-4.954128e-02	-1.281873e-01	
+19	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-7.963824e-02	-2.769657e-01	
+19	caudate_pFgA_z_FDR_0_roi.mat	-6.065395e-02	-1.213794e-01	
+19	dacc_pFgA_z_FDR_0_roi.mat	-7.128325e-02	-3.146551e-01	
+19	dlpfc_pFgA_z_FDR_0_roi.mat	-1.379053e-02	3.881917e-02	
+19	dmpfc_pFgA_z_FDR_0_roi.mat	-1.582711e-01	-1.726499e-01	
+19	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-4.608025e-02	-5.631754e-02	
+19	mpfc_pFgA_z_FDR_0_roi.mat	2.820344e-02	-1.190428e-02	
+19	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-6.053967e-02	-2.481394e-02	
+19	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	4.295237e-02	-2.017301e-01	
+19	precuneus_pFgA_z_FDR_0_roi.mat	-1.016999e-01	-5.287557e-01	
+19	psts_pFgA_z_FDR_0_roi.mat	-7.305585e-02	-5.538313e-02	
+19	putamen_pFgA_z_FDR_0_roi.mat	-1.498522e-02	-2.955635e-02	
+19	striatum_pFgA_z_FDR_0_roi.mat	1.084591e-01	1.388015e-01	
+19	subgenual_pFgA_z_FDR_0_roi.mat	-2.875870e-02	-2.129697e-01	
+19	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-2.981545e-02	-1.676153e-01	
+19	ventral striatum_pFgA_z_FDR_0_roi.mat	1.601467e-01	2.339090e-01	
+19	vlpfc_pFgA_z_FDR_0_roi.mat	9.510167e-02	2.832166e-03	
+19	vmpfc_pFgA_z_FDR_0_roi.mat	2.847038e-02	1.241486e-01	
+20	acc_pFgA_z_FDR_0_roi.mat	1.884417e+00	1.032709e+00	
+20	amygdala_pFgA_z_FDR_0_roi.mat	3.262144e-01	8.928990e-02	
+20	anterior insula_pFgA_z_FDR_0_roi.mat	4.097582e-01	3.164255e-01	
+20	anterior prefrontal_pFgA_z_FDR_0_roi.mat	2.628367e-01	-1.029532e-01	
+20	caudate_pFgA_z_FDR_0_roi.mat	5.083710e-01	1.160702e-01	
+20	dacc_pFgA_z_FDR_0_roi.mat	1.424971e+00	6.872666e-01	
+20	dlpfc_pFgA_z_FDR_0_roi.mat	8.011614e-01	4.792465e-01	
+20	dmpfc_pFgA_z_FDR_0_roi.mat	1.368103e-01	2.628430e-01	
+20	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	7.210889e-01	1.989770e-01	
+20	mpfc_pFgA_z_FDR_0_roi.mat	7.680528e-01	2.421542e-01	
+20	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-3.590480e-01	-4.416036e-01	
+20	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	4.539931e-01	1.873958e-01	
+20	precuneus_pFgA_z_FDR_0_roi.mat	-2.371543e-01	-3.993750e-01	
+20	psts_pFgA_z_FDR_0_roi.mat	9.431063e-01	4.672448e-01	
+20	putamen_pFgA_z_FDR_0_roi.mat	4.065241e-01	1.052262e-01	
+20	striatum_pFgA_z_FDR_0_roi.mat	2.416355e+00	1.565835e+00	
+20	subgenual_pFgA_z_FDR_0_roi.mat	4.455309e-01	3.556822e-02	
+20	temporoparietal junction_pFgA_z_FDR_0_roi.mat	6.257362e-01	5.293178e-01	
+20	ventral striatum_pFgA_z_FDR_0_roi.mat	2.324798e+00	1.429936e+00	
+20	vlpfc_pFgA_z_FDR_0_roi.mat	1.884737e+00	9.056584e-01	
+20	vmpfc_pFgA_z_FDR_0_roi.mat	-4.499356e-01	-4.402195e-01	
+21	acc_pFgA_z_FDR_0_roi.mat	-2.075179e-02	1.421684e-01	
+21	amygdala_pFgA_z_FDR_0_roi.mat	3.495196e-02	1.794141e-02	
+21	anterior insula_pFgA_z_FDR_0_roi.mat	-5.326085e-02	1.805288e-01	
+21	anterior prefrontal_pFgA_z_FDR_0_roi.mat	4.035620e-01	-7.900698e-01	
+21	caudate_pFgA_z_FDR_0_roi.mat	-5.008388e-02	9.963621e-02	
+21	dacc_pFgA_z_FDR_0_roi.mat	6.648639e-02	1.309694e-01	
+21	dlpfc_pFgA_z_FDR_0_roi.mat	1.644931e-01	-7.058940e-02	
+21	dmpfc_pFgA_z_FDR_0_roi.mat	5.980414e-02	-2.309261e-01	
+21	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-1.195037e-01	-4.037853e-01	
+21	mpfc_pFgA_z_FDR_0_roi.mat	1.258498e-01	-8.026173e-01	
+21	nucleus accumbens_pFgA_z_FDR_0_roi.mat	1.796005e-02	-2.420885e-01	
+21	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-1.713843e-01	-4.832333e-01	
+21	precuneus_pFgA_z_FDR_0_roi.mat	-1.669317e-02	-7.513321e-01	
+21	psts_pFgA_z_FDR_0_roi.mat	6.250503e-02	2.189956e-01	
+21	putamen_pFgA_z_FDR_0_roi.mat	-1.969033e-02	-2.220175e-01	
+21	striatum_pFgA_z_FDR_0_roi.mat	-8.837557e-02	1.685295e-01	
+21	subgenual_pFgA_z_FDR_0_roi.mat	-1.974374e-01	-7.044059e-01	
+21	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.778959e-01	-1.795357e-01	
+21	ventral striatum_pFgA_z_FDR_0_roi.mat	-8.422324e-02	1.112467e-01	
+21	vlpfc_pFgA_z_FDR_0_roi.mat	9.938567e-02	3.208257e-01	
+21	vmpfc_pFgA_z_FDR_0_roi.mat	-1.231841e-02	-4.563741e-01	
+22	acc_pFgA_z_FDR_0_roi.mat	5.261183e-01	3.113082e-01	
+22	amygdala_pFgA_z_FDR_0_roi.mat	3.805933e-01	1.534428e-01	
+22	anterior insula_pFgA_z_FDR_0_roi.mat	-2.342505e-01	-8.030582e-02	
+22	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-8.548515e-02	-5.472823e-02	
+22	caudate_pFgA_z_FDR_0_roi.mat	-3.601487e-02	7.174244e-03	
+22	dacc_pFgA_z_FDR_0_roi.mat	3.358307e-01	2.390633e-01	
+22	dlpfc_pFgA_z_FDR_0_roi.mat	3.833890e-01	2.459206e-01	
+22	dmpfc_pFgA_z_FDR_0_roi.mat	-1.996118e-01	-2.959726e-02	
+22	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	2.359554e-01	7.203219e-02	
+22	mpfc_pFgA_z_FDR_0_roi.mat	-1.532636e-01	-7.887898e-02	
+22	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-2.179311e-01	-6.644144e-02	
+22	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	5.464068e-02	8.352977e-03	
+22	precuneus_pFgA_z_FDR_0_roi.mat	1.245818e-01	1.047926e-02	
+22	psts_pFgA_z_FDR_0_roi.mat	3.916437e-02	5.582679e-02	
+22	putamen_pFgA_z_FDR_0_roi.mat	-6.158290e-02	-1.207339e-02	
+22	striatum_pFgA_z_FDR_0_roi.mat	4.813545e-01	1.931287e-01	
+22	subgenual_pFgA_z_FDR_0_roi.mat	2.331658e-01	1.915006e-01	
+22	temporoparietal junction_pFgA_z_FDR_0_roi.mat	2.401029e-01	9.682598e-03	
+22	ventral striatum_pFgA_z_FDR_0_roi.mat	4.643278e-01	2.078028e-01	
+22	vlpfc_pFgA_z_FDR_0_roi.mat	3.826913e-01	1.659189e-01	
+22	vmpfc_pFgA_z_FDR_0_roi.mat	2.185013e-01	8.659715e-02	
+23	acc_pFgA_z_FDR_0_roi.mat	3.844428e-01	7.175021e-01	
+23	amygdala_pFgA_z_FDR_0_roi.mat	1.372678e-01	9.139942e-02	
+23	anterior insula_pFgA_z_FDR_0_roi.mat	2.349260e-01	3.704567e-01	
+23	anterior prefrontal_pFgA_z_FDR_0_roi.mat	2.575553e-01	1.528917e-01	
+23	caudate_pFgA_z_FDR_0_roi.mat	2.025661e-01	3.583650e-01	
+23	dacc_pFgA_z_FDR_0_roi.mat	7.201083e-01	1.219245e+00	
+23	dlpfc_pFgA_z_FDR_0_roi.mat	4.125159e-01	7.805494e-01	
+23	dmpfc_pFgA_z_FDR_0_roi.mat	-8.888478e-02	1.022076e-01	
+23	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	9.432483e-01	1.322085e+00	
+23	mpfc_pFgA_z_FDR_0_roi.mat	3.131553e-01	6.150470e-01	
+23	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-1.915045e-01	-1.243277e-01	
+23	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	2.040952e-01	5.772899e-01	
+23	precuneus_pFgA_z_FDR_0_roi.mat	-4.983710e-02	-3.479964e-02	
+23	psts_pFgA_z_FDR_0_roi.mat	6.710075e-01	1.176273e+00	
+23	putamen_pFgA_z_FDR_0_roi.mat	5.586095e-01	7.902685e-01	
+23	striatum_pFgA_z_FDR_0_roi.mat	9.587681e-01	1.369860e+00	
+23	subgenual_pFgA_z_FDR_0_roi.mat	9.576906e-02	1.933278e-01	
+23	temporoparietal junction_pFgA_z_FDR_0_roi.mat	1.848168e-01	3.777316e-01	
+23	ventral striatum_pFgA_z_FDR_0_roi.mat	9.513240e-01	1.358632e+00	
+23	vlpfc_pFgA_z_FDR_0_roi.mat	6.049586e-01	1.217515e+00	
+23	vmpfc_pFgA_z_FDR_0_roi.mat	-2.506731e-02	-5.999307e-02	
+24	acc_pFgA_z_FDR_0_roi.mat	1.810806e-01	9.385489e-02	
+24	amygdala_pFgA_z_FDR_0_roi.mat	-5.709871e-02	-4.740808e-02	
+24	anterior insula_pFgA_z_FDR_0_roi.mat	-2.231620e-01	-1.737826e-01	
+24	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-6.468031e-01	-6.482889e-01	
+24	caudate_pFgA_z_FDR_0_roi.mat	-1.705852e-02	-4.267152e-02	
+24	dacc_pFgA_z_FDR_0_roi.mat	2.594239e-01	1.254073e-01	
+24	dlpfc_pFgA_z_FDR_0_roi.mat	1.495324e-01	-2.169352e-02	
+24	dmpfc_pFgA_z_FDR_0_roi.mat	7.529301e-02	-1.382770e-01	
+24	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-1.297227e-01	-2.900016e-01	
+24	mpfc_pFgA_z_FDR_0_roi.mat	-1.081733e-01	-2.172406e-02	
+24	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-4.334239e-01	-3.929081e-01	
+24	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-5.722603e-01	-3.991930e-01	
+24	precuneus_pFgA_z_FDR_0_roi.mat	1.341321e+00	7.258623e-01	
+24	psts_pFgA_z_FDR_0_roi.mat	-6.801547e-02	-4.018179e-02	
+24	putamen_pFgA_z_FDR_0_roi.mat	-4.995266e-02	-1.037193e-01	
+24	striatum_pFgA_z_FDR_0_roi.mat	1.770776e-01	1.377212e-01	
+24	subgenual_pFgA_z_FDR_0_roi.mat	4.450542e-02	1.430324e-01	
+24	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-2.415174e-01	-9.906880e-02	
+24	ventral striatum_pFgA_z_FDR_0_roi.mat	1.405958e-01	1.124082e-01	
+24	vlpfc_pFgA_z_FDR_0_roi.mat	1.225817e-02	5.088654e-02	
+24	vmpfc_pFgA_z_FDR_0_roi.mat	-1.129210e-01	-5.258922e-02	
+25	acc_pFgA_z_FDR_0_roi.mat	2.132102e-01	4.516985e-01	
+25	amygdala_pFgA_z_FDR_0_roi.mat	-5.211212e-02	-1.485730e-01	
+25	anterior insula_pFgA_z_FDR_0_roi.mat	-1.775832e-01	7.235496e-03	
+25	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-2.204853e-01	-3.862769e-01	
+25	caudate_pFgA_z_FDR_0_roi.mat	-7.151891e-03	1.183465e-01	
+25	dacc_pFgA_z_FDR_0_roi.mat	9.931718e-02	4.195775e-01	
+25	dlpfc_pFgA_z_FDR_0_roi.mat	5.384675e-02	1.506299e-01	
+25	dmpfc_pFgA_z_FDR_0_roi.mat	-2.718574e-01	-5.678934e-02	
+25	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-1.175527e-01	-1.666344e-01	
+25	mpfc_pFgA_z_FDR_0_roi.mat	-1.643365e-01	1.417545e-01	
+25	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-2.328649e-01	-1.573176e-01	
+25	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-6.655747e-02	9.803168e-02	
+25	precuneus_pFgA_z_FDR_0_roi.mat	-2.592293e-01	-2.317065e-01	
+25	psts_pFgA_z_FDR_0_roi.mat	-3.227273e-02	1.625547e-01	
+25	putamen_pFgA_z_FDR_0_roi.mat	-8.189584e-02	2.854541e-01	
+25	striatum_pFgA_z_FDR_0_roi.mat	3.343656e-01	4.765955e-01	
+25	subgenual_pFgA_z_FDR_0_roi.mat	-7.542129e-02	1.258036e-02	
+25	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.570076e-01	-2.231297e-01	
+25	ventral striatum_pFgA_z_FDR_0_roi.mat	3.154573e-01	5.289102e-01	
+25	vlpfc_pFgA_z_FDR_0_roi.mat	6.313007e-02	2.321603e-01	
+25	vmpfc_pFgA_z_FDR_0_roi.mat	-1.588630e-01	-1.179821e-01	
+27	acc_pFgA_z_FDR_0_roi.mat	1.760922e-01	2.001427e-01	
+27	amygdala_pFgA_z_FDR_0_roi.mat	-6.613271e-02	7.688068e-02	
+27	anterior insula_pFgA_z_FDR_0_roi.mat	-2.656686e-01	-2.379208e-01	
+27	anterior prefrontal_pFgA_z_FDR_0_roi.mat	2.910072e-01	-5.751406e-02	
+27	caudate_pFgA_z_FDR_0_roi.mat	5.035767e-01	1.559546e-01	
+27	dacc_pFgA_z_FDR_0_roi.mat	2.053560e-01	2.567408e-01	
+27	dlpfc_pFgA_z_FDR_0_roi.mat	-1.958908e-01	-1.712327e-01	
+27	dmpfc_pFgA_z_FDR_0_roi.mat	-2.795113e-01	-1.994810e-01	
+27	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	7.912472e-02	-1.353630e-01	
+27	mpfc_pFgA_z_FDR_0_roi.mat	9.960945e-02	-7.589330e-02	
+27	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-2.672037e-01	-2.025946e-01	
+27	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	5.786404e-01	1.192516e-01	
+27	precuneus_pFgA_z_FDR_0_roi.mat	-1.455587e-01	-1.593000e-01	
+27	psts_pFgA_z_FDR_0_roi.mat	5.445490e-01	1.152426e-01	
+27	putamen_pFgA_z_FDR_0_roi.mat	4.390680e-01	2.341689e-02	
+27	striatum_pFgA_z_FDR_0_roi.mat	5.392875e-03	-1.105286e-01	
+27	subgenual_pFgA_z_FDR_0_roi.mat	1.722089e-01	7.430908e-02	
+27	temporoparietal junction_pFgA_z_FDR_0_roi.mat	3.929026e-01	-1.115679e-01	
+27	ventral striatum_pFgA_z_FDR_0_roi.mat	1.084839e-01	-8.150249e-02	
+27	vlpfc_pFgA_z_FDR_0_roi.mat	5.029073e-01	1.890883e-01	
+27	vmpfc_pFgA_z_FDR_0_roi.mat	-3.301626e-01	-2.270411e-01	
+28	acc_pFgA_z_FDR_0_roi.mat	1.348881e-01	1.366500e-01	
+28	amygdala_pFgA_z_FDR_0_roi.mat	-1.371949e-01	-2.126283e-01	
+28	anterior insula_pFgA_z_FDR_0_roi.mat	-3.290177e-01	-6.689717e-01	
+28	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-2.240837e-01	1.209140e-02	
+28	caudate_pFgA_z_FDR_0_roi.mat	1.240804e-02	-5.564705e-03	
+28	dacc_pFgA_z_FDR_0_roi.mat	-9.774524e-02	-1.146305e-01	
+28	dlpfc_pFgA_z_FDR_0_roi.mat	4.054952e-02	-5.381265e-03	
+28	dmpfc_pFgA_z_FDR_0_roi.mat	1.588211e-02	2.187944e-02	
+28	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	5.425496e-02	8.576043e-01	
+28	mpfc_pFgA_z_FDR_0_roi.mat	-2.134955e-01	-3.064451e-01	
+28	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-4.087656e-01	-3.108939e-01	
+28	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-8.884745e-02	-4.434684e-01	
+28	precuneus_pFgA_z_FDR_0_roi.mat	1.240281e-01	1.763278e-01	
+28	psts_pFgA_z_FDR_0_roi.mat	9.889499e-02	-5.344128e-02	
+28	putamen_pFgA_z_FDR_0_roi.mat	5.655819e-01	2.760446e-01	
+28	striatum_pFgA_z_FDR_0_roi.mat	3.176786e-01	7.301209e-01	
+28	subgenual_pFgA_z_FDR_0_roi.mat	-4.297577e-02	1.720086e-03	
+28	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.791311e-01	-2.218583e-01	
+28	ventral striatum_pFgA_z_FDR_0_roi.mat	2.765588e-01	6.313586e-01	
+28	vlpfc_pFgA_z_FDR_0_roi.mat	7.931071e-02	8.680026e-02	
+28	vmpfc_pFgA_z_FDR_0_roi.mat	-9.257628e-02	-5.025573e-01	
+29	acc_pFgA_z_FDR_0_roi.mat	2.672695e-01	1.365455e-01	
+29	amygdala_pFgA_z_FDR_0_roi.mat	2.987256e-02	5.291050e-02	
+29	anterior insula_pFgA_z_FDR_0_roi.mat	-1.499468e-01	-9.096594e-02	
+29	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-5.006639e-01	-1.226158e-01	
+29	caudate_pFgA_z_FDR_0_roi.mat	-6.456976e-02	-6.295762e-02	
+29	dacc_pFgA_z_FDR_0_roi.mat	4.284398e-02	-8.439095e-02	
+29	dlpfc_pFgA_z_FDR_0_roi.mat	-1.753504e-01	3.312532e-02	
+29	dmpfc_pFgA_z_FDR_0_roi.mat	8.261666e-02	8.382962e-02	
+29	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-8.933579e-01	-1.774017e-01	
+29	mpfc_pFgA_z_FDR_0_roi.mat	-1.898929e-01	-9.979536e-02	
+29	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-8.776260e-01	-3.032738e-01	
+29	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-1.064306e-01	-1.017200e-01	
+29	precuneus_pFgA_z_FDR_0_roi.mat	-1.340795e+00	7.284378e-02	
+29	psts_pFgA_z_FDR_0_roi.mat	2.403152e-01	-1.591469e-03	
+29	putamen_pFgA_z_FDR_0_roi.mat	-2.983901e-01	-2.092225e-02	
+29	striatum_pFgA_z_FDR_0_roi.mat	4.752971e-01	2.981912e-01	
+29	subgenual_pFgA_z_FDR_0_roi.mat	-4.247887e-01	-2.243071e-01	
+29	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-2.289965e-01	-1.148420e-01	
+29	ventral striatum_pFgA_z_FDR_0_roi.mat	3.477539e-01	2.191889e-01	
+29	vlpfc_pFgA_z_FDR_0_roi.mat	1.545036e-01	-2.852428e-02	
+29	vmpfc_pFgA_z_FDR_0_roi.mat	5.560072e-01	7.130415e-02	
+30	acc_pFgA_z_FDR_0_roi.mat	1.743974e-01	3.901015e-01	
+30	amygdala_pFgA_z_FDR_0_roi.mat	-2.387369e-02	1.130715e-01	
+30	anterior insula_pFgA_z_FDR_0_roi.mat	-1.330744e-01	-9.131554e-02	
+30	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-7.305458e-02	-7.848143e-02	
+30	caudate_pFgA_z_FDR_0_roi.mat	-2.149478e-02	5.412063e-02	
+30	dacc_pFgA_z_FDR_0_roi.mat	1.504943e-01	4.849726e-01	
+30	dlpfc_pFgA_z_FDR_0_roi.mat	-1.168513e-02	6.442200e-02	
+30	dmpfc_pFgA_z_FDR_0_roi.mat	1.038178e-01	2.306430e-01	
+30	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-8.640783e-02	-3.462939e-02	
+30	mpfc_pFgA_z_FDR_0_roi.mat	-1.972098e-02	6.600870e-02	
+30	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-4.873520e-03	1.655073e-02	
+30	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-8.471307e-02	-2.480740e-01	
+30	precuneus_pFgA_z_FDR_0_roi.mat	-2.421799e-02	-3.900409e-01	
+30	psts_pFgA_z_FDR_0_roi.mat	5.385364e-02	1.717044e-01	
+30	putamen_pFgA_z_FDR_0_roi.mat	1.816075e-02	5.437236e-02	
+30	striatum_pFgA_z_FDR_0_roi.mat	-8.900605e-02	7.809508e-03	
+30	subgenual_pFgA_z_FDR_0_roi.mat	3.481228e-02	1.063508e-01	
+30	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-9.857684e-02	-2.726226e-01	
+30	ventral striatum_pFgA_z_FDR_0_roi.mat	-7.644862e-02	-5.398891e-02	
+30	vlpfc_pFgA_z_FDR_0_roi.mat	2.992263e-02	2.095962e-01	
+30	vmpfc_pFgA_z_FDR_0_roi.mat	-2.510284e-02	6.810898e-02	
+31	acc_pFgA_z_FDR_0_roi.mat	-7.859806e-02	6.475315e-02	
+31	amygdala_pFgA_z_FDR_0_roi.mat	2.489974e-01	1.123726e-01	
+31	anterior insula_pFgA_z_FDR_0_roi.mat	2.056363e-01	1.092497e-01	
+31	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-6.498974e-02	-1.356691e-01	
+31	caudate_pFgA_z_FDR_0_roi.mat	2.131027e-02	-6.558988e-02	
+31	dacc_pFgA_z_FDR_0_roi.mat	-2.246617e-02	1.540457e-01	
+31	dlpfc_pFgA_z_FDR_0_roi.mat	-3.282999e-01	1.139339e-01	
+31	dmpfc_pFgA_z_FDR_0_roi.mat	-4.764187e-03	2.800756e-02	
+31	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-4.314856e-02	-1.984594e-01	
+31	mpfc_pFgA_z_FDR_0_roi.mat	1.610569e-01	4.814428e-02	
+31	nucleus accumbens_pFgA_z_FDR_0_roi.mat	2.440885e-01	7.577847e-02	
+31	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	3.908719e-02	-1.397408e-01	
+31	precuneus_pFgA_z_FDR_0_roi.mat	7.279399e-02	-5.362723e-02	
+31	psts_pFgA_z_FDR_0_roi.mat	2.951541e-01	1.370581e-01	
+31	putamen_pFgA_z_FDR_0_roi.mat	2.002530e-01	7.583921e-02	
+31	striatum_pFgA_z_FDR_0_roi.mat	-8.562149e-03	1.386789e-01	
+31	subgenual_pFgA_z_FDR_0_roi.mat	1.025707e-01	3.066433e-03	
+31	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.637314e-01	-1.631912e-01	
+31	ventral striatum_pFgA_z_FDR_0_roi.mat	-3.089718e-02	1.365468e-01	
+31	vlpfc_pFgA_z_FDR_0_roi.mat	-6.780363e-02	-1.699992e-02	
+31	vmpfc_pFgA_z_FDR_0_roi.mat	2.693745e-01	4.981013e-02	
+33	acc_pFgA_z_FDR_0_roi.mat	1.465068e-01	7.874658e-02	
+33	amygdala_pFgA_z_FDR_0_roi.mat	2.648338e-02	-6.247475e-02	
+33	anterior insula_pFgA_z_FDR_0_roi.mat	7.378244e-02	-1.256625e-01	
+33	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-1.728386e-01	-4.814665e-02	
+33	caudate_pFgA_z_FDR_0_roi.mat	-1.796785e-02	-1.183152e-01	
+33	dacc_pFgA_z_FDR_0_roi.mat	2.671908e-01	5.245264e-02	
+33	dlpfc_pFgA_z_FDR_0_roi.mat	3.044861e-01	2.579947e-01	
+33	dmpfc_pFgA_z_FDR_0_roi.mat	-3.129340e-01	-5.918425e-02	
+33	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-3.751727e-01	-2.235247e-01	
+33	mpfc_pFgA_z_FDR_0_roi.mat	1.071226e-01	-3.505106e-02	
+33	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-8.831441e-02	-4.858240e-03	
+33	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	1.350286e-01	-6.707781e-02	
+33	precuneus_pFgA_z_FDR_0_roi.mat	2.572812e-01	7.292429e-02	
+33	psts_pFgA_z_FDR_0_roi.mat	2.547673e-01	1.659777e-01	
+33	putamen_pFgA_z_FDR_0_roi.mat	-8.324015e-02	-5.120718e-02	
+33	striatum_pFgA_z_FDR_0_roi.mat	6.692672e-01	3.549504e-01	
+33	subgenual_pFgA_z_FDR_0_roi.mat	-7.843995e-02	-1.165836e-01	
+33	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-3.192167e-02	-1.232374e-01	
+33	ventral striatum_pFgA_z_FDR_0_roi.mat	6.197739e-01	3.103552e-01	
+33	vlpfc_pFgA_z_FDR_0_roi.mat	1.242977e-01	1.311225e-01	
+33	vmpfc_pFgA_z_FDR_0_roi.mat	-2.646949e-01	3.647130e-02	
+34	acc_pFgA_z_FDR_0_roi.mat	2.074548e-02	2.183821e-01	
+34	amygdala_pFgA_z_FDR_0_roi.mat	-8.006610e-02	-6.643772e-02	
+34	anterior insula_pFgA_z_FDR_0_roi.mat	-6.072378e-02	7.208706e-02	
+34	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-1.011186e-01	-2.124447e-01	
+34	caudate_pFgA_z_FDR_0_roi.mat	-9.040371e-02	6.957285e-02	
+34	dacc_pFgA_z_FDR_0_roi.mat	1.987112e-01	5.143242e-01	
+34	dlpfc_pFgA_z_FDR_0_roi.mat	-9.978098e-03	1.861836e-01	
+34	dmpfc_pFgA_z_FDR_0_roi.mat	-2.326448e-01	-6.046706e-01	
+34	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-4.258067e-02	-8.372533e-02	
+34	mpfc_pFgA_z_FDR_0_roi.mat	-4.723657e-04	1.678414e-01	
+34	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-1.494010e-01	-4.097802e-01	
+34	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	7.234461e-02	2.803506e-01	
+34	precuneus_pFgA_z_FDR_0_roi.mat	-9.777665e-02	-6.683567e-03	
+34	psts_pFgA_z_FDR_0_roi.mat	-1.445043e-02	2.399922e-01	
+34	putamen_pFgA_z_FDR_0_roi.mat	1.869777e-02	2.669352e-01	
+34	striatum_pFgA_z_FDR_0_roi.mat	1.624139e-01	4.738870e-01	
+34	subgenual_pFgA_z_FDR_0_roi.mat	1.830392e-02	1.563248e-05	
+34	temporoparietal junction_pFgA_z_FDR_0_roi.mat	1.405032e-01	4.969302e-01	
+34	ventral striatum_pFgA_z_FDR_0_roi.mat	2.260332e-01	5.883880e-01	
+34	vlpfc_pFgA_z_FDR_0_roi.mat	7.866015e-02	3.205634e-01	
+34	vmpfc_pFgA_z_FDR_0_roi.mat	-1.346575e-01	-1.868036e-01	
+35	acc_pFgA_z_FDR_0_roi.mat	-3.470921e-03	8.037127e-02	
+35	amygdala_pFgA_z_FDR_0_roi.mat	-2.966629e-01	-6.739511e-02	
+35	anterior insula_pFgA_z_FDR_0_roi.mat	-6.708731e-01	-1.587360e-01	
+35	anterior prefrontal_pFgA_z_FDR_0_roi.mat	1.184344e-01	5.565894e-02	
+35	caudate_pFgA_z_FDR_0_roi.mat	1.150984e-01	3.739372e-02	
+35	dacc_pFgA_z_FDR_0_roi.mat	-2.198543e-01	2.232919e-02	
+35	dlpfc_pFgA_z_FDR_0_roi.mat	-7.090687e-01	-2.123110e-01	
+35	dmpfc_pFgA_z_FDR_0_roi.mat	6.639756e-02	-9.703272e-02	
+35	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	1.650251e-01	1.161186e-01	
+35	mpfc_pFgA_z_FDR_0_roi.mat	-5.335015e-02	4.090428e-02	
+35	nucleus accumbens_pFgA_z_FDR_0_roi.mat	3.956649e-01	2.089935e-01	
+35	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-9.992238e-02	4.197235e-03	
+35	precuneus_pFgA_z_FDR_0_roi.mat	6.734277e-02	1.008729e-01	
+35	psts_pFgA_z_FDR_0_roi.mat	-1.021956e-01	4.983775e-02	
+35	putamen_pFgA_z_FDR_0_roi.mat	2.474227e-02	1.176386e-01	
+35	striatum_pFgA_z_FDR_0_roi.mat	-4.243796e-01	-1.293098e-01	
+35	subgenual_pFgA_z_FDR_0_roi.mat	1.962047e-02	1.124614e-01	
+35	temporoparietal junction_pFgA_z_FDR_0_roi.mat	5.795172e-02	2.416513e-02	
+35	ventral striatum_pFgA_z_FDR_0_roi.mat	-4.361318e-01	-1.298971e-01	
+35	vlpfc_pFgA_z_FDR_0_roi.mat	-1.615230e-01	-5.250078e-03	
+35	vmpfc_pFgA_z_FDR_0_roi.mat	-9.750682e-03	-4.297620e-02	
+36	acc_pFgA_z_FDR_0_roi.mat	3.515099e-01	4.008913e-01	
+36	amygdala_pFgA_z_FDR_0_roi.mat	4.053562e-02	-2.398637e-02	
+36	anterior insula_pFgA_z_FDR_0_roi.mat	-3.041820e-02	2.720715e-01	
+36	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-2.442750e-01	-5.792178e-02	
+36	caudate_pFgA_z_FDR_0_roi.mat	-3.692972e-02	1.232140e-02	
+36	dacc_pFgA_z_FDR_0_roi.mat	3.089714e-01	4.224071e-01	
+36	dlpfc_pFgA_z_FDR_0_roi.mat	3.773239e-02	3.275392e-01	
+36	dmpfc_pFgA_z_FDR_0_roi.mat	-3.487953e-01	-4.545673e-01	
+36	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-2.048280e-01	-3.387221e-02	
+36	mpfc_pFgA_z_FDR_0_roi.mat	-6.235487e-02	3.886778e-01	
+36	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-1.189593e-01	-5.022853e-01	
+36	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-9.585541e-03	6.935389e-01	
+36	precuneus_pFgA_z_FDR_0_roi.mat	-4.828902e-01	-7.762503e-01	
+36	psts_pFgA_z_FDR_0_roi.mat	2.759714e-01	6.102274e-01	
+36	putamen_pFgA_z_FDR_0_roi.mat	-4.717279e-02	4.292530e-01	
+36	striatum_pFgA_z_FDR_0_roi.mat	3.301807e-01	5.199905e-01	
+36	subgenual_pFgA_z_FDR_0_roi.mat	-7.683533e-02	-2.374990e-01	
+36	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.614646e-01	3.227300e-01	
+36	ventral striatum_pFgA_z_FDR_0_roi.mat	2.993218e-01	5.072759e-01	
+36	vlpfc_pFgA_z_FDR_0_roi.mat	2.950512e-01	4.379652e-01	
+36	vmpfc_pFgA_z_FDR_0_roi.mat	-4.947687e-01	-6.686577e-01	
+37	acc_pFgA_z_FDR_0_roi.mat	-8.752955e-02	1.630731e-01	
+37	amygdala_pFgA_z_FDR_0_roi.mat	-4.078360e-01	2.073342e-02	
+37	anterior insula_pFgA_z_FDR_0_roi.mat	-1.008350e-01	-6.216218e-02	
+37	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-1.693861e+00	-8.501318e-01	
+37	caudate_pFgA_z_FDR_0_roi.mat	-1.517117e-01	3.484883e-03	
+37	dacc_pFgA_z_FDR_0_roi.mat	-1.912263e-01	1.603535e-02	
+37	dlpfc_pFgA_z_FDR_0_roi.mat	-5.164165e-01	1.518717e-01	
+37	dmpfc_pFgA_z_FDR_0_roi.mat	1.852494e+00	3.302503e-01	
+37	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	4.290031e-01	9.277507e-02	
+37	mpfc_pFgA_z_FDR_0_roi.mat	1.585484e-01	2.137538e-01	
+37	nucleus accumbens_pFgA_z_FDR_0_roi.mat	2.282886e-01	-1.389801e-01	
+37	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	5.672124e-03	1.571309e-02	
+37	precuneus_pFgA_z_FDR_0_roi.mat	1.944886e-01	-2.898333e-01	
+37	psts_pFgA_z_FDR_0_roi.mat	1.155479e-01	-3.469490e-02	
+37	putamen_pFgA_z_FDR_0_roi.mat	9.527944e-02	-2.540813e-03	
+37	striatum_pFgA_z_FDR_0_roi.mat	-2.140739e-01	3.770990e-01	
+37	subgenual_pFgA_z_FDR_0_roi.mat	1.507314e-01	-5.839571e-03	
+37	temporoparietal junction_pFgA_z_FDR_0_roi.mat	3.970076e-02	7.077788e-02	
+37	ventral striatum_pFgA_z_FDR_0_roi.mat	-9.731078e-02	2.889616e-01	
+37	vlpfc_pFgA_z_FDR_0_roi.mat	-1.279902e-01	-2.067829e-02	
+37	vmpfc_pFgA_z_FDR_0_roi.mat	4.919758e-01	-1.923238e-02	
+38	acc_pFgA_z_FDR_0_roi.mat	1.589634e-01	1.497679e-02	
+38	amygdala_pFgA_z_FDR_0_roi.mat	1.379099e-01	-8.365204e-02	
+38	anterior insula_pFgA_z_FDR_0_roi.mat	2.008072e-01	-2.520932e-02	
+38	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-3.013026e-01	-2.440430e-01	
+38	caudate_pFgA_z_FDR_0_roi.mat	1.674336e-01	-9.563065e-02	
+38	dacc_pFgA_z_FDR_0_roi.mat	3.198680e-01	5.919687e-02	
+38	dlpfc_pFgA_z_FDR_0_roi.mat	-6.250923e-02	-6.550306e-02	
+38	dmpfc_pFgA_z_FDR_0_roi.mat	-1.632037e-01	-2.032680e-01	
+38	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	8.472589e-02	-1.190053e-01	
+38	mpfc_pFgA_z_FDR_0_roi.mat	3.594042e-02	-2.611954e-01	
+38	nucleus accumbens_pFgA_z_FDR_0_roi.mat	6.121197e-02	-1.898858e-01	
+38	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	8.218330e-02	-1.031317e-01	
+38	precuneus_pFgA_z_FDR_0_roi.mat	-2.370326e-01	-4.046736e-01	
+38	psts_pFgA_z_FDR_0_roi.mat	1.989096e-01	-9.275375e-03	
+38	putamen_pFgA_z_FDR_0_roi.mat	2.584186e-01	-5.142505e-02	
+38	striatum_pFgA_z_FDR_0_roi.mat	4.110661e-01	8.014246e-02	
+38	subgenual_pFgA_z_FDR_0_roi.mat	9.216823e-02	-1.854065e-01	
+38	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.122267e-01	-2.698181e-01	
+38	ventral striatum_pFgA_z_FDR_0_roi.mat	4.159975e-01	7.075896e-02	
+38	vlpfc_pFgA_z_FDR_0_roi.mat	1.859180e-01	-5.460240e-02	
+38	vmpfc_pFgA_z_FDR_0_roi.mat	-2.772850e-02	-2.192715e-01	
+39	acc_pFgA_z_FDR_0_roi.mat	1.732297e-01	2.082053e-01	
+39	amygdala_pFgA_z_FDR_0_roi.mat	-9.559151e-02	-2.808664e-01	
+39	anterior insula_pFgA_z_FDR_0_roi.mat	-1.151433e-01	2.175744e-02	
+39	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-5.795900e-02	-1.729118e-02	
+39	caudate_pFgA_z_FDR_0_roi.mat	-1.680558e-02	1.207759e-01	
+39	dacc_pFgA_z_FDR_0_roi.mat	3.578347e-02	-6.445057e-02	
+39	dlpfc_pFgA_z_FDR_0_roi.mat	-1.171765e-01	-1.661768e-01	
+39	dmpfc_pFgA_z_FDR_0_roi.mat	3.274566e-01	8.144494e-01	
+39	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	4.145073e-02	1.715824e-01	
+39	mpfc_pFgA_z_FDR_0_roi.mat	-3.631549e-01	-2.332242e-01	
+39	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-1.595851e-01	-8.184862e-02	
+39	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-2.565717e-01	-3.276928e-01	
+39	precuneus_pFgA_z_FDR_0_roi.mat	-4.588389e-02	-5.260416e-01	
+39	psts_pFgA_z_FDR_0_roi.mat	-1.102652e-01	-2.123278e-02	
+39	putamen_pFgA_z_FDR_0_roi.mat	7.038579e-02	6.432801e-02	
+39	striatum_pFgA_z_FDR_0_roi.mat	-6.694978e-02	-9.357128e-03	
+39	subgenual_pFgA_z_FDR_0_roi.mat	-7.736240e-02	-8.646893e-02	
+39	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-3.352762e-01	-2.711062e-01	
+39	ventral striatum_pFgA_z_FDR_0_roi.mat	-4.501974e-02	-2.870333e-03	
+39	vlpfc_pFgA_z_FDR_0_roi.mat	-2.733356e-03	2.278430e-02	
+39	vmpfc_pFgA_z_FDR_0_roi.mat	-7.457589e-02	-3.453785e-03	
+40	acc_pFgA_z_FDR_0_roi.mat	-7.944307e-03	1.551616e-01	
+40	amygdala_pFgA_z_FDR_0_roi.mat	-8.945182e-02	-7.634986e-02	
+40	anterior insula_pFgA_z_FDR_0_roi.mat	-2.134335e-01	-7.421772e-02	
+40	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-2.134241e-01	-2.069905e-01	
+40	caudate_pFgA_z_FDR_0_roi.mat	-1.427906e-01	-9.902271e-02	
+40	dacc_pFgA_z_FDR_0_roi.mat	-3.976743e-01	-4.441990e-02	
+40	dlpfc_pFgA_z_FDR_0_roi.mat	-2.420062e-01	-1.588886e-02	
+40	dmpfc_pFgA_z_FDR_0_roi.mat	1.431365e-01	-1.557734e-01	
+40	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	2.933382e-02	-1.036699e-01	
+40	mpfc_pFgA_z_FDR_0_roi.mat	5.646355e-03	-1.093543e-01	
+40	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-1.129088e-01	-2.522150e-01	
+40	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-1.071856e-01	-6.465999e-02	
+40	precuneus_pFgA_z_FDR_0_roi.mat	6.886710e-02	-1.747238e-01	
+40	psts_pFgA_z_FDR_0_roi.mat	-4.924197e-02	2.876673e-02	
+40	putamen_pFgA_z_FDR_0_roi.mat	-3.822823e-01	-4.052817e-02	
+40	striatum_pFgA_z_FDR_0_roi.mat	1.911980e-01	4.198411e-02	
+40	subgenual_pFgA_z_FDR_0_roi.mat	-3.577476e-01	-2.284095e-01	
+40	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-4.317013e-01	-1.850795e-01	
+40	ventral striatum_pFgA_z_FDR_0_roi.mat	1.836280e-01	7.560176e-02	
+40	vlpfc_pFgA_z_FDR_0_roi.mat	4.176284e-02	1.591909e-01	
+40	vmpfc_pFgA_z_FDR_0_roi.mat	-5.003534e-02	-3.020866e-01	
+41	acc_pFgA_z_FDR_0_roi.mat	4.193834e-01	6.304045e-01	
+41	amygdala_pFgA_z_FDR_0_roi.mat	1.271419e-01	2.960578e-01	
+41	anterior insula_pFgA_z_FDR_0_roi.mat	1.491408e-01	5.925040e-01	
+41	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-4.248042e-01	-1.413419e-01	
+41	caudate_pFgA_z_FDR_0_roi.mat	-2.951113e-02	-1.171648e-01	
+41	dacc_pFgA_z_FDR_0_roi.mat	2.494320e-01	6.126056e-01	
+41	dlpfc_pFgA_z_FDR_0_roi.mat	3.121075e-01	2.957974e-01	
+41	dmpfc_pFgA_z_FDR_0_roi.mat	-5.183567e-01	-2.831238e-01	
+41	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-7.900531e-02	4.660981e-02	
+41	mpfc_pFgA_z_FDR_0_roi.mat	8.524969e-02	1.548723e-01	
+41	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-4.257643e-01	-2.139224e-01	
+41	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	4.927721e-02	-2.505664e-01	
+41	precuneus_pFgA_z_FDR_0_roi.mat	-3.455320e-01	-1.561009e-01	
+41	psts_pFgA_z_FDR_0_roi.mat	2.773028e-01	6.391593e-01	
+41	putamen_pFgA_z_FDR_0_roi.mat	7.924188e-02	4.588498e-01	
+41	striatum_pFgA_z_FDR_0_roi.mat	6.295109e-01	6.555349e-01	
+41	subgenual_pFgA_z_FDR_0_roi.mat	4.228032e-02	-5.024459e-03	
+41	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-3.834063e-02	-9.170573e-02	
+41	ventral striatum_pFgA_z_FDR_0_roi.mat	5.820250e-01	6.704111e-01	
+41	vlpfc_pFgA_z_FDR_0_roi.mat	4.302740e-01	5.308832e-01	
+41	vmpfc_pFgA_z_FDR_0_roi.mat	-3.834907e-01	-1.812687e-01	
+42	acc_pFgA_z_FDR_0_roi.mat	2.496730e-01	2.877894e-01	
+42	amygdala_pFgA_z_FDR_0_roi.mat	6.430353e-02	2.005095e-02	
+42	anterior insula_pFgA_z_FDR_0_roi.mat	-1.000258e-01	4.724050e-02	
+42	anterior prefrontal_pFgA_z_FDR_0_roi.mat	5.496381e-02	-5.706225e-02	
+42	caudate_pFgA_z_FDR_0_roi.mat	1.735759e-01	8.366855e-02	
+42	dacc_pFgA_z_FDR_0_roi.mat	1.677250e-01	1.910862e-01	
+42	dlpfc_pFgA_z_FDR_0_roi.mat	-1.188946e-01	4.776780e-02	
+42	dmpfc_pFgA_z_FDR_0_roi.mat	2.126622e-01	3.954889e-01	
+42	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	2.320192e-02	2.228904e-02	
+42	mpfc_pFgA_z_FDR_0_roi.mat	-6.778640e-02	-6.054886e-02	
+42	nucleus accumbens_pFgA_z_FDR_0_roi.mat	3.925009e-01	1.875339e-01	
+42	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	9.593992e-02	2.422606e-02	
+42	precuneus_pFgA_z_FDR_0_roi.mat	3.703536e-02	6.383670e-02	
+42	psts_pFgA_z_FDR_0_roi.mat	1.389049e-01	9.383760e-02	
+42	putamen_pFgA_z_FDR_0_roi.mat	-4.147815e-02	-1.480105e-02	
+42	striatum_pFgA_z_FDR_0_roi.mat	4.101284e-02	2.112411e-01	
+42	subgenual_pFgA_z_FDR_0_roi.mat	1.956318e-01	1.746758e-01	
+42	temporoparietal junction_pFgA_z_FDR_0_roi.mat	6.564988e-01	3.926293e-01	
+42	ventral striatum_pFgA_z_FDR_0_roi.mat	7.804229e-02	2.418052e-01	
+42	vlpfc_pFgA_z_FDR_0_roi.mat	1.517847e-01	1.895499e-01	
+42	vmpfc_pFgA_z_FDR_0_roi.mat	1.064548e-01	-2.381979e-02	
+43	acc_pFgA_z_FDR_0_roi.mat	6.248790e-02	1.382708e-03	
+43	amygdala_pFgA_z_FDR_0_roi.mat	1.032376e-02	-4.210358e-01	
+43	anterior insula_pFgA_z_FDR_0_roi.mat	-1.942646e-01	-1.473025e-01	
+43	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-7.691519e-03	7.575315e-01	
+43	caudate_pFgA_z_FDR_0_roi.mat	-1.877606e-01	7.668558e-01	
+43	dacc_pFgA_z_FDR_0_roi.mat	-7.478549e-02	-1.450302e-01	
+43	dlpfc_pFgA_z_FDR_0_roi.mat	1.238231e-02	3.197882e-02	
+43	dmpfc_pFgA_z_FDR_0_roi.mat	-8.850115e-02	7.831757e-01	
+43	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-6.168541e-02	1.022449e+00	
+43	mpfc_pFgA_z_FDR_0_roi.mat	-1.300136e-01	5.467519e-01	
+43	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-1.347996e-01	3.285529e-01	
+43	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	-2.112879e-01	6.132698e-01	
+43	precuneus_pFgA_z_FDR_0_roi.mat	3.316233e-02	6.773363e-01	
+43	psts_pFgA_z_FDR_0_roi.mat	3.997729e-02	2.594151e-01	
+43	putamen_pFgA_z_FDR_0_roi.mat	-1.876947e-02	7.183565e-01	
+43	striatum_pFgA_z_FDR_0_roi.mat	1.716096e-01	3.576127e-01	
+43	subgenual_pFgA_z_FDR_0_roi.mat	5.724412e-03	3.174438e-01	
+43	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-1.770835e-01	1.659428e-01	
+43	ventral striatum_pFgA_z_FDR_0_roi.mat	1.583169e-01	4.487170e-01	
+43	vlpfc_pFgA_z_FDR_0_roi.mat	8.823601e-03	3.139554e-01	
+43	vmpfc_pFgA_z_FDR_0_roi.mat	-2.251948e-01	5.279918e-01	
+44	acc_pFgA_z_FDR_0_roi.mat	-2.337523e-01	-7.012534e-02	
+44	amygdala_pFgA_z_FDR_0_roi.mat	-2.123783e-02	-7.200540e-02	
+44	anterior insula_pFgA_z_FDR_0_roi.mat	-2.557378e-01	-1.284478e-01	
+44	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-4.901452e-02	-1.045093e-01	
+44	caudate_pFgA_z_FDR_0_roi.mat	1.782634e-01	9.851259e-03	
+44	dacc_pFgA_z_FDR_0_roi.mat	-3.357189e-01	-2.103847e-01	
+44	dlpfc_pFgA_z_FDR_0_roi.mat	-5.124278e-01	-3.092853e-01	
+44	dmpfc_pFgA_z_FDR_0_roi.mat	-1.235072e-01	-3.031564e-02	
+44	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-6.593482e-02	-7.342055e-02	
+44	mpfc_pFgA_z_FDR_0_roi.mat	-1.841242e-01	-1.708309e-01	
+44	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-2.037991e-01	-1.045600e-01	
+44	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	2.110456e-01	-1.332315e-02	
+44	precuneus_pFgA_z_FDR_0_roi.mat	-2.728071e-01	-1.572749e-01	
+44	psts_pFgA_z_FDR_0_roi.mat	2.887177e-02	-8.040640e-02	
+44	putamen_pFgA_z_FDR_0_roi.mat	5.746202e-02	-1.111627e-01	
+44	striatum_pFgA_z_FDR_0_roi.mat	-2.667415e-01	-2.782768e-01	
+44	subgenual_pFgA_z_FDR_0_roi.mat	-3.925720e-02	-6.472913e-02	
+44	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-7.421965e-02	-1.454564e-01	
+44	ventral striatum_pFgA_z_FDR_0_roi.mat	-2.147013e-01	-2.237584e-01	
+44	vlpfc_pFgA_z_FDR_0_roi.mat	-1.006117e-01	-5.094657e-02	
+44	vmpfc_pFgA_z_FDR_0_roi.mat	2.298615e-02	-5.198012e-01	
+45	acc_pFgA_z_FDR_0_roi.mat	3.165118e-01	2.606480e-01	
+45	amygdala_pFgA_z_FDR_0_roi.mat	1.811197e-01	-9.460150e-02	
+45	anterior insula_pFgA_z_FDR_0_roi.mat	9.807527e-04	-3.771969e-02	
+45	anterior prefrontal_pFgA_z_FDR_0_roi.mat	-1.210057e-01	-5.147691e-02	
+45	caudate_pFgA_z_FDR_0_roi.mat	8.820781e-02	-2.312728e-02	
+45	dacc_pFgA_z_FDR_0_roi.mat	1.285451e-01	4.365187e-02	
+45	dlpfc_pFgA_z_FDR_0_roi.mat	-3.634055e-02	-1.720000e-02	
+45	dmpfc_pFgA_z_FDR_0_roi.mat	7.347538e-01	3.230376e-01	
+45	medial orbitofrontal_pFgA_z_FDR_0_roi.mat	-3.895333e-02	-5.931726e-02	
+45	mpfc_pFgA_z_FDR_0_roi.mat	-5.739236e-02	-1.493341e-01	
+45	nucleus accumbens_pFgA_z_FDR_0_roi.mat	-2.087049e-01	-9.628061e-02	
+45	orbitofrontal cortex_pFgA_z_FDR_0_roi.mat	5.251396e-02	-3.641340e-02	
+45	precuneus_pFgA_z_FDR_0_roi.mat	4.409647e-01	-2.188819e-01	
+45	psts_pFgA_z_FDR_0_roi.mat	1.589810e-02	1.831339e-02	
+45	putamen_pFgA_z_FDR_0_roi.mat	-1.474822e-02	8.660783e-02	
+45	striatum_pFgA_z_FDR_0_roi.mat	1.714033e-01	1.196595e-01	
+45	subgenual_pFgA_z_FDR_0_roi.mat	1.533259e-01	-1.996510e-03	
+45	temporoparietal junction_pFgA_z_FDR_0_roi.mat	-8.662828e-02	8.891044e-02	
+45	ventral striatum_pFgA_z_FDR_0_roi.mat	1.348842e-01	1.023551e-01	
+45	vlpfc_pFgA_z_FDR_0_roi.mat	2.300752e-01	2.016342e-01	
+45	vmpfc_pFgA_z_FDR_0_roi.mat	7.476961e-02	-1.267215e-01	
