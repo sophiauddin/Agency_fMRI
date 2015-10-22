@@ -375,7 +375,7 @@ In order to make ROIs from Neurosynth, one does the following steps:
 4. Click on the hyperlink that is returned by the result; some images showing red activation maps for the ROI should pop up  
 5. In the "Layers" bar on the right side, look for "ROI: reverse inference". Click the download arrow next to that to download a .nii file.   
 6. The ROIs are downloaded as .nii.gz files that can easily be expanded by double clicking (at least on a Mac)  
-7. 
+7. In MarsBar, click "Import" for ROI and import the .nii file. Click through the GUI and an ROI will be created automatically.
 
 ### Parameters to investigate
 I wrote 2 small scripts to do the following:   
@@ -390,7 +390,7 @@ Out of all the possible parameters of interest, it seems that *percent signal ch
 Using the data generated from first-level analysis, containing percent signal change for each block, I did the following:
 
 + For each subject and each ROI, average together the "agency" and "non-agency" blocks to get one agency % signal change and one non-agency % signal change  
-+ For each ROI, use R to perform a paired t-test between agency and non-agency (n=38 usable subjects)
++ For each ROI, use R to perform a paired t-test between agency and non-agency (n=37 usable subjects)
 
 A paired t test was used because the same subjects are being scanned twice: once in an agency condition and once in a non-agency condition.
 
@@ -406,6 +406,45 @@ for (i in 1:46){
 write.table(pval,"pavlues_ROIttest.txt", sep="\t")
 ```
 
+###Results
+No areas reached the significance threshold of p<0.05, however some came close.
+
+These are:  
+IFG opercular (p=0.079 left, p=0.076 right)  
+IFG orbital (p=0.067 left, p=0.081 right)  
+IFG triangular, left (p=0.066)
+Inferior temporal, left only (p=0.069)  
+
+### Repetition of second-level with Neurosynth ROIs
+This pulled out the following ROIs:  
+anterior insula (p=0.088)  
+DLPFC (p=0.016)  
+
+Note that Neurosynth ROIs are necessarily bilateral already.
+
+### Repetition of second-level with only prosocial subjects
+
+Subjects that were never or rarely prosocial (see below in the Subjects section) were removed from the .csv file read into R, and the analysis was repeated (sample size is now n=34).
+
+```{r,eval=FALSE}
+for (i in 1:46){
+  temp=t.test(data[1:34,i],data[35:68,i],alternative=c("two.sided"),mu=0,paired=TRUE,var.equal=FALSE,conf.level=0.95)
+         pval[i]=temp[[3]]
+         rm(temp)
+         }
+         
+         write.table(pval,"pavlues_ROIttest_proonly.txt", sep="\t")
+```
+
+Looking at only prosocial subjects, one area now reaches significance:  
+Mid temporal pole, right (p=0.043)  
+
+Other areas are close:  
+IFG opercular (p=0.097 left, p=0.070 right)  
+IFG orbital (p=0.065 left, p=0.088 right)  
+IFG triangular (p=0.056 left, p=0.084 right)  
+Inferior temporal, left (p=0.087)  
+
 ## On FWE vs. conventional significance levels with ROI analysis
 
 As stated in [Schweizer et. al. 2013](http://www.jneurosci.org/content/33/12/5301.full), using an ROI analysis makes looking at corrected P values unnecessary:
@@ -415,7 +454,7 @@ As stated in [Schweizer et. al. 2013](http://www.jneurosci.org/content/33/12/530
 #Participant information
 
 ## Excluded for data when art repair is used
-2, 9, 10, 12, 16, 26, 32
+2, 9, 10, 12, 13, 16, 26, 32
 
 ## Excluded when art repair is not used
 2, 9, 10, 12, 16, 17, 26, 32, 37, 38, 43, 45 (everyone on Lester's list of people who may have had motion issues)
@@ -426,8 +465,19 @@ Agency first: 2, 4, 6, 8, 10, 12, 14, 16, 18, 19, 21, 23, 25, 26, 28, 30, 32, 34
 Non-agency first: 1, 3, 5, 7, 9, 11, 13, 15, 17, 20, 22, 24, 27, 29, 31, 33, 35, 37, 38, 40, 42, 44, 45
 
 ## Unusual, but still included
+35: had only 171 scans in run 4
 
-* 13: had only 13 scans in run 4
-* 35: had only 171 scans in run 4
+## Never prosocial
+Accessible in column "O" of the subject info spreadsheet *dga_ mri_ costrationbeh_ noinit.csv*
+
+* Subject 24
+
+## Rarely prosocial
+
+* Subject 1 and 8 (only prosocial once each)
+
+## No behavioral data
+
+* Subject 13
 
 
