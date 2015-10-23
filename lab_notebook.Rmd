@@ -3,13 +3,13 @@ title: "fMRI analysis - agency/decision making"
 author: "Soph Uddin"
 date: "September 21, 2015"
 output:
-  pdf_document:
-    toc: yes
   html_document:
     fig_caption: yes
     number_sections: yes
     self_contained: no
     theme: cerulean
+    toc: yes
+  pdf_document:
     toc: yes
   word_document: default
 ---
@@ -217,6 +217,10 @@ I examined the same contrasts as before, with the same options.
 
 ##Repetition of first-level with trial types as events
 I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model.
+The associated files for this analysis (e.g. the SPM.mat) are inside the folder *...nifti/subj#/Specify model 2/Design_ 4block/with_ trialtype*.
+
+The design matrix now looks like this (example=subject 1):
+![expanded design matrix](design_trialtype.png)
 
 ###Batch processing
 I added options to my *batch_ firstlevel.m* script to add these trial types for each subject.
