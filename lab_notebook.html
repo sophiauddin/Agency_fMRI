@@ -92,17 +92,22 @@ img {
 <li><a href="#batch-processing-1"><span class="toc-section-number">2.3.1</span> Batch processing</a></li>
 <li><a href="#results-1"><span class="toc-section-number">2.3.2</span> Results</a></li>
 </ul></li>
+<li><a href="#repetition-of-first-level-with-trial-types-as-events"><span class="toc-section-number">2.4</span> Repetition of first-level with trial types as events</a><ul>
+<li><a href="#batch-processing-2"><span class="toc-section-number">2.4.1</span> Batch processing</a></li>
+<li><a href="#results-2"><span class="toc-section-number">2.4.2</span> Results</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#second-level-analysis"><span class="toc-section-number">3</span> Second-level analysis</a><ul>
 <li><a href="#filenames-and-location"><span class="toc-section-number">3.1</span> Filenames and location</a></li>
 <li><a href="#settings"><span class="toc-section-number">3.2</span> Settings</a></li>
-<li><a href="#pictures"><span class="toc-section-number">3.3</span> Pictures</a><ul>
-<li><a href="#agency-vs.baseline"><span class="toc-section-number">3.3.1</span> Agency vs. baseline</a></li>
-<li><a href="#non-agency-vs.baseline"><span class="toc-section-number">3.3.2</span> Non-agency vs. baseline</a></li>
-<li><a href="#agency-non-agency"><span class="toc-section-number">3.3.3</span> Agency &gt; non-agency</a></li>
+<li><a href="#modeling-order-effects"><span class="toc-section-number">3.3</span> Modeling order effects</a></li>
+<li><a href="#pictures"><span class="toc-section-number">3.4</span> Pictures</a><ul>
+<li><a href="#agency-vs.baseline"><span class="toc-section-number">3.4.1</span> Agency vs. baseline</a></li>
+<li><a href="#non-agency-vs.baseline"><span class="toc-section-number">3.4.2</span> Non-agency vs. baseline</a></li>
+<li><a href="#agency-non-agency"><span class="toc-section-number">3.4.3</span> Agency &gt; non-agency</a></li>
 </ul></li>
-<li><a href="#interpretation-of-active-brain-areas"><span class="toc-section-number">3.4</span> Interpretation of active brain areas</a><ul>
-<li><a href="#converting-mni-to-tal-and-area-lookup"><span class="toc-section-number">3.4.1</span> Converting MNI to TAL and area lookup</a></li>
+<li><a href="#interpretation-of-active-brain-areas"><span class="toc-section-number">3.5</span> Interpretation of active brain areas</a><ul>
+<li><a href="#converting-mni-to-tal-and-area-lookup"><span class="toc-section-number">3.5.1</span> Converting MNI to TAL and area lookup</a></li>
 </ul></li>
 </ul></li>
 <li><a href="#roi-analysis-with-marsbar"><span class="toc-section-number">4</span> ROI analysis with MarsBaR</a><ul>
@@ -112,7 +117,11 @@ img {
 <li><a href="#rois-used-neurosynth"><span class="toc-section-number">4.2.2</span> ROIs used: Neurosynth</a></li>
 <li><a href="#parameters-to-investigate"><span class="toc-section-number">4.2.3</span> Parameters to investigate</a></li>
 </ul></li>
-<li><a href="#marsbar-second-level"><span class="toc-section-number">4.3</span> MARSBaR second level</a></li>
+<li><a href="#marsbar-second-level"><span class="toc-section-number">4.3</span> MARSBaR second level</a><ul>
+<li><a href="#results-3"><span class="toc-section-number">4.3.1</span> Results</a></li>
+<li><a href="#repetition-of-second-level-with-neurosynth-rois"><span class="toc-section-number">4.3.2</span> Repetition of second-level with Neurosynth ROIs</a></li>
+<li><a href="#repetition-of-second-level-with-only-prosocial-subjects"><span class="toc-section-number">4.3.3</span> Repetition of second-level with only prosocial subjects</a></li>
+</ul></li>
 <li><a href="#on-fwe-vs.conventional-significance-levels-with-roi-analysis"><span class="toc-section-number">4.4</span> On FWE vs. conventional significance levels with ROI analysis</a></li>
 </ul></li>
 <li><a href="#participant-information"><span class="toc-section-number">5</span> Participant information</a><ul>
@@ -120,6 +129,9 @@ img {
 <li><a href="#excluded-when-art-repair-is-not-used"><span class="toc-section-number">5.2</span> Excluded when art repair is not used</a></li>
 <li><a href="#block-order"><span class="toc-section-number">5.3</span> Block order</a></li>
 <li><a href="#unusual-but-still-included"><span class="toc-section-number">5.4</span> Unusual, but still included</a></li>
+<li><a href="#never-prosocial"><span class="toc-section-number">5.5</span> Never prosocial</a></li>
+<li><a href="#rarely-prosocial"><span class="toc-section-number">5.6</span> Rarely prosocial</a></li>
+<li><a href="#no-behavioral-data"><span class="toc-section-number">5.7</span> No behavioral data</a></li>
 </ul></li>
 </ul>
 </div>
@@ -323,6 +335,18 @@ img {
 <p>I examined the same contrasts as before, with the same options.</p>
 </div>
 </div>
+<div id="repetition-of-first-level-with-trial-types-as-events" class="section level2">
+<h2><span class="header-section-number">2.4</span> Repetition of first-level with trial types as events</h2>
+<p>I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model.</p>
+<div id="batch-processing-2" class="section level3">
+<h3><span class="header-section-number">2.4.1</span> Batch processing</h3>
+<p>I added options to my <em>batch_ firstlevel.m</em> script to add these trial types for each subject.</p>
+</div>
+<div id="results-2" class="section level3">
+<h3><span class="header-section-number">2.4.2</span> Results</h3>
+<p>I examined the same contrasts as before, with the same options.</p>
+</div>
+</div>
 </div>
 <div id="second-level-analysis" class="section level1">
 <h1><span class="header-section-number">3</span> Second-level analysis</h1>
@@ -343,36 +367,40 @@ img {
 <li>Extent threshold: 0 voxels for comparisons with baseline; 5 voxels for agency &gt; non-agency contrast because so many one or two-voxel locations were lighting up</li>
 </ul>
 </div>
+<div id="modeling-order-effects" class="section level2">
+<h2><span class="header-section-number">3.3</span> Modeling order effects</h2>
+<p>I did the second-level analysis both with and without including block order as another regressor. <strong>Examine how block order changes actual p values</strong></p>
+</div>
 <div id="pictures" class="section level2">
-<h2><span class="header-section-number">3.3</span> Pictures</h2>
+<h2><span class="header-section-number">3.4</span> Pictures</h2>
 <div id="agency-vs.baseline" class="section level3">
-<h3><span class="header-section-number">3.3.1</span> Agency vs. baseline</h3>
+<h3><span class="header-section-number">3.4.1</span> Agency vs. baseline</h3>
 <div class="figure">
 <img src="lev2_ag.png" alt="ag vs base" /><p class="caption">ag vs base</p>
 </div>
 </div>
 <div id="non-agency-vs.baseline" class="section level3">
-<h3><span class="header-section-number">3.3.2</span> Non-agency vs. baseline</h3>
+<h3><span class="header-section-number">3.4.2</span> Non-agency vs. baseline</h3>
 <div class="figure">
 <img src="lev2_nonag.png" alt="nonag vs base" /><p class="caption">nonag vs base</p>
 </div>
 </div>
 <div id="agency-non-agency" class="section level3">
-<h3><span class="header-section-number">3.3.3</span> Agency &gt; non-agency</h3>
+<h3><span class="header-section-number">3.4.3</span> Agency &gt; non-agency</h3>
 <div class="figure">
 <img src="lev2_contrast.png" alt="agency &gt; non-agency" /><p class="caption">agency &gt; non-agency</p>
 </div>
 </div>
 </div>
 <div id="interpretation-of-active-brain-areas" class="section level2">
-<h2><span class="header-section-number">3.4</span> Interpretation of active brain areas</h2>
+<h2><span class="header-section-number">3.5</span> Interpretation of active brain areas</h2>
 <p>The “versus baseline” contrasts give us a nice reality check. Because this task involves reading information on a screen, we should see activity in visual areas, which is obvious in both agency vs. baseline and non-agency vs. baseline. Because it involves pretty sophisticated decision-making, we should also see a great deal of frontal activation, which we also see in both “versus baseline” cases.</p>
 <div id="converting-mni-to-tal-and-area-lookup" class="section level3">
-<h3><span class="header-section-number">3.4.1</span> Converting MNI to TAL and area lookup</h3>
+<h3><span class="header-section-number">3.5.1</span> Converting MNI to TAL and area lookup</h3>
 <p>The coordinates in SPM are MNI coordinates. These need to be converted to Talairach in order to look them up in the Brede database. I used <a href="http://sprout022.sprout.yale.edu/mni2tal/mni2tal.html">a website from the BioImage suite at Yale</a> to convert MNI to TAL.</p>
 <p>I then used the <a href="http://neuro.imm.dtu.dk/cgi-bin/brede_loc_query.pl?q=">Brede database</a> to look up the TAL coordinates and what areas they correspond with in the literature.</p>
 <div id="areas-implicated-in-literature" class="section level4">
-<h4><span class="header-section-number">3.4.1.1</span> Areas implicated in literature</h4>
+<h4><span class="header-section-number">3.5.1.1</span> Areas implicated in literature</h4>
 <p>The following papers (from Shoham) are being used as a guide.</p>
 <ul>
 <li>Hutcherson et. al. 2015 <strong>A neurocomputational model of altruistic choice and its implications</strong></li>
@@ -387,7 +415,7 @@ img {
 </div>
 <div id="roi-analysis-with-marsbar" class="section level1">
 <h1><span class="header-section-number">4</span> ROI analysis with MarsBaR</h1>
-<p>One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.</p>
+<p>One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This happened regardless of whether block order was a regressor or not. This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.</p>
 <div id="downloads" class="section level2">
 <h2><span class="header-section-number">4.1</span> Downloads</h2>
 <p>Marsbar-0.44 was already present on Acropolis. To use MARSBaR’s pre-made ROIs, I downloaded marsbar-aal-0.2 from their <a href="http://sourceforge.net/projects/marsbar/files/marsbar%20AAL%20ROIs/0.2/">recommended website</a>. These are used for strucural ROIs when functionals are not available (as in our case).</p>
@@ -443,7 +471,7 @@ img {
 <li>Click on the hyperlink that is returned by the result; some images showing red activation maps for the ROI should pop up<br /></li>
 <li>In the “Layers” bar on the right side, look for “ROI: reverse inference”. Click the download arrow next to that to download a .nii file.<br /></li>
 <li>The ROIs are downloaded as .nii.gz files that can easily be expanded by double clicking (at least on a Mac)<br /></li>
-<li></li>
+<li>In MarsBar, click “Import” for ROI and import the .nii file. Click through the GUI and an ROI will be created automatically.</li>
 </ol>
 </div>
 <div id="parameters-to-investigate" class="section level3">
@@ -457,7 +485,7 @@ img {
 <p>Using the data generated from first-level analysis, containing percent signal change for each block, I did the following:</p>
 <ul>
 <li>For each subject and each ROI, average together the “agency” and “non-agency” blocks to get one agency % signal change and one non-agency % signal change<br /></li>
-<li>For each ROI, use R to perform a paired t-test between agency and non-agency (n=38 usable subjects)</li>
+<li>For each ROI, use R to perform a paired t-test between agency and non-agency (n=37 usable subjects)</li>
 </ul>
 <p>A paired t test was used because the same subjects are being scanned twice: once in an agency condition and once in a non-agency condition.</p>
 <p>The following code in R was used to loop through all 46 ROIs examined, given percent signal change data:</p>
@@ -468,6 +496,29 @@ img {
 }
 
 write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></pre>
+<div id="results-3" class="section level3">
+<h3><span class="header-section-number">4.3.1</span> Results</h3>
+<p>No areas reached the significance threshold of p&lt;0.05, however some came close.</p>
+<p>These are:<br />IFG opercular (p=0.079 left, p=0.076 right)<br />IFG orbital (p=0.067 left, p=0.081 right)<br />IFG triangular, left (p=0.066) Inferior temporal, left only (p=0.069)</p>
+</div>
+<div id="repetition-of-second-level-with-neurosynth-rois" class="section level3">
+<h3><span class="header-section-number">4.3.2</span> Repetition of second-level with Neurosynth ROIs</h3>
+<p>This pulled out the following ROIs:<br />anterior insula (p=0.088)<br />DLPFC (p=0.016)</p>
+<p>Note that Neurosynth ROIs are necessarily bilateral already.</p>
+</div>
+<div id="repetition-of-second-level-with-only-prosocial-subjects" class="section level3">
+<h3><span class="header-section-number">4.3.3</span> Repetition of second-level with only prosocial subjects</h3>
+<p>Subjects that were never or rarely prosocial (see below in the Subjects section) were removed from the .csv file read into R, and the analysis was repeated (sample size is now n=34).</p>
+<pre class="r"><code>for (i in 1:46){
+  temp=t.test(data[1:34,i],data[35:68,i],alternative=c(&quot;two.sided&quot;),mu=0,paired=TRUE,var.equal=FALSE,conf.level=0.95)
+         pval[i]=temp[[3]]
+         rm(temp)
+         }
+         
+         write.table(pval,&quot;pavlues_ROIttest_proonly.txt&quot;, sep=&quot;\t&quot;)</code></pre>
+<p>Looking at only prosocial subjects, one area now reaches significance:<br />Mid temporal pole, right (p=0.043)</p>
+<p>Other areas are close:<br />IFG opercular (p=0.097 left, p=0.070 right)<br />IFG orbital (p=0.065 left, p=0.088 right)<br />IFG triangular (p=0.056 left, p=0.084 right)<br />Inferior temporal, left (p=0.087)</p>
+</div>
 </div>
 <div id="on-fwe-vs.conventional-significance-levels-with-roi-analysis" class="section level2">
 <h2><span class="header-section-number">4.4</span> On FWE vs. conventional significance levels with ROI analysis</h2>
@@ -479,7 +530,7 @@ write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></p
 <h1><span class="header-section-number">5</span> Participant information</h1>
 <div id="excluded-for-data-when-art-repair-is-used" class="section level2">
 <h2><span class="header-section-number">5.1</span> Excluded for data when art repair is used</h2>
-<p>2, 9, 10, 12, 16, 26, 32</p>
+<p>2, 9, 10, 12, 13, 16, 26, 32</p>
 </div>
 <div id="excluded-when-art-repair-is-not-used" class="section level2">
 <h2><span class="header-section-number">5.2</span> Excluded when art repair is not used</h2>
@@ -492,9 +543,25 @@ write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></p
 </div>
 <div id="unusual-but-still-included" class="section level2">
 <h2><span class="header-section-number">5.4</span> Unusual, but still included</h2>
+<p>35: had only 171 scans in run 4</p>
+</div>
+<div id="never-prosocial" class="section level2">
+<h2><span class="header-section-number">5.5</span> Never prosocial</h2>
+<p>Accessible in column “O” of the subject info spreadsheet <em>dga_ mri_ costrationbeh_ noinit.csv</em></p>
 <ul>
-<li>13: had only 13 scans in run 4</li>
-<li>35: had only 171 scans in run 4</li>
+<li>Subject 24</li>
+</ul>
+</div>
+<div id="rarely-prosocial" class="section level2">
+<h2><span class="header-section-number">5.6</span> Rarely prosocial</h2>
+<ul>
+<li>Subject 1 and 8 (only prosocial once each)</li>
+</ul>
+</div>
+<div id="no-behavioral-data" class="section level2">
+<h2><span class="header-section-number">5.7</span> No behavioral data</h2>
+<ul>
+<li>Subject 13</li>
 </ul>
 </div>
 </div>

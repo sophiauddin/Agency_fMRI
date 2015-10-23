@@ -3,13 +3,13 @@ title: "fMRI analysis - agency/decision making"
 author: "Soph Uddin"
 date: "September 21, 2015"
 output:
+  pdf_document:
+    toc: yes
   html_document:
     fig_caption: yes
     number_sections: yes
     self_contained: no
     theme: cerulean
-    toc: yes
-  pdf_document:
     toc: yes
   word_document: default
 ---
@@ -215,6 +215,14 @@ To do this, I edited the *batch_ firstlevel.m* script to loop through all the su
 ### Results
 I examined the same contrasts as before, with the same options.
 
+##Repetition of first-level with trial types as events
+I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model.
+
+###Batch processing
+I added options to my *batch_ firstlevel.m* script to add these trial types for each subject.
+
+### Results
+I examined the same contrasts as before, with the same options.
 
 #Second-level analysis
 ## Filenames and location
@@ -237,6 +245,9 @@ To obtain the second-level contrasts, I followed the tutorial in the SPM8 manual
 * p value adjustment: none
 * Threshold T/p value: 0.000001 for comparisons with baseline; 0.025 for agency > non-agency contrast
 * Extent threshold: 0 voxels for comparisons with baseline; 5 voxels for agency > non-agency contrast because so many one or two-voxel locations were lighting up
+
+## Modeling order effects
+I did the second-level analysis both with and without including block order as another regressor. **Examine how block order changes actual p values**
 
 ## Pictures
 
@@ -272,7 +283,7 @@ I looked at the names of the main areas implicated in these papers, then did a l
 Another approach is to use **Neurosynth** to generate automated meta-analyses; I am looking into this currently.
 
 # ROI analysis with MarsBaR
-One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.
+One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This happened regardless of whether block order was a regressor or not. This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.
 
 ## Downloads
 Marsbar-0.44 was already present on Acropolis. To use MARSBaR's pre-made ROIs, I downloaded marsbar-aal-0.2 from their [recommended website](http://sourceforge.net/projects/marsbar/files/marsbar%20AAL%20ROIs/0.2/). These are used for strucural ROIs when functionals are not available (as in our case).
@@ -345,7 +356,7 @@ I used neurosynth to make ROIs for the following areas, which were pulled out fr
 
 + Anterior cingulate (searched "acc")
 + Dorsal anterior cingulate (searched "dacc")
-+ <span style="color:red">Paracingulate cortex - searched but no results in Neurosynth</span>  
++ _Paracingulate cortex - searched but no results in Neurosynth_
 + Caudate
 + Precuneus
 + VMPFC
@@ -360,7 +371,7 @@ I used neurosynth to make ROIs for the following areas, which were pulled out fr
 + Ventral striatum
 + Anterior insula
 + Nucleus accumbens
-+ <span style="color:red">Ventral tegmental area - searched but no results in Neurosynth</span>
++ _Ventral tegmental area - searched but no results in Neurosynth_
 + Subgenual area (searched "subgenual")
 + Posterior STS (searched "psts")
 + Temporoparietal junction
@@ -384,7 +395,7 @@ I wrote 2 small scripts to do the following:
 These scripts save the subject name, ROI identity, and P value in a text file that can be copy-pasted into excel, etc.
 
 I also used code from the [MarsBar FAQ page](http://marsbar.sourceforge.net/faq.html#how-do-i-extract-percent-signal-change-from-my-design-using-batch) to extract percent signal change from the data in batch mode.   
-Out of all the possible parameters of interest, it seems that *percent signal change* is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.
+Out of all the possible parameters of interest, it seems that **percent signal change** is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.
 
 ## MARSBaR second level
 Using the data generated from first-level analysis, containing percent signal change for each block, I did the following:
@@ -474,10 +485,11 @@ Accessible in column "O" of the subject info spreadsheet *dga_ mri_ costrationbe
 
 ## Rarely prosocial
 
-* Subject 1 and 8 (only prosocial once each)
+* Subject 1 (one prosocial decision)
+* Subject 8 (one prosocial decision)
 
 ## No behavioral data
 
-* Subject 13
+* Subject 13 (file was corrupted due to computer malfunction during data collection; excluding this subject)
 
 
