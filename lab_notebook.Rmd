@@ -216,7 +216,7 @@ To do this, I edited the *batch_ firstlevel.m* script to loop through all the su
 I examined the same contrasts as before, with the same options.
 
 ##Repetition of first-level with trial types as events
-I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model.
+I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model. This means there were 12 conditions: 3 trial types x 4 blocks (agency1/2 and non-agency 1/2).
 The associated files for this analysis (e.g. the SPM.mat) are inside the folder *...nifti/subj#/Specify model 2/Design_ 4block/with_ trialtype*.
 
 The design matrix now looks like this (example=subject 1):
@@ -231,16 +231,48 @@ I examined the same contrasts as before, with the same options.
 #Second-level analysis
 ## Filenames and location
 
-Files for second-level analysis are the contrasts created in first-level. These are numbered as follows:
+Files for second-level analysis are the contrasts created in first-level. These were added to a separate "2nd level" folder for easy access, and the subject number was appended to the contrast filename like this:  
+*con_ 0001_ subj#.img*. 
 
-For agency > non-agency contrast:  
-*con_ 0001_ subj#.img* is saved in */mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ over_ no/*  
+Guide to these files:
 
-For agency vs. baseline:  
-*con_ 0002_ subj#.img* is saved in */mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ vs_ base/*  
+The main 2nd level folder is: */mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1*
 
-For non-agency vs. baseline:  
-*con_ 0003_ subj#.img* is saved in */mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/no_ vs_ base/*  
+Within this, there are: 
+
+1. First analysis, with simple 4-block first-level design that does not take trial type or subject response into account:  
+*ag_ over_ no*: contains contrasts from all included subjects for agency > non-agency (numbered con_0001)  
+*ag_ vs_ base*: contains agency vs. baseline contrasts (numbered con_0002)  
+*no_ vs_ base*: contains non-agency vs. baseline contrasts (numbered con_0003)    
+
+2. Second analysis: taking block order per subject into account at the second level.
+
+This just consists of a folder with some regressions called *order* inside the *2ndlev_1* folder
+
+
+3. Third analysis: taking trial type (leveraging etc.) into account:  
+These are located in the subfolder *2ndlev_1 > with_trialtype*.  
+
+Inside this folder, there are:  
+*ag_ over_ no*: agency > non (con_0001)  
+*ag_ vs_ base*: agency vs. baseline (con_0002)  
+*no_ vs_ base*: non-agency vs. baseline (con_0003)  
+*no_ over_ag*: non-agency > agency (con_0004)  
+*lev_ vs_ base*: leveraging vs. baseline (con_0005)  
+*self_ vs_ base*: self vs. baseline (con_0006)  
+*dic_ vs_ base*: dic vs. baseline (con_0007)  
+*lev_ over_ other*: leveraging > other trials (con_0008)  
+*self_ over_ other*: self > other trials (con_0009)  
+*dic_ over_ other*: dic > other trials (con_0010)  
+
+Inside each of these there are both *with order* and *without order* folders; this didn't make much of a difference so going forward I will just go ahead and model block order.
+
+4. Fourth analysis: looking only at subjects who made some prosocial decisions. These are located in the subfolder *2ndlev_1 > prosocial > with_ order > with_ trialtype*. The contrasts and subfolders here are the same as they were for the 3rd analysis.
+
+
+5. Fifth analysis: taking prosocial decisions, as well as trial type and blocks, into account: 
+
+Things got tricky at this level, because not all subjects were prosocial in all of the conditions. Therefore, each subject had a different number of conditions. The full range would have been 24 conditions: 3 trial types x 4 blocks x prosocial/not...but almost nobody was prosocial in every trial type in every block. In general, the "self" and "dic" type trials often lacked any prosocial trials at all.
 
 ## Settings 
 To obtain the second-level contrasts, I followed the tutorial in the SPM8 manual closely. For each condition (e.g. agency vs. baseline), I made an F contrast with weights matrix = 1.
@@ -251,9 +283,14 @@ To obtain the second-level contrasts, I followed the tutorial in the SPM8 manual
 * Extent threshold: 0 voxels for comparisons with baseline; 5 voxels for agency > non-agency contrast because so many one or two-voxel locations were lighting up
 
 ## Modeling order effects
-I did the second-level analysis both with and without including block order as another regressor. **Examine how block order changes actual p values**
+Lester suggested I model block order effects at the second level, as shown in the following pictures.
 
 ## Pictures
+
+These are second-level contrasts for a first-level analysis that:  
+* Included trial type (3 kinds)  
+* Included 4 blocks: 2 agency and 2 non-agency  
+* Included all subjects
 
 ###Agency vs. baseline
 ![ag vs base](lev2_ag.png)
@@ -284,7 +321,8 @@ The following papers (from Shoham) are being used as a guide.
 
 I looked at the names of the main areas implicated in these papers, then did a literature search to define the borders of these areas. I then compared the coordinates identified in my second-level analysis to the lists of coordinates as defined in many different papers. 
 
-Another approach is to use **Neurosynth** to generate automated meta-analyses; I am looking into this currently.
+####Areas we found to be active
+
 
 # ROI analysis with MarsBaR
 One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This happened regardless of whether block order was a regressor or not. This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.
@@ -491,6 +529,7 @@ Accessible in column "O" of the subject info spreadsheet *dga_ mri_ costrationbe
 
 * Subject 1 (one prosocial decision)
 * Subject 8 (one prosocial decision)
+* Subject 3 (7 prosocial decisions)
 
 ## No behavioral data
 
