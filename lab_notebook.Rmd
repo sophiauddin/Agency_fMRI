@@ -219,8 +219,12 @@ I examined the same contrasts as before, with the same options.
 I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model.
 The associated files for this analysis (e.g. the SPM.mat) are inside the folder *...nifti/subj#/Specify model 2/Design_ 4block/with_ trialtype*.
 
-The design matrix now looks like this (example=subject 1):
+The design matrix now looks like this (example=subject 3):
 ![expanded design matrix](design_trialtype.png)
+
+
+To look at individual trial types, there is a csv file:  
+*mnt/ide0/share/hcnlab/agency/documents/dga3_ behav/trials/dga3options.csv*
 
 ###Batch processing
 I added options to my *batch_ firstlevel.m* script to add these trial types for each subject.
