@@ -232,6 +232,30 @@ I added options to my *batch_ firstlevel.m* script to add these trial types for 
 ### Results
 I examined the same contrasts as before, with the same options.
 
+##Repetition of first-level with trial types as events AND with prosocial trials only
+This yielded 24 conditions (hypothetically) for each subject:  
+3 trial types x 4 blocks (agency1/agency2/non1/non2) x prosociality (yes or no).
+
+Because the model now depends on prosocial decisions, which don't always happen consistently, there were a couple implications to doing the analysis this way:  
+1. The design matrix for each subject looks different  
+2. Because of this, the contrasts for each subject are different and have to be done by hand  
+
+Here are some example design matrices:  
+![24con design matrix](design_sub15.png)
+
+![24con design matrix](design_sub18.png)
+
+
+###Results
+For a first pass, I examined the following contrasts:  
+1. prosocial vs. baseline  
+2. NP vs. baseline  
+3. prosocial > NP  
+
+These contrasts are numbered in the order they are listed here, and were made with the SPM.mat files in *subj#/Specify model 2/Design_4block/with_trialtype/protrials*
+
+Done: up thru 30
+
 #Second-level analysis
 ## Filenames and location
 
