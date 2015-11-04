@@ -254,7 +254,7 @@ For a first pass, I examined the following contrasts:
 
 These contrasts are numbered in the order they are listed here, and were made with the SPM.mat files in *subj#/Specify model 2/Design_4block/with_trialtype/protrials*
 
-Done: up thru 30
+Done: up thru 41
 
 #Second-level analysis
 ## Filenames and location
