@@ -71,75 +71,112 @@ img {
 
 <div id="TOC">
 <ul>
-<li><a href="#preprocessing"><span class="toc-section-number">1</span> Preprocessing</a><ul>
-<li><a href="#steps-settings"><span class="toc-section-number">1.1</span> Steps &amp; Settings</a></li>
-<li><a href="#subjects-excluded-after-prepro"><span class="toc-section-number">1.2</span> Subjects excluded after prepro</a></li>
-<li><a href="#art-repair"><span class="toc-section-number">1.3</span> Art repair</a><ul>
-<li><a href="#re-run-of-subject-17-run-3"><span class="toc-section-number">1.3.1</span> Re-run of subject 17, run 3</a></li>
+<li><a href="#design-and-trial-types"><span class="toc-section-number">1</span> Design and trial types</a><ul>
+<li><a href="#agency-vs.non-agency"><span class="toc-section-number">1.1</span> Agency vs. non-agency</a></li>
+<li><a href="#trials"><span class="toc-section-number">1.2</span> Trials</a></li>
+<li><a href="#trial-types"><span class="toc-section-number">1.3</span> Trial types</a></li>
+</ul></li>
+<li><a href="#preprocessing"><span class="toc-section-number">2</span> Preprocessing</a><ul>
+<li><a href="#steps-settings"><span class="toc-section-number">2.1</span> Steps &amp; Settings</a></li>
+<li><a href="#subjects-excluded-after-prepro"><span class="toc-section-number">2.2</span> Subjects excluded after prepro</a></li>
+<li><a href="#art-repair"><span class="toc-section-number">2.3</span> Art repair</a><ul>
+<li><a href="#re-run-of-subject-17-run-3"><span class="toc-section-number">2.3.1</span> Re-run of subject 17, run 3</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#first-level-analysis"><span class="toc-section-number">2</span> First-level analysis</a><ul>
-<li><a href="#with-art-repair-without-motion-regressors"><span class="toc-section-number">2.1</span> With art repair, without motion regressors</a><ul>
-<li><a href="#making-the-multiple-conditions-.mat-file"><span class="toc-section-number">2.1.1</span> Making the “multiple conditions” .mat file</a></li>
-<li><a href="#running-batch-option"><span class="toc-section-number">2.1.2</span> Running batch option</a></li>
-<li><a href="#first-pass-examination-of-level-1-results"><span class="toc-section-number">2.1.3</span> First-pass examination of level 1 results</a></li>
+<li><a href="#first-level-analysis"><span class="toc-section-number">3</span> First-level analysis</a><ul>
+<li><a href="#with-art-repair-without-motion-regressors"><span class="toc-section-number">3.1</span> With art repair, without motion regressors</a><ul>
+<li><a href="#making-the-multiple-conditions-.mat-file"><span class="toc-section-number">3.1.1</span> Making the “multiple conditions” .mat file</a></li>
+<li><a href="#running-batch-option"><span class="toc-section-number">3.1.2</span> Running batch option</a></li>
+<li><a href="#first-pass-examination-of-level-1-results"><span class="toc-section-number">3.1.3</span> First-pass examination of level 1 results</a></li>
 </ul></li>
-<li><a href="#repetition-of-first-level-analysis-with-art-repair-and-motion-regressors"><span class="toc-section-number">2.2</span> Repetition of first-level analysis with art repair AND motion regressors</a><ul>
-<li><a href="#batch-processing"><span class="toc-section-number">2.2.1</span> Batch processing</a></li>
-<li><a href="#results"><span class="toc-section-number">2.2.2</span> Results</a></li>
+<li><a href="#repetition-of-first-level-analysis-with-art-repair-and-motion-regressors"><span class="toc-section-number">3.2</span> Repetition of first-level analysis with art repair AND motion regressors</a><ul>
+<li><a href="#batch-processing"><span class="toc-section-number">3.2.1</span> Batch processing</a></li>
+<li><a href="#results"><span class="toc-section-number">3.2.2</span> Results</a></li>
 </ul></li>
-<li><a href="#repetition-of-first-level-analysis-with-motion-regressors-but-no-art-repair"><span class="toc-section-number">2.3</span> Repetition of first-level analysis with motion regressors but NO art repair</a><ul>
-<li><a href="#batch-processing-1"><span class="toc-section-number">2.3.1</span> Batch processing</a></li>
-<li><a href="#results-1"><span class="toc-section-number">2.3.2</span> Results</a></li>
+<li><a href="#repetition-of-first-level-analysis-with-motion-regressors-but-no-art-repair"><span class="toc-section-number">3.3</span> Repetition of first-level analysis with motion regressors but NO art repair</a><ul>
+<li><a href="#batch-processing-1"><span class="toc-section-number">3.3.1</span> Batch processing</a></li>
+<li><a href="#results-1"><span class="toc-section-number">3.3.2</span> Results</a></li>
 </ul></li>
-<li><a href="#repetition-of-first-level-with-trial-types-as-events"><span class="toc-section-number">2.4</span> Repetition of first-level with trial types as events</a><ul>
-<li><a href="#batch-processing-2"><span class="toc-section-number">2.4.1</span> Batch processing</a></li>
-<li><a href="#results-2"><span class="toc-section-number">2.4.2</span> Results</a></li>
+<li><a href="#repetition-of-first-level-with-trial-types-as-events"><span class="toc-section-number">3.4</span> Repetition of first-level with trial types as events</a><ul>
+<li><a href="#batch-processing-2"><span class="toc-section-number">3.4.1</span> Batch processing</a></li>
+<li><a href="#results-2"><span class="toc-section-number">3.4.2</span> Results</a></li>
+<li><a href="#results-eliminating-filler-trials"><span class="toc-section-number">3.4.3</span> Results eliminating “filler” trials</a></li>
 </ul></li>
-</ul></li>
-<li><a href="#second-level-analysis"><span class="toc-section-number">3</span> Second-level analysis</a><ul>
-<li><a href="#filenames-and-location"><span class="toc-section-number">3.1</span> Filenames and location</a></li>
-<li><a href="#settings"><span class="toc-section-number">3.2</span> Settings</a></li>
-<li><a href="#modeling-order-effects"><span class="toc-section-number">3.3</span> Modeling order effects</a></li>
-<li><a href="#pictures"><span class="toc-section-number">3.4</span> Pictures</a><ul>
-<li><a href="#agency-vs.baseline"><span class="toc-section-number">3.4.1</span> Agency vs. baseline</a></li>
-<li><a href="#non-agency-vs.baseline"><span class="toc-section-number">3.4.2</span> Non-agency vs. baseline</a></li>
-<li><a href="#agency-non-agency"><span class="toc-section-number">3.4.3</span> Agency &gt; non-agency</a></li>
-</ul></li>
-<li><a href="#interpretation-of-active-brain-areas"><span class="toc-section-number">3.5</span> Interpretation of active brain areas</a><ul>
-<li><a href="#converting-mni-to-tal-and-area-lookup"><span class="toc-section-number">3.5.1</span> Converting MNI to TAL and area lookup</a></li>
+<li><a href="#repetition-of-first-level-with-trial-types-as-events-and-with-prosocial-trials-only"><span class="toc-section-number">3.5</span> Repetition of first-level with trial types as events AND with prosocial trials only</a><ul>
+<li><a href="#results-3"><span class="toc-section-number">3.5.1</span> Results</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#roi-analysis-with-marsbar"><span class="toc-section-number">4</span> ROI analysis with MarsBaR</a><ul>
-<li><a href="#downloads"><span class="toc-section-number">4.1</span> Downloads</a></li>
-<li><a href="#marsbar-first-level"><span class="toc-section-number">4.2</span> MARSBaR first level</a><ul>
-<li><a href="#rois-used-marsbars-own"><span class="toc-section-number">4.2.1</span> ROIs used: Marsbar’s own</a></li>
-<li><a href="#rois-used-neurosynth"><span class="toc-section-number">4.2.2</span> ROIs used: Neurosynth</a></li>
-<li><a href="#parameters-to-investigate"><span class="toc-section-number">4.2.3</span> Parameters to investigate</a></li>
+<li><a href="#second-level-analysis"><span class="toc-section-number">4</span> Second-level analysis</a><ul>
+<li><a href="#filenames-and-location"><span class="toc-section-number">4.1</span> Filenames and location</a></li>
+<li><a href="#settings"><span class="toc-section-number">4.2</span> Settings</a></li>
+<li><a href="#modeling-order-effects"><span class="toc-section-number">4.3</span> Modeling order effects</a></li>
+<li><a href="#pictures"><span class="toc-section-number">4.4</span> Pictures</a><ul>
+<li><a href="#agency-vs.baseline"><span class="toc-section-number">4.4.1</span> Agency vs. baseline</a></li>
+<li><a href="#non-agency-vs.baseline"><span class="toc-section-number">4.4.2</span> Non-agency vs. baseline</a></li>
+<li><a href="#agency-non-agency"><span class="toc-section-number">4.4.3</span> Agency &gt; non-agency</a></li>
 </ul></li>
-<li><a href="#marsbar-second-level"><span class="toc-section-number">4.3</span> MARSBaR second level</a><ul>
-<li><a href="#results-3"><span class="toc-section-number">4.3.1</span> Results</a></li>
-<li><a href="#repetition-of-second-level-with-neurosynth-rois"><span class="toc-section-number">4.3.2</span> Repetition of second-level with Neurosynth ROIs</a></li>
-<li><a href="#repetition-of-second-level-with-only-prosocial-subjects"><span class="toc-section-number">4.3.3</span> Repetition of second-level with only prosocial subjects</a></li>
+<li><a href="#interpretation-of-active-brain-areas"><span class="toc-section-number">4.5</span> Interpretation of active brain areas</a><ul>
+<li><a href="#converting-mni-to-tal-and-area-lookup"><span class="toc-section-number">4.5.1</span> Converting MNI to TAL and area lookup</a></li>
 </ul></li>
-<li><a href="#on-fwe-vs.conventional-significance-levels-with-roi-analysis"><span class="toc-section-number">4.4</span> On FWE vs. conventional significance levels with ROI analysis</a></li>
 </ul></li>
-<li><a href="#participant-information"><span class="toc-section-number">5</span> Participant information</a><ul>
-<li><a href="#excluded-for-data-when-art-repair-is-used"><span class="toc-section-number">5.1</span> Excluded for data when art repair is used</a></li>
-<li><a href="#excluded-when-art-repair-is-not-used"><span class="toc-section-number">5.2</span> Excluded when art repair is not used</a></li>
-<li><a href="#block-order"><span class="toc-section-number">5.3</span> Block order</a></li>
-<li><a href="#unusual-but-still-included"><span class="toc-section-number">5.4</span> Unusual, but still included</a></li>
-<li><a href="#never-prosocial"><span class="toc-section-number">5.5</span> Never prosocial</a></li>
-<li><a href="#rarely-prosocial"><span class="toc-section-number">5.6</span> Rarely prosocial</a></li>
-<li><a href="#no-behavioral-data"><span class="toc-section-number">5.7</span> No behavioral data</a></li>
+<li><a href="#roi-analysis-with-marsbar"><span class="toc-section-number">5</span> ROI analysis with MarsBaR</a><ul>
+<li><a href="#downloads"><span class="toc-section-number">5.1</span> Downloads</a></li>
+<li><a href="#marsbar-first-level"><span class="toc-section-number">5.2</span> MARSBaR first level</a><ul>
+<li><a href="#rois-used-marsbars-own"><span class="toc-section-number">5.2.1</span> ROIs used: Marsbar’s own</a></li>
+<li><a href="#rois-used-neurosynth"><span class="toc-section-number">5.2.2</span> ROIs used: Neurosynth</a></li>
+<li><a href="#parameters-to-investigate"><span class="toc-section-number">5.2.3</span> Parameters to investigate</a></li>
+</ul></li>
+<li><a href="#marsbar-second-level"><span class="toc-section-number">5.3</span> MARSBaR second level</a><ul>
+<li><a href="#results-4"><span class="toc-section-number">5.3.1</span> Results</a></li>
+<li><a href="#repetition-of-second-level-with-neurosynth-rois"><span class="toc-section-number">5.3.2</span> Repetition of second-level with Neurosynth ROIs</a></li>
+<li><a href="#repetition-of-second-level-with-only-prosocial-subjects"><span class="toc-section-number">5.3.3</span> Repetition of second-level with only prosocial subjects</a></li>
+</ul></li>
+<li><a href="#on-fwe-vs.conventional-significance-levels-with-roi-analysis"><span class="toc-section-number">5.4</span> On FWE vs. conventional significance levels with ROI analysis</a></li>
+</ul></li>
+<li><a href="#participant-information"><span class="toc-section-number">6</span> Participant information</a><ul>
+<li><a href="#excluded-for-data-when-art-repair-is-used"><span class="toc-section-number">6.1</span> Excluded for data when art repair is used</a></li>
+<li><a href="#excluded-when-art-repair-is-not-used"><span class="toc-section-number">6.2</span> Excluded when art repair is not used</a></li>
+<li><a href="#block-order"><span class="toc-section-number">6.3</span> Block order</a></li>
+<li><a href="#unusual-but-still-included"><span class="toc-section-number">6.4</span> Unusual, but still included</a></li>
+<li><a href="#never-prosocial"><span class="toc-section-number">6.5</span> Never prosocial</a></li>
+<li><a href="#rarely-prosocial"><span class="toc-section-number">6.6</span> Rarely prosocial</a></li>
+<li><a href="#no-behavioral-data"><span class="toc-section-number">6.7</span> No behavioral data</a></li>
 </ul></li>
 </ul>
 </div>
 
+<div id="design-and-trial-types" class="section level1">
+<h1><span class="header-section-number">1</span> Design and trial types</h1>
+<div id="agency-vs.non-agency" class="section level2">
+<h2><span class="header-section-number">1.1</span> Agency vs. non-agency</h2>
+<p>This was a block-level variable, within-subjects. There were 2 blocks in a row of each condition, and order was counterbalanced, such that half of the subjects did the following blocks:</p>
+<p>Ag-Ag-Non-Non</p>
+<p>And half of them did:<br />Non-Non-Ag-Ag</p>
+</div>
+<div id="trials" class="section level2">
+<h2><span class="header-section-number">1.2</span> Trials</h2>
+<p>There were 70 total agency trials and 70 total non-agency trials. These were randomly divided into 35 per block.</p>
+</div>
+<div id="trial-types" class="section level2">
+<h2><span class="header-section-number">1.3</span> Trial types</h2>
+<ol style="list-style-type: decimal">
+<li>Leveraging: at no cost or small cost to self, subject can give more money to the other. Example:<br />Opt. A: self $4, other $4<br />Opt. B: self $3.50, other $8</li>
+</ol>
+<p>The expectation is for quite a few prosocial decisions, particularly at no cost to the self.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Control (coded as “self”): at no penalty to the other, one can give oneself more money. Example:<br />Opt. A: self $4, other $4<br />Opt. B: self $8, other $4</li>
+</ol>
+<p>The expectation here is for few, if any, prosocial decisions.</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Dictator: the numbers are fairly unequal and flip-flop. Example:<br />Opt. A: self $6, other $16<br />Opt. B: self $16, other $6</li>
+</ol>
+<p>The expectation here is for people to favor themselves most of the time.</p>
+</div>
+</div>
 <div id="preprocessing" class="section level1">
-<h1><span class="header-section-number">1</span> Preprocessing</h1>
+<h1><span class="header-section-number">2</span> Preprocessing</h1>
 <div id="steps-settings" class="section level2">
-<h2><span class="header-section-number">1.1</span> Steps &amp; Settings</h2>
+<h2><span class="header-section-number">2.1</span> Steps &amp; Settings</h2>
 <p>The following pipeline was used:<br />1. Motion correction (folder: <em>Realignment</em>).<br />Settings:<br /><strong>Estimate</strong></p>
 <ul>
 <li>Quality: 0.9<br /></li>
@@ -226,7 +263,7 @@ img {
 <p>Each step was checked visually before progressing to the next one.</p>
 </div>
 <div id="subjects-excluded-after-prepro" class="section level2">
-<h2><span class="header-section-number">1.2</span> Subjects excluded after prepro</h2>
+<h2><span class="header-section-number">2.2</span> Subjects excluded after prepro</h2>
 <ul>
 <li>2 for oddly shaped brain/failed motion correction<br /></li>
 <li>9 for failed motion correction<br /></li>
@@ -236,7 +273,7 @@ img {
 </ul>
 </div>
 <div id="art-repair" class="section level2">
-<h2><span class="header-section-number">1.3</span> Art repair</h2>
+<h2><span class="header-section-number">2.3</span> Art repair</h2>
 <p>Artifact repair was done using the Gabrieli lab’s ArtRepair toolbox, available for free online. As Lester suggested, I used the <em>art global</em> script to repair the already preprocessed images.<br />Because the end-stage preprocessed images are found in the “Smoothing” folder, the artifact repaired images appear in “Smoothing” for each subject, but they have a “v” added to the prefix.</p>
 <p>Note: this program needs to be run separately for each scan; that means it has to be run 4 times for each subject.</p>
 <p>I created a matlab script, now found in the Art Repair folder on the Acropolis server (mnt/ide0/share/hcnlab/spm8/ArtRepair v5b), called <em>artglobal loop</em>. This script loops through each subject and through each of the 4 scans, running <em>art global</em> separately, with defaults in place, each time. It spits out warnings when over 25% of the data in that scan were repaired (as per Lester’s suggestion of 25%) so that the user can go back, change the threshold, and re-run those separately.</p>
@@ -251,7 +288,7 @@ img {
 <li>Subject 20 run 1 only; I will keep this subject unless things look strange.</li>
 </ul>
 <div id="re-run-of-subject-17-run-3" class="section level3">
-<h3><span class="header-section-number">1.3.1</span> Re-run of subject 17, run 3</h3>
+<h3><span class="header-section-number">2.3.1</span> Re-run of subject 17, run 3</h3>
 <p>Used the GUI to adjust the threshold as follows:</p>
 <div class="figure">
 <img src="17rerun.png" alt="New thresholds" /><p class="caption">New thresholds</p>
@@ -260,9 +297,9 @@ img {
 </div>
 </div>
 <div id="first-level-analysis" class="section level1">
-<h1><span class="header-section-number">2</span> First-level analysis</h1>
+<h1><span class="header-section-number">3</span> First-level analysis</h1>
 <div id="with-art-repair-without-motion-regressors" class="section level2">
-<h2><span class="header-section-number">2.1</span> With art repair, without motion regressors</h2>
+<h2><span class="header-section-number">3.1</span> With art repair, without motion regressors</h2>
 <p>The options I used were:</p>
 <ul>
 <li>Units: seconds</li>
@@ -279,7 +316,7 @@ img {
 <p>The design matrix looks like this: <img src="designmatrix.png" alt="design matrix" /></p>
 <p>This shows that each run of 210 scans was treated as a separate condition.</p>
 <div id="making-the-multiple-conditions-.mat-file" class="section level3">
-<h3><span class="header-section-number">2.1.1</span> Making the “multiple conditions” .mat file</h3>
+<h3><span class="header-section-number">3.1.1</span> Making the “multiple conditions” .mat file</h3>
 <ul>
 <li>One file for agency first condition, one for non-first condition<br /></li>
 <li>Names set to cell array with “agency 1”, “agency 2”, “non-agency 1”, and “non-agency 2” blocks for agency first; flipped for non-agency first.</li>
@@ -289,11 +326,11 @@ img {
 </ul>
 </div>
 <div id="running-batch-option" class="section level3">
-<h3><span class="header-section-number">2.1.2</span> Running batch option</h3>
+<h3><span class="header-section-number">3.1.2</span> Running batch option</h3>
 <p>This stage can be run as a loop through subjects using the <em>batch_ firstlevel.m</em> script found in <em>mnt/ide0/share/hcnlab/agency/nifti/001/Specify model 1</em>.</p>
 </div>
 <div id="first-pass-examination-of-level-1-results" class="section level3">
-<h3><span class="header-section-number">2.1.3</span> First-pass examination of level 1 results</h3>
+<h3><span class="header-section-number">3.1.3</span> First-pass examination of level 1 results</h3>
 <p><strong>3 “contrasts” defined</strong><br />1. Agency &gt; non-agency (subtracts activation from non-agency from activation from agency condition, showing where the brain is MORE active, as measured by blood flow, for agency).<br />For agency first, vector is: [1 1 -1 -1 0]<br />For non-agency first, vector is: [-1 -1 1 1 0]</p>
 <ol start="2" style="list-style-type: decimal">
 <li><p>Agency vs. baseline (shows where brain is active for agency, regardless of other conditions)<br />For agency first, vector is: [1 1 0 0 0]<br />For non-agency first, vector is: [0 0 1 1 0]</p></li>
@@ -310,55 +347,109 @@ img {
 </div>
 </div>
 <div id="repetition-of-first-level-analysis-with-art-repair-and-motion-regressors" class="section level2">
-<h2><span class="header-section-number">2.2</span> Repetition of first-level analysis with art repair AND motion regressors</h2>
+<h2><span class="header-section-number">3.2</span> Repetition of first-level analysis with art repair AND motion regressors</h2>
 <p>Even though the results made sense without the motion regressors I was curious to see if they would be improved or changed by adding motion regressors (e.g. using the rp*.txt files generated at the Realign phase of preprocessing as multiple regressors).</p>
 <p>This is in the folder <em>Specify model 2</em> for each subject.</p>
 <div id="batch-processing" class="section level3">
-<h3><span class="header-section-number">2.2.1</span> Batch processing</h3>
+<h3><span class="header-section-number">3.2.1</span> Batch processing</h3>
 <p>To do this, I edited the <em>batch_ firstlevel.m</em> script to loop through all the subjects but add the regressors.</p>
 </div>
 <div id="results" class="section level3">
-<h3><span class="header-section-number">2.2.2</span> Results</h3>
+<h3><span class="header-section-number">3.2.2</span> Results</h3>
 <p>I examined the same contrasts as before, with the same options.</p>
 </div>
 </div>
 <div id="repetition-of-first-level-analysis-with-motion-regressors-but-no-art-repair" class="section level2">
-<h2><span class="header-section-number">2.3</span> Repetition of first-level analysis with motion regressors but NO art repair</h2>
+<h2><span class="header-section-number">3.3</span> Repetition of first-level analysis with motion regressors but NO art repair</h2>
 <p>Based on some odd-looking brains that came out of the first-level analysis with art repair, I decided to try this again but not do art repair, instead excluding subjects that had motion issues. See below for the expanded list of excluded subjects.</p>
 <p>This is in the folder <em>Specify model 3</em> for each subject.</p>
 <div id="batch-processing-1" class="section level3">
-<h3><span class="header-section-number">2.3.1</span> Batch processing</h3>
+<h3><span class="header-section-number">3.3.1</span> Batch processing</h3>
 <p>To do this, I edited the <em>batch_ firstlevel.m</em> script to loop through all the subjects but add the regressors.</p>
 </div>
 <div id="results-1" class="section level3">
-<h3><span class="header-section-number">2.3.2</span> Results</h3>
+<h3><span class="header-section-number">3.3.2</span> Results</h3>
 <p>I examined the same contrasts as before, with the same options.</p>
 </div>
 </div>
 <div id="repetition-of-first-level-with-trial-types-as-events" class="section level2">
-<h2><span class="header-section-number">2.4</span> Repetition of first-level with trial types as events</h2>
-<p>I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model.</p>
+<h2><span class="header-section-number">3.4</span> Repetition of first-level with trial types as events</h2>
+<p>I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model. This means there were 12 conditions: 3 trial types x 4 blocks (agency1/2 and non-agency 1/2). The associated files for this analysis (e.g. the SPM.mat) are inside the folder <em>…nifti/subj#/Specify model 2/Design_ 4block/with_ trialtype</em>.</p>
+<p>The design matrix now looks like this (example=subject 3): <img src="design_trialtype.png" alt="expanded design matrix" /></p>
+<p>To look at individual trial types, there is a csv file:<br /><em>mnt/ide0/share/hcnlab/agency/documents/dga3_ behav/trials/dga3options.csv</em></p>
 <div id="batch-processing-2" class="section level3">
-<h3><span class="header-section-number">2.4.1</span> Batch processing</h3>
+<h3><span class="header-section-number">3.4.1</span> Batch processing</h3>
 <p>I added options to my <em>batch_ firstlevel.m</em> script to add these trial types for each subject.</p>
 </div>
 <div id="results-2" class="section level3">
-<h3><span class="header-section-number">2.4.2</span> Results</h3>
+<h3><span class="header-section-number">3.4.2</span> Results</h3>
 <p>I examined the same contrasts as before, with the same options.</p>
+</div>
+<div id="results-eliminating-filler-trials" class="section level3">
+<h3><span class="header-section-number">3.4.3</span> Results eliminating “filler” trials</h3>
+<p>We are most interested in leveraging trials, where people are likely to be prosocial. Thus, in the first-level contrasts, we can enter zeros for self and dic type trials, looking only at leveraging. For completeness we can also look at self and dic trials alone. The script for this is <em>contrasts_trialtypesep.m</em>.</p>
+<p>This yields 9 contrasts. These are stored in <em>/mnt/ide0/share/hcnlab/agency/nifti/subj#/Specify model 2/Design_4block/with_trialtype/septype</em>. The contrasts are numbered as follows:</p>
+<ol style="list-style-type: decimal">
+<li>LEV ag &gt; non</li>
+<li>LEV ag &gt; base</li>
+<li>LEV non &gt; base</li>
+<li>SELF ag &gt; non</li>
+<li>SELF ag &gt; base</li>
+<li>SELF non &gt; base</li>
+<li>DIC ag &gt; non</li>
+<li>DIC ag &gt; base</li>
+<li>DIC non &gt; base</li>
+</ol>
+<p>It should be noted that for these,</p>
+<ul>
+<li>Never-prosocial subjects (1, 8, and 24) are excluded</li>
+<li>Prosociality is not modeled as a separate condition</li>
+<li>Block order is modeled at the second level</li>
+</ul>
+</div>
+</div>
+<div id="repetition-of-first-level-with-trial-types-as-events-and-with-prosocial-trials-only" class="section level2">
+<h2><span class="header-section-number">3.5</span> Repetition of first-level with trial types as events AND with prosocial trials only</h2>
+<p>This yielded 24 conditions (hypothetically) for each subject:<br />3 trial types x 4 blocks (agency1/agency2/non1/non2) x prosociality (yes or no).</p>
+<p>Because the model now depends on prosocial decisions, which don’t always happen consistently, there were a couple implications to doing the analysis this way:<br />1. The design matrix for each subject looks different<br />2. Because of this, the contrasts for each subject are different and have to be done by hand</p>
+<p>Here are some example design matrices:<br /><img src="design_sub15.png" alt="24con design matrix" /></p>
+<div class="figure">
+<img src="design_sub18.png" alt="24con design matrix" /><p class="caption">24con design matrix</p>
+</div>
+<div id="results-3" class="section level3">
+<h3><span class="header-section-number">3.5.1</span> Results</h3>
+<p>For a first pass, I examined the following contrasts:<br />1. prosocial vs. baseline<br />2. NP vs. baseline<br />3. prosocial &gt; NP</p>
+<p>These contrasts are numbered in the order they are listed here, and were made with the SPM.mat files in <em>subj#/Specify model 2/Design_4block/with_trialtype/protrials</em></p>
+<p>Done: up thru 41</p>
 </div>
 </div>
 </div>
 <div id="second-level-analysis" class="section level1">
-<h1><span class="header-section-number">3</span> Second-level analysis</h1>
+<h1><span class="header-section-number">4</span> Second-level analysis</h1>
 <div id="filenames-and-location" class="section level2">
-<h2><span class="header-section-number">3.1</span> Filenames and location</h2>
-<p>Files for second-level analysis are the contrasts created in first-level. These are numbered as follows:</p>
-<p>For agency &gt; non-agency contrast:<br /><em>con_ 0001_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ over_ no/</em></p>
-<p>For agency vs. baseline:<br /><em>con_ 0002_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ vs_ base/</em></p>
-<p>For non-agency vs. baseline:<br /><em>con_ 0003_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/no_ vs_ base/</em></p>
+<h2><span class="header-section-number">4.1</span> Filenames and location</h2>
+<p>Files for second-level analysis are the contrasts created in first-level. These were added to a separate “2nd level” folder for easy access, and the subject number was appended to the contrast filename like this:<br /><em>con_ 0001_ subj#.img</em>.</p>
+<p>Guide to these files:</p>
+<p>The main 2nd level folder is: <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1</em></p>
+<p>Within this, there are:</p>
+<ol style="list-style-type: decimal">
+<li><p>First analysis, with simple 4-block first-level design that does not take trial type or subject response into account:<br /><em>ag_ over_ no</em>: contains contrasts from all included subjects for agency &gt; non-agency (numbered con_0001)<br /><em>ag_ vs_ base</em>: contains agency vs. baseline contrasts (numbered con_0002)<br /><em>no_ vs_ base</em>: contains non-agency vs. baseline contrasts (numbered con_0003)</p></li>
+<li><p>Second analysis: taking block order per subject into account at the second level.</p></li>
+</ol>
+<p>This just consists of a folder with some regressions called <em>order</em> inside the <em>2ndlev_1</em> folder</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Third analysis: taking trial type (leveraging etc.) into account:<br />These are located in the subfolder <em>2ndlev_1 &gt; with_trialtype</em>.</li>
+</ol>
+<p>Inside this folder, there are:<br /><em>ag_ over_ no</em>: agency &gt; non (con_0001)<br /><em>ag_ vs_ base</em>: agency vs. baseline (con_0002)<br /><em>no_ vs_ base</em>: non-agency vs. baseline (con_0003)<br /><em>no_ over_ag</em>: non-agency &gt; agency (con_0004)<br /><em>lev_ vs_ base</em>: leveraging vs. baseline (con_0005)<br /><em>self_ vs_ base</em>: self vs. baseline (con_0006)<br /><em>dic_ vs_ base</em>: dic vs. baseline (con_0007)<br /><em>lev_ over_ other</em>: leveraging &gt; other trials (con_0008)<br /><em>self_ over_ other</em>: self &gt; other trials (con_0009)<br /><em>dic_ over_ other</em>: dic &gt; other trials (con_0010)</p>
+<p>Inside each of these there are both <em>with order</em> and <em>without order</em> folders; this didn’t make much of a difference so going forward I will just go ahead and model block order.</p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Fourth analysis: looking only at subjects who made some prosocial decisions. These are located in the subfolder <em>2ndlev_1 &gt; prosocial &gt; with_ order &gt; with_ trialtype</em>. The contrasts and subfolders here are the same as they were for the 3rd analysis.</p></li>
+<li><p>Fifth analysis: taking prosocial decisions, as well as trial type and blocks, into account:</p></li>
+</ol>
+<p>Things got tricky at this level, because not all subjects were prosocial in all of the conditions. Therefore, each subject had a different number of conditions. The full range would have been 24 conditions: 3 trial types x 4 blocks x prosocial/not…but almost nobody was prosocial in every trial type in every block. In general, the “self” and “dic” type trials often lacked any prosocial trials at all.</p>
 </div>
 <div id="settings" class="section level2">
-<h2><span class="header-section-number">3.2</span> Settings</h2>
+<h2><span class="header-section-number">4.2</span> Settings</h2>
 <p>To obtain the second-level contrasts, I followed the tutorial in the SPM8 manual closely. For each condition (e.g. agency vs. baseline), I made an F contrast with weights matrix = 1.</p>
 <ul>
 <li>Apply masking: none</li>
@@ -368,39 +459,40 @@ img {
 </ul>
 </div>
 <div id="modeling-order-effects" class="section level2">
-<h2><span class="header-section-number">3.3</span> Modeling order effects</h2>
-<p>I did the second-level analysis both with and without including block order as another regressor. <strong>Examine how block order changes actual p values</strong></p>
+<h2><span class="header-section-number">4.3</span> Modeling order effects</h2>
+<p>Lester suggested I model block order effects at the second level, as shown in the following pictures.</p>
 </div>
 <div id="pictures" class="section level2">
-<h2><span class="header-section-number">3.4</span> Pictures</h2>
+<h2><span class="header-section-number">4.4</span> Pictures</h2>
+<p>These are second-level contrasts for a first-level analysis that:<br />* Included trial type (3 kinds)<br />* Included 4 blocks: 2 agency and 2 non-agency<br />* Included all subjects</p>
 <div id="agency-vs.baseline" class="section level3">
-<h3><span class="header-section-number">3.4.1</span> Agency vs. baseline</h3>
+<h3><span class="header-section-number">4.4.1</span> Agency vs. baseline</h3>
 <div class="figure">
 <img src="lev2_ag.png" alt="ag vs base" /><p class="caption">ag vs base</p>
 </div>
 </div>
 <div id="non-agency-vs.baseline" class="section level3">
-<h3><span class="header-section-number">3.4.2</span> Non-agency vs. baseline</h3>
+<h3><span class="header-section-number">4.4.2</span> Non-agency vs. baseline</h3>
 <div class="figure">
 <img src="lev2_nonag.png" alt="nonag vs base" /><p class="caption">nonag vs base</p>
 </div>
 </div>
 <div id="agency-non-agency" class="section level3">
-<h3><span class="header-section-number">3.4.3</span> Agency &gt; non-agency</h3>
+<h3><span class="header-section-number">4.4.3</span> Agency &gt; non-agency</h3>
 <div class="figure">
 <img src="lev2_contrast.png" alt="agency &gt; non-agency" /><p class="caption">agency &gt; non-agency</p>
 </div>
 </div>
 </div>
 <div id="interpretation-of-active-brain-areas" class="section level2">
-<h2><span class="header-section-number">3.5</span> Interpretation of active brain areas</h2>
+<h2><span class="header-section-number">4.5</span> Interpretation of active brain areas</h2>
 <p>The “versus baseline” contrasts give us a nice reality check. Because this task involves reading information on a screen, we should see activity in visual areas, which is obvious in both agency vs. baseline and non-agency vs. baseline. Because it involves pretty sophisticated decision-making, we should also see a great deal of frontal activation, which we also see in both “versus baseline” cases.</p>
 <div id="converting-mni-to-tal-and-area-lookup" class="section level3">
-<h3><span class="header-section-number">3.5.1</span> Converting MNI to TAL and area lookup</h3>
+<h3><span class="header-section-number">4.5.1</span> Converting MNI to TAL and area lookup</h3>
 <p>The coordinates in SPM are MNI coordinates. These need to be converted to Talairach in order to look them up in the Brede database. I used <a href="http://sprout022.sprout.yale.edu/mni2tal/mni2tal.html">a website from the BioImage suite at Yale</a> to convert MNI to TAL.</p>
 <p>I then used the <a href="http://neuro.imm.dtu.dk/cgi-bin/brede_loc_query.pl?q=">Brede database</a> to look up the TAL coordinates and what areas they correspond with in the literature.</p>
 <div id="areas-implicated-in-literature" class="section level4">
-<h4><span class="header-section-number">3.5.1.1</span> Areas implicated in literature</h4>
+<h4><span class="header-section-number">4.5.1.1</span> Areas implicated in literature</h4>
 <p>The following papers (from Shoham) are being used as a guide.</p>
 <ul>
 <li>Hutcherson et. al. 2015 <strong>A neurocomputational model of altruistic choice and its implications</strong></li>
@@ -408,20 +500,22 @@ img {
 <li>Fehr &amp; Camerer 2007 <strong>Social neuroeconomics: the neural circuitry of social preferences</strong></li>
 </ul>
 <p>I looked at the names of the main areas implicated in these papers, then did a literature search to define the borders of these areas. I then compared the coordinates identified in my second-level analysis to the lists of coordinates as defined in many different papers.</p>
-<p>Another approach is to use <strong>Neurosynth</strong> to generate automated meta-analyses; I am looking into this currently.</p>
+</div>
+<div id="areas-we-found-to-be-active" class="section level4">
+<h4><span class="header-section-number">4.5.1.2</span> Areas we found to be active</h4>
 </div>
 </div>
 </div>
 </div>
 <div id="roi-analysis-with-marsbar" class="section level1">
-<h1><span class="header-section-number">4</span> ROI analysis with MarsBaR</h1>
+<h1><span class="header-section-number">5</span> ROI analysis with MarsBaR</h1>
 <p>One problem with the second-level analysis was that when FWE-corrected p values were used, no activation could be seen (due to too much variance throughout the brain). This happened regardless of whether block order was a regressor or not. This means that ROI masks need to be used to isolate areas of interest (based on the literature and on the preliminary results obtained with uncorrected p values). This will prevent variance from all over the brain from washing out our effect.</p>
 <div id="downloads" class="section level2">
-<h2><span class="header-section-number">4.1</span> Downloads</h2>
+<h2><span class="header-section-number">5.1</span> Downloads</h2>
 <p>Marsbar-0.44 was already present on Acropolis. To use MARSBaR’s pre-made ROIs, I downloaded marsbar-aal-0.2 from their <a href="http://sourceforge.net/projects/marsbar/files/marsbar%20AAL%20ROIs/0.2/">recommended website</a>. These are used for strucural ROIs when functionals are not available (as in our case).</p>
 </div>
 <div id="marsbar-first-level" class="section level2">
-<h2><span class="header-section-number">4.2</span> MARSBaR first level</h2>
+<h2><span class="header-section-number">5.2</span> MARSBaR first level</h2>
 <p>I used each subject’s first-level SPM.mat file to specify the design; the Graphics window verified that the design had been correctly imported.</p>
 <p>I used MarsBar’s batch code from their <a href="http://marsbar.sourceforge.net/faq.html#how-do-i-run-a-marsbar-analysis-in-batch-mode">support website</a> to run the ROIs for all the subjects, across all four of the preliminary contrasts:</p>
 <ul>
@@ -431,17 +525,17 @@ img {
 <li>non vs. baseline</li>
 </ul>
 <div id="rois-used-marsbars-own" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> ROIs used: Marsbar’s own</h3>
+<h3><span class="header-section-number">5.2.1</span> ROIs used: Marsbar’s own</h3>
 <p>See “downloads” section above; I used a huge loop to go through all the ROIs that looked related to ones implicated in the literature (e.g. orbitofrontal, etc.) plus ones that looked like (upon visual examination with a non-corrected p-value threshold) like they were active in the contrast (temporal areas). This came to a total of 46 ROIs (bolded = approaching significance)</p>
 <p>MNI_ Caudate_ L_ roi.mat<br />MNI_ Caudate_ R_ roi.mat<br />MNI_ Cingulum_ Ant_ L_ roi.mat<br />MNI_ Cingulum_ Ant_ R_ roi.mat<br />MNI_ Cingulum_ Mid_ L_ roi.mat<br />MNI_ Cingulum_ Mid_ R_ roi.mat<br />MNI_ Cingulum_ Post_ L_ roi.mat<br />MNI_ Cingulum_ Post_ R_ roi.mat<br />MNI_ Cuneus_ L_ roi.mat<br />MNI_ Cuneus_ R_ roi.mat<br /><strong>MNI_ Frontal_ Inf_ Oper_ L_ roi.mat</strong> (p=0.07)<br /><strong>MNI_ Frontal_ Inf_ Oper_ R_ roi.mat</strong> (p=0.05)<br /><strong>MNI_ Frontal_ Inf_ Orb_ L_ roi.mat</strong> (p=0.06)<br /><strong>MNI_ Frontal_ Inf_ Orb_ R_ roi.mat</strong> (p=0.07)<br /><strong>MNI_ Frontal_ Inf_ Tri_ L_ roi.mat</strong> (p=0.05)<br /><strong>MNI_ Frontal_ Inf_ Tri_ R_ roi.mat</strong> (p=0.07)<br />MNI_ Frontal_ Med_ Orb_ L_ roi.mat<br />MNI_ Frontal_ Med_ Orb_ R_ roi.mat<br />MNI_ Frontal_ Mid_ L_ roi.mat<br />MNI_ Frontal_ Mid_ R_ roi.mat<br />MNI_ Frontal_ Mid_ Orb_ L_ roi.mat<br />MNI_ Frontal_ Mid_ Orb_ R_ roi.mat<br />MNI_ Frontal_ Sup_ L_ roi.mat<br />MNI_ Frontal_ Sup_ R_ roi.mat<br />MNI_ Frontal_ Sup_ Medial_ L_ roi.mat<br />MNI_ Frontal_ Sup_ Medial_ R_ roi.mat<br />MNI_ Frontal_ Sup_ Orb_ L_ roi.mat<br />MNI_ Frontal_ Sup_ Orb_ R_ roi.mat<br />MNI_ Insula_ L_ roi.mat<br />MNI_ Insula_ R_ roi.mat<br />MNI_ Precuneus_ L_ roi.mat<br />MNI_ Precuneus_ R_ roi.mat<br />MNI_ Putamen_ L_ roi.mat<br />MNI_ Putamen_ R_ roi.mat<br /><strong>MNI_ Temporal_ Inf_ L_ roi.mat</strong> (p=0.08)<br />MNI_ Temporal_ Inf_ R_ roi.mat<br />MNI_ Temporal_ Mid_ L_ roi.mat<br />MNI_ Temporal_ Mid_ R_ roi.mat<br />MNI_ Temporal_ Pole_ Mid_ L_ roi.mat<br />MNI_ Temporal_ Pole_ Mid_ R_ roi.mat<br />MNI_ Temporal_ Pole_ Sup_ L_ roi.mat<br />MNI_ Temporal_ Pole_ Sup_ R_ roi.mat<br />MNI_ Temporal_ Sup_ L_ roi.mat<br />MNI_ Temporal_ Sup_ R_ roi.mat<br />MNI_ Occipital_ Inf_ L_ roi.mat<br />MNI_ Occipital_ Inf_ R_ roi.mat</p>
 </div>
 <div id="rois-used-neurosynth" class="section level3">
-<h3><span class="header-section-number">4.2.2</span> ROIs used: Neurosynth</h3>
+<h3><span class="header-section-number">5.2.2</span> ROIs used: Neurosynth</h3>
 <p>I used neurosynth to make ROIs for the following areas, which were pulled out from the literature on decision making, prosociality, etc.:</p>
 <ul>
 <li>Anterior cingulate (searched “acc”)</li>
 <li>Dorsal anterior cingulate (searched “dacc”)</li>
-<li><span style="color:red">Paracingulate cortex - searched but no results in Neurosynth</span><br /></li>
+<li><em>Paracingulate cortex - searched but no results in Neurosynth</em></li>
 <li>Caudate</li>
 <li>Precuneus</li>
 <li>VMPFC</li>
@@ -456,7 +550,7 @@ img {
 <li>Ventral striatum</li>
 <li>Anterior insula</li>
 <li>Nucleus accumbens</li>
-<li><span style="color:red">Ventral tegmental area - searched but no results in Neurosynth</span></li>
+<li><em>Ventral tegmental area - searched but no results in Neurosynth</em></li>
 <li>Subgenual area (searched “subgenual”)</li>
 <li>Posterior STS (searched “psts”)</li>
 <li>Temporoparietal junction</li>
@@ -475,13 +569,13 @@ img {
 </ol>
 </div>
 <div id="parameters-to-investigate" class="section level3">
-<h3><span class="header-section-number">4.2.3</span> Parameters to investigate</h3>
+<h3><span class="header-section-number">5.2.3</span> Parameters to investigate</h3>
 <p>I wrote 2 small scripts to do the following:<br />1. Fish out the ROIs and their P values<br />2. Fish out the significant ROIs and their P values &lt; 0.05 These scripts save the subject name, ROI identity, and P value in a text file that can be copy-pasted into excel, etc.</p>
-<p>I also used code from the <a href="http://marsbar.sourceforge.net/faq.html#how-do-i-extract-percent-signal-change-from-my-design-using-batch">MarsBar FAQ page</a> to extract percent signal change from the data in batch mode.<br />Out of all the possible parameters of interest, it seems that <em>percent signal change</em> is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.</p>
+<p>I also used code from the <a href="http://marsbar.sourceforge.net/faq.html#how-do-i-extract-percent-signal-change-from-my-design-using-batch">MarsBar FAQ page</a> to extract percent signal change from the data in batch mode.<br />Out of all the possible parameters of interest, it seems that <strong>percent signal change</strong> is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.</p>
 </div>
 </div>
 <div id="marsbar-second-level" class="section level2">
-<h2><span class="header-section-number">4.3</span> MARSBaR second level</h2>
+<h2><span class="header-section-number">5.3</span> MARSBaR second level</h2>
 <p>Using the data generated from first-level analysis, containing percent signal change for each block, I did the following:</p>
 <ul>
 <li>For each subject and each ROI, average together the “agency” and “non-agency” blocks to get one agency % signal change and one non-agency % signal change<br /></li>
@@ -496,18 +590,18 @@ img {
 }
 
 write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></pre>
-<div id="results-3" class="section level3">
-<h3><span class="header-section-number">4.3.1</span> Results</h3>
+<div id="results-4" class="section level3">
+<h3><span class="header-section-number">5.3.1</span> Results</h3>
 <p>No areas reached the significance threshold of p&lt;0.05, however some came close.</p>
 <p>These are:<br />IFG opercular (p=0.079 left, p=0.076 right)<br />IFG orbital (p=0.067 left, p=0.081 right)<br />IFG triangular, left (p=0.066) Inferior temporal, left only (p=0.069)</p>
 </div>
 <div id="repetition-of-second-level-with-neurosynth-rois" class="section level3">
-<h3><span class="header-section-number">4.3.2</span> Repetition of second-level with Neurosynth ROIs</h3>
+<h3><span class="header-section-number">5.3.2</span> Repetition of second-level with Neurosynth ROIs</h3>
 <p>This pulled out the following ROIs:<br />anterior insula (p=0.088)<br />DLPFC (p=0.016)</p>
 <p>Note that Neurosynth ROIs are necessarily bilateral already.</p>
 </div>
 <div id="repetition-of-second-level-with-only-prosocial-subjects" class="section level3">
-<h3><span class="header-section-number">4.3.3</span> Repetition of second-level with only prosocial subjects</h3>
+<h3><span class="header-section-number">5.3.3</span> Repetition of second-level with only prosocial subjects</h3>
 <p>Subjects that were never or rarely prosocial (see below in the Subjects section) were removed from the .csv file read into R, and the analysis was repeated (sample size is now n=34).</p>
 <pre class="r"><code>for (i in 1:46){
   temp=t.test(data[1:34,i],data[35:68,i],alternative=c(&quot;two.sided&quot;),mu=0,paired=TRUE,var.equal=FALSE,conf.level=0.95)
@@ -521,47 +615,49 @@ write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></p
 </div>
 </div>
 <div id="on-fwe-vs.conventional-significance-levels-with-roi-analysis" class="section level2">
-<h2><span class="header-section-number">4.4</span> On FWE vs. conventional significance levels with ROI analysis</h2>
+<h2><span class="header-section-number">5.4</span> On FWE vs. conventional significance levels with ROI analysis</h2>
 <p>As stated in <a href="http://www.jneurosci.org/content/33/12/5301.full">Schweizer et. al. 2013</a>, using an ROI analysis makes looking at corrected P values unnecessary:</p>
 <p>“(1) the ROI under consideration are clearly derived from the literature a priori; and (2) averaging across all voxels within an anatomically defined ROI is itself very conservative because included in the average will likely be sizeable clusters of voxels not activated by the relevant contrast. Such averaging already therefore biases toward the null hypothesis, and additional correction for multiple tests would make the significance threshold very stringent indeed (Poldrack, 2007).”</p>
 </div>
 </div>
 <div id="participant-information" class="section level1">
-<h1><span class="header-section-number">5</span> Participant information</h1>
+<h1><span class="header-section-number">6</span> Participant information</h1>
 <div id="excluded-for-data-when-art-repair-is-used" class="section level2">
-<h2><span class="header-section-number">5.1</span> Excluded for data when art repair is used</h2>
+<h2><span class="header-section-number">6.1</span> Excluded for data when art repair is used</h2>
 <p>2, 9, 10, 12, 13, 16, 26, 32</p>
 </div>
 <div id="excluded-when-art-repair-is-not-used" class="section level2">
-<h2><span class="header-section-number">5.2</span> Excluded when art repair is not used</h2>
+<h2><span class="header-section-number">6.2</span> Excluded when art repair is not used</h2>
 <p>2, 9, 10, 12, 16, 17, 26, 32, 37, 38, 43, 45 (everyone on Lester’s list of people who may have had motion issues)</p>
 </div>
 <div id="block-order" class="section level2">
-<h2><span class="header-section-number">5.3</span> Block order</h2>
+<h2><span class="header-section-number">6.3</span> Block order</h2>
 <p>Agency first: 2, 4, 6, 8, 10, 12, 14, 16, 18, 19, 21, 23, 25, 26, 28, 30, 32, 34, 36, 39, 41, 43</p>
 <p>Non-agency first: 1, 3, 5, 7, 9, 11, 13, 15, 17, 20, 22, 24, 27, 29, 31, 33, 35, 37, 38, 40, 42, 44, 45</p>
 </div>
 <div id="unusual-but-still-included" class="section level2">
-<h2><span class="header-section-number">5.4</span> Unusual, but still included</h2>
+<h2><span class="header-section-number">6.4</span> Unusual, but still included</h2>
 <p>35: had only 171 scans in run 4</p>
 </div>
 <div id="never-prosocial" class="section level2">
-<h2><span class="header-section-number">5.5</span> Never prosocial</h2>
+<h2><span class="header-section-number">6.5</span> Never prosocial</h2>
 <p>Accessible in column “O” of the subject info spreadsheet <em>dga_ mri_ costrationbeh_ noinit.csv</em></p>
 <ul>
 <li>Subject 24</li>
 </ul>
 </div>
 <div id="rarely-prosocial" class="section level2">
-<h2><span class="header-section-number">5.6</span> Rarely prosocial</h2>
+<h2><span class="header-section-number">6.6</span> Rarely prosocial</h2>
 <ul>
-<li>Subject 1 and 8 (only prosocial once each)</li>
+<li>Subject 1 (one prosocial decision)</li>
+<li>Subject 8 (one prosocial decision)</li>
+<li>Subject 3 (7 prosocial decisions)</li>
 </ul>
 </div>
 <div id="no-behavioral-data" class="section level2">
-<h2><span class="header-section-number">5.7</span> No behavioral data</h2>
+<h2><span class="header-section-number">6.7</span> No behavioral data</h2>
 <ul>
-<li>Subject 13</li>
+<li>Subject 13 (file was corrupted due to computer malfunction during data collection; excluding this subject)</li>
 </ul>
 </div>
 </div>
