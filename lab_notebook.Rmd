@@ -14,6 +14,39 @@ output:
   word_document: default
 ---
 
+# Design and trial types
+
+##Agency vs. non-agency
+This was a block-level variable, within-subjects. There were 2 blocks in a row of each condition, and order was counterbalanced, such that half of the subjects did the following blocks:  
+
+Ag-Ag-Non-Non  
+
+And half of them did:  
+Non-Non-Ag-Ag  
+
+##Trials
+There were 70 total agency trials and 70 total non-agency trials. These were randomly divided into 35 per block.
+
+## Trial types
+
+1. Leveraging: at no cost or small cost to self, subject can give more money to the other. Example:  
+Opt. A: self $4, other $4  
+Opt. B: self $3.50, other $8  
+
+The expectation is for quite a few prosocial decisions, particularly at no cost to the self.
+
+2. Control (coded as "self"): at no penalty to the other, one can give oneself more money. Example:    
+Opt. A: self $4, other $4  
+Opt. B: self $8, other $4  
+
+The expectation here is for few, if any, prosocial decisions.
+
+3. Dictator: the numbers are fairly unequal and flip-flop. Example:  
+Opt. A: self $6, other $16  
+Opt. B: self $16, other $6  
+
+The expectation here is for people to favor themselves most of the time.
+
 # Preprocessing
 
 ## Steps & Settings
@@ -231,6 +264,28 @@ I added options to my *batch_ firstlevel.m* script to add these trial types for 
 
 ### Results
 I examined the same contrasts as before, with the same options.
+
+###Results eliminating "filler" trials
+We are most interested in leveraging trials, where people are likely to be prosocial. Thus, in the first-level contrasts, we can enter zeros for self and dic type trials, looking only at leveraging. For completeness we can also look at self and dic trials alone. The script for this is *contrasts_trialtypesep.m*.
+
+This yields 9 contrasts. These are stored in */mnt/ide0/share/hcnlab/agency/nifti/subj#/Specify model 2/Design_4block/with_trialtype/septype*. The contrasts are numbered as follows: 
+
+1. LEV ag > non
+2. LEV ag > base
+3. LEV non > base
+4. SELF ag > non
+5. SELF ag > base
+6. SELF non > base
+7. DIC ag > non
+8. DIC ag > base
+9. DIC non > base
+
+It should be noted that for these, 
+
+* Never-prosocial subjects (1, 8, and 24) are excluded
+* Prosociality is not modeled as a separate condition
+* Block order is modeled at the second level
+
 
 ##Repetition of first-level with trial types as events AND with prosocial trials only
 This yielded 24 conditions (hypothetically) for each subject:  
