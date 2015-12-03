@@ -268,7 +268,7 @@ I examined the same contrasts as before, with the same options.
 ###Results eliminating "filler" trials
 We are most interested in leveraging trials, where people are likely to be prosocial. Thus, in the first-level contrasts, we can enter zeros for self and dic type trials, looking only at leveraging. For completeness we can also look at self and dic trials alone. The script for this is *contrasts_trialtypesep.m*.
 
-This yields 9 contrasts. These are stored in */mnt/ide0/share/hcnlab/agency/nifti/subj#/Specify model 2/Design_4block/with_trialtype/septype*. The contrasts are numbered as follows: 
+This yields 9 contrasts. These are stored in */mnt/ide0/share/hcnlab/agency/nifti/2ndlev_1/with_trialtype/TRIALTYPE_contrast*. The contrasts are numbered as follows: 
 
 1. LEV ag > non
 2. LEV ag > base
@@ -309,7 +309,6 @@ For a first pass, I examined the following contrasts:
 
 These contrasts are numbered in the order they are listed here, and were made with the SPM.mat files in *subj#/Specify model 2/Design_4block/with_trialtype/protrials*
 
-Done: up thru 41
 
 #Second-level analysis
 ## Filenames and location
