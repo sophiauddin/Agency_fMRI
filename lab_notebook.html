@@ -96,6 +96,9 @@ img {
 <li><a href="#batch-processing-2"><span class="toc-section-number">2.4.1</span> Batch processing</a></li>
 <li><a href="#results-2"><span class="toc-section-number">2.4.2</span> Results</a></li>
 </ul></li>
+<li><a href="#repetition-of-first-level-with-trial-types-as-events-and-with-prosocial-trials-only"><span class="toc-section-number">2.5</span> Repetition of first-level with trial types as events AND with prosocial trials only</a><ul>
+<li><a href="#results-3"><span class="toc-section-number">2.5.1</span> Results</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#second-level-analysis"><span class="toc-section-number">3</span> Second-level analysis</a><ul>
 <li><a href="#filenames-and-location"><span class="toc-section-number">3.1</span> Filenames and location</a></li>
@@ -118,7 +121,7 @@ img {
 <li><a href="#parameters-to-investigate"><span class="toc-section-number">4.2.3</span> Parameters to investigate</a></li>
 </ul></li>
 <li><a href="#marsbar-second-level"><span class="toc-section-number">4.3</span> MARSBaR second level</a><ul>
-<li><a href="#results-3"><span class="toc-section-number">4.3.1</span> Results</a></li>
+<li><a href="#results-4"><span class="toc-section-number">4.3.1</span> Results</a></li>
 <li><a href="#repetition-of-second-level-with-neurosynth-rois"><span class="toc-section-number">4.3.2</span> Repetition of second-level with Neurosynth ROIs</a></li>
 <li><a href="#repetition-of-second-level-with-only-prosocial-subjects"><span class="toc-section-number">4.3.3</span> Repetition of second-level with only prosocial subjects</a></li>
 </ul></li>
@@ -337,7 +340,9 @@ img {
 </div>
 <div id="repetition-of-first-level-with-trial-types-as-events" class="section level2">
 <h2><span class="header-section-number">2.4</span> Repetition of first-level with trial types as events</h2>
-<p>I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model.</p>
+<p>I used the built-in batch editor GUI to add each of the 3 trial types (lev, self, and dic) as separate conditions to the first level model. This means there were 12 conditions: 3 trial types x 4 blocks (agency1/2 and non-agency 1/2). The associated files for this analysis (e.g. the SPM.mat) are inside the folder <em>…nifti/subj#/Specify model 2/Design_ 4block/with_ trialtype</em>.</p>
+<p>The design matrix now looks like this (example=subject 3): <img src="design_trialtype.png" alt="expanded design matrix" /></p>
+<p>To look at individual trial types, there is a csv file:<br /><em>mnt/ide0/share/hcnlab/agency/documents/dga3_ behav/trials/dga3options.csv</em></p>
 <div id="batch-processing-2" class="section level3">
 <h3><span class="header-section-number">2.4.1</span> Batch processing</h3>
 <p>I added options to my <em>batch_ firstlevel.m</em> script to add these trial types for each subject.</p>
@@ -347,15 +352,45 @@ img {
 <p>I examined the same contrasts as before, with the same options.</p>
 </div>
 </div>
+<div id="repetition-of-first-level-with-trial-types-as-events-and-with-prosocial-trials-only" class="section level2">
+<h2><span class="header-section-number">2.5</span> Repetition of first-level with trial types as events AND with prosocial trials only</h2>
+<p>This yielded 24 conditions (hypothetically) for each subject:<br />3 trial types x 4 blocks (agency1/agency2/non1/non2) x prosociality (yes or no).</p>
+<p>Because the model now depends on prosocial decisions, which don’t always happen consistently, there were a couple implications to doing the analysis this way:<br />1. The design matrix for each subject looks different<br />2. Because of this, the contrasts for each subject are different and have to be done by hand</p>
+<p>Here are some example design matrices:<br /><img src="design_sub15.png" alt="24con design matrix" /></p>
+<div class="figure">
+<img src="design_sub18.png" alt="24con design matrix" /><p class="caption">24con design matrix</p>
+</div>
+<div id="results-3" class="section level3">
+<h3><span class="header-section-number">2.5.1</span> Results</h3>
+<p>For a first pass, I examined the following contrasts:<br />1. prosocial vs. baseline<br />2. NP vs. baseline<br />3. prosocial &gt; NP</p>
+<p>These contrasts are numbered in the order they are listed here, and were made with the SPM.mat files in <em>subj#/Specify model 2/Design_4block/with_trialtype/protrials</em></p>
+<p>Done: up thru 41</p>
+</div>
+</div>
 </div>
 <div id="second-level-analysis" class="section level1">
 <h1><span class="header-section-number">3</span> Second-level analysis</h1>
 <div id="filenames-and-location" class="section level2">
 <h2><span class="header-section-number">3.1</span> Filenames and location</h2>
-<p>Files for second-level analysis are the contrasts created in first-level. These are numbered as follows:</p>
-<p>For agency &gt; non-agency contrast:<br /><em>con_ 0001_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ over_ no/</em></p>
-<p>For agency vs. baseline:<br /><em>con_ 0002_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/ag_ vs_ base/</em></p>
-<p>For non-agency vs. baseline:<br /><em>con_ 0003_ subj#.img</em> is saved in <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1/no_ vs_ base/</em></p>
+<p>Files for second-level analysis are the contrasts created in first-level. These were added to a separate “2nd level” folder for easy access, and the subject number was appended to the contrast filename like this:<br /><em>con_ 0001_ subj#.img</em>.</p>
+<p>Guide to these files:</p>
+<p>The main 2nd level folder is: <em>/mnt/ide0/hcnlab/agency/nifti/2ndlev_ 1</em></p>
+<p>Within this, there are:</p>
+<ol style="list-style-type: decimal">
+<li><p>First analysis, with simple 4-block first-level design that does not take trial type or subject response into account:<br /><em>ag_ over_ no</em>: contains contrasts from all included subjects for agency &gt; non-agency (numbered con_0001)<br /><em>ag_ vs_ base</em>: contains agency vs. baseline contrasts (numbered con_0002)<br /><em>no_ vs_ base</em>: contains non-agency vs. baseline contrasts (numbered con_0003)</p></li>
+<li><p>Second analysis: taking block order per subject into account at the second level.</p></li>
+</ol>
+<p>This just consists of a folder with some regressions called <em>order</em> inside the <em>2ndlev_1</em> folder</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Third analysis: taking trial type (leveraging etc.) into account:<br />These are located in the subfolder <em>2ndlev_1 &gt; with_trialtype</em>.</li>
+</ol>
+<p>Inside this folder, there are:<br /><em>ag_ over_ no</em>: agency &gt; non (con_0001)<br /><em>ag_ vs_ base</em>: agency vs. baseline (con_0002)<br /><em>no_ vs_ base</em>: non-agency vs. baseline (con_0003)<br /><em>no_ over_ag</em>: non-agency &gt; agency (con_0004)<br /><em>lev_ vs_ base</em>: leveraging vs. baseline (con_0005)<br /><em>self_ vs_ base</em>: self vs. baseline (con_0006)<br /><em>dic_ vs_ base</em>: dic vs. baseline (con_0007)<br /><em>lev_ over_ other</em>: leveraging &gt; other trials (con_0008)<br /><em>self_ over_ other</em>: self &gt; other trials (con_0009)<br /><em>dic_ over_ other</em>: dic &gt; other trials (con_0010)</p>
+<p>Inside each of these there are both <em>with order</em> and <em>without order</em> folders; this didn’t make much of a difference so going forward I will just go ahead and model block order.</p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Fourth analysis: looking only at subjects who made some prosocial decisions. These are located in the subfolder <em>2ndlev_1 &gt; prosocial &gt; with_ order &gt; with_ trialtype</em>. The contrasts and subfolders here are the same as they were for the 3rd analysis.</p></li>
+<li><p>Fifth analysis: taking prosocial decisions, as well as trial type and blocks, into account:</p></li>
+</ol>
+<p>Things got tricky at this level, because not all subjects were prosocial in all of the conditions. Therefore, each subject had a different number of conditions. The full range would have been 24 conditions: 3 trial types x 4 blocks x prosocial/not…but almost nobody was prosocial in every trial type in every block. In general, the “self” and “dic” type trials often lacked any prosocial trials at all.</p>
 </div>
 <div id="settings" class="section level2">
 <h2><span class="header-section-number">3.2</span> Settings</h2>
@@ -369,10 +404,11 @@ img {
 </div>
 <div id="modeling-order-effects" class="section level2">
 <h2><span class="header-section-number">3.3</span> Modeling order effects</h2>
-<p>I did the second-level analysis both with and without including block order as another regressor. <strong>Examine how block order changes actual p values</strong></p>
+<p>Lester suggested I model block order effects at the second level, as shown in the following pictures.</p>
 </div>
 <div id="pictures" class="section level2">
 <h2><span class="header-section-number">3.4</span> Pictures</h2>
+<p>These are second-level contrasts for a first-level analysis that:<br />* Included trial type (3 kinds)<br />* Included 4 blocks: 2 agency and 2 non-agency<br />* Included all subjects</p>
 <div id="agency-vs.baseline" class="section level3">
 <h3><span class="header-section-number">3.4.1</span> Agency vs. baseline</h3>
 <div class="figure">
@@ -408,7 +444,9 @@ img {
 <li>Fehr &amp; Camerer 2007 <strong>Social neuroeconomics: the neural circuitry of social preferences</strong></li>
 </ul>
 <p>I looked at the names of the main areas implicated in these papers, then did a literature search to define the borders of these areas. I then compared the coordinates identified in my second-level analysis to the lists of coordinates as defined in many different papers.</p>
-<p>Another approach is to use <strong>Neurosynth</strong> to generate automated meta-analyses; I am looking into this currently.</p>
+</div>
+<div id="areas-we-found-to-be-active" class="section level4">
+<h4><span class="header-section-number">3.5.1.2</span> Areas we found to be active</h4>
 </div>
 </div>
 </div>
@@ -441,7 +479,7 @@ img {
 <ul>
 <li>Anterior cingulate (searched “acc”)</li>
 <li>Dorsal anterior cingulate (searched “dacc”)</li>
-<li><span style="color:red">Paracingulate cortex - searched but no results in Neurosynth</span><br /></li>
+<li><em>Paracingulate cortex - searched but no results in Neurosynth</em></li>
 <li>Caudate</li>
 <li>Precuneus</li>
 <li>VMPFC</li>
@@ -456,7 +494,7 @@ img {
 <li>Ventral striatum</li>
 <li>Anterior insula</li>
 <li>Nucleus accumbens</li>
-<li><span style="color:red">Ventral tegmental area - searched but no results in Neurosynth</span></li>
+<li><em>Ventral tegmental area - searched but no results in Neurosynth</em></li>
 <li>Subgenual area (searched “subgenual”)</li>
 <li>Posterior STS (searched “psts”)</li>
 <li>Temporoparietal junction</li>
@@ -477,7 +515,7 @@ img {
 <div id="parameters-to-investigate" class="section level3">
 <h3><span class="header-section-number">4.2.3</span> Parameters to investigate</h3>
 <p>I wrote 2 small scripts to do the following:<br />1. Fish out the ROIs and their P values<br />2. Fish out the significant ROIs and their P values &lt; 0.05 These scripts save the subject name, ROI identity, and P value in a text file that can be copy-pasted into excel, etc.</p>
-<p>I also used code from the <a href="http://marsbar.sourceforge.net/faq.html#how-do-i-extract-percent-signal-change-from-my-design-using-batch">MarsBar FAQ page</a> to extract percent signal change from the data in batch mode.<br />Out of all the possible parameters of interest, it seems that <em>percent signal change</em> is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.</p>
+<p>I also used code from the <a href="http://marsbar.sourceforge.net/faq.html#how-do-i-extract-percent-signal-change-from-my-design-using-batch">MarsBar FAQ page</a> to extract percent signal change from the data in batch mode.<br />Out of all the possible parameters of interest, it seems that <strong>percent signal change</strong> is the parameter of interest for us. I added code in my script to save the percent signal change for each block, each ROI, and each subject.</p>
 </div>
 </div>
 <div id="marsbar-second-level" class="section level2">
@@ -496,7 +534,7 @@ img {
 }
 
 write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></pre>
-<div id="results-3" class="section level3">
+<div id="results-4" class="section level3">
 <h3><span class="header-section-number">4.3.1</span> Results</h3>
 <p>No areas reached the significance threshold of p&lt;0.05, however some came close.</p>
 <p>These are:<br />IFG opercular (p=0.079 left, p=0.076 right)<br />IFG orbital (p=0.067 left, p=0.081 right)<br />IFG triangular, left (p=0.066) Inferior temporal, left only (p=0.069)</p>
@@ -555,13 +593,15 @@ write.table(pval,&quot;pavlues_ROIttest.txt&quot;, sep=&quot;\t&quot;)</code></p
 <div id="rarely-prosocial" class="section level2">
 <h2><span class="header-section-number">5.6</span> Rarely prosocial</h2>
 <ul>
-<li>Subject 1 and 8 (only prosocial once each)</li>
+<li>Subject 1 (one prosocial decision)</li>
+<li>Subject 8 (one prosocial decision)</li>
+<li>Subject 3 (7 prosocial decisions)</li>
 </ul>
 </div>
 <div id="no-behavioral-data" class="section level2">
 <h2><span class="header-section-number">5.7</span> No behavioral data</h2>
 <ul>
-<li>Subject 13</li>
+<li>Subject 13 (file was corrupted due to computer malfunction during data collection; excluding this subject)</li>
 </ul>
 </div>
 </div>
